@@ -1,8 +1,8 @@
 <section class="content-header">
-    <h1>Все статьи</h1>
+    <h1>Все проэкты</h1>
     <ol class="breadcrumb">
         <li><a href="<?=ADMIN?>"><i class="fa fa-dashboard"></i>Главная</a></li>
-        <li>Все статьи</li>
+        <li>Все проэкты</li>
     </ol>
 </section>
 
@@ -12,34 +12,34 @@
             <div class="box">
                 <!-- /.box-header -->
                 <div class="box-body">
-                    <a href="<?=ADMIN?>/article/add" class="btn btn-success">Добавить новую статью</a>
+                    <a href="<?=ADMIN?>/project/add" class="btn btn-success">Добавить новый проэкт</a>
                     <div class="table-responsive">
                         <table class="table table-bordered table-hover">
                             <thead>
                             <tr>
                                 <th>Фото</th>
                                 <th>Название</th>
-                                <th>Дата создания</th>
-                                <th>На главном экране</th>
+                                <th>Url</th>
+                                <th>Заказчик</th>
                                 <th>Статус</th>
                                 <th>Действия</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php foreach ($articles as $key => $article):?>
+                            <?php foreach ($projects as $key => $project):?>
                                 <tr>
                                     <td>
-                                        <img style="max-width: 50px" src="/images/<?=$article['img'];?>" alt="">
+                                        <img style="max-width: 50px" src="/images/<?=$project['img_preview'];?>" alt="">
                                     </td>
-                                    <td><?=$article['title'];?></td>
-                                    <td><?=echoDate($article['created_at'], true);?></td>
-                                    <td><?=$article['is_show'] ? 'Показывать' : 'Не показывать';?></td>
-                                    <td><?=$article['status'] ? 'Показывать' : 'Скрывать';?></td>
+                                    <td><?=$project['title'];?></td>
+                                    <td><a href="<?=$project['url'];?>"><?=$project['url'];?></a></td>
+                                    <td><?=$project['customer_name'];?></td>
+                                    <td><?=$project['status'] ? 'Показывать' : 'Скрывать';?></td>
                                     <td>
-                                        <a href="<?=ADMIN?>/article/edit?id=<?=$article['id'];?>">
+                                        <a href="<?=ADMIN?>/project/edit?id=<?=$project['id'];?>">
                                             <i class="fa fa-fw fa-edit"></i>
                                         </a>
-                                        <a href="<?=ADMIN?>/article/delete?id=<?=$article['id'];?>">
+                                        <a href="<?=ADMIN?>/project/delete?id=<?=$project['id'];?>">
                                             <i class="fa fa-fw fa-trash delete text-danger"></i>
                                         </a>
                                     </td>
@@ -49,7 +49,7 @@
                         </table>
                     </div>
                     <div class="text-content">
-                        <p><?=count($articles);?> статьи(статей) с <?=$count?></p>
+                        <p><?=count($projects);?> проэкт(проэктов) с <?=$count?></p>
                         <?php if ($pagination->getCountPages() > 1):?>
                             <?=$pagination?>
                         <?php endif; ?>

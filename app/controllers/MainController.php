@@ -8,7 +8,12 @@ class MainController extends AppController
 {
     public function indexAction(){
 
+        $projects = \R::findAll('project');
+
+
+
         $this->setMeta('IceBerg');
+        $this->setData(compact('projects'));
     }
 
 

@@ -26,10 +26,10 @@
 
                         <a class='view-breadcrumb view-back d-flex' href="#">
                             <div class="breadcrumbs-arrow"></div>
-                            Main
+                            Главная
                         </a>
                         <p class="px-1">/</p>
-                        <p class='view-breadcrumb'> Title</p>
+                        <p class='view-breadcrumb'><?=$project->title;?></p>
                     </div>
                     <div class="">
                         <a href="#" class="view-header-phone">+380 93 91 79 871</a>
@@ -41,20 +41,20 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="project-header">
-                        <div class="project-title">Elisoft</div>
-                        <div class="project-description">Производство мягкой мебели под заказ</div>
+                        <div class="project-title"><?=$project->title;?></div>
+                        <div class="project-description"><?=$project->description;?></div>
                         <!--<a href="#" class="project-button"><span>Посмотреть сайт</span><span class="think-arrow-right"></span></a>-->
-                        <button class="iconbutton iconbutton--border">
+                        <a class="iconbutton iconbutton--border" href="<?=$project->url;?>">
                             <span class="iconbutton__text">Посмотреть сайт</span>
                             <span class="iconbutton__graphic">
 							        <svg class="icon icon--arrow-right"><use xlink:href="#icon-arrow"></use></svg>
 						        </span>
                             <div class="iconbutton__border"></div>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-7 view-banner-wrap">
-                    <img src="images/header_img.png" alt="image">
+                    <img src="images/<?=$project->img_banner;?>" alt="image">
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
             </div>
             <div class="col-md-8">
                 <div class="task-value">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    <?=h($project->task);?>
                 </div>
             </div>
         </div>
@@ -81,11 +81,11 @@
             </div>
             <div class="col-md-8">
                 <div class="task-value">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    <?=h($project->design);?>
                 </div>
                 <div class="task-colors d-flex">
-                    <div class="task-color" style="background-color: #ff7f00"></div>
-                    <div class="task-color" style="background-color: #5c5c5c"></div>
+                    <div class="task-color" style="background-color: <?=$project->color_1;?>"></div>
+                    <div class="task-color" style="background-color: <?=$project->color_2;?>"></div>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="video-project-bg"
-                     data-vide-bg="mp4: videos/m.mp4, poster: images/bg.png"
+                     data-vide-bg="mp4: videos/<?=$project->video_big;?>, poster: images/<?=$project->img_preview;?>"
                      data-vide-options="loop: true, posterType: detect, autoplay: true, muted: true, position: 0% 0%">
                 </div>
 <!---->
@@ -113,7 +113,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="image-phone">
-                    <img src="images/phone_photo.png" alt="images">
+                    <img src="images/<?=$project->img_responsive;?>" alt="images">
                 </div>
             </div>
             <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -122,7 +122,7 @@
                     <div class="task-line mb-3"></div>
                 </div>
                 <div class="task-value">
-                    Разработали адаптированную мобильную версию, такую же эффектную и удобную. Весь контент полноценно воспроизводится на любых устройствах.
+                    <?=h($project->responsive);?>
                 </div>
             </div>
         </div>
@@ -133,18 +133,18 @@
         <div class="row my-3">
             <div class="col-lg-8">
                 <div class="view overlay">
-                    <img src="https://i.ytimg.com/vi/1uIs7bm2rv4/maxresdefault.jpg" alt="ukiWU9ly6d4" />
+                    <img src="https://i.ytimg.com/vi/<?=$project->video_small;?>/maxresdefault.jpg" alt="ukiWU9ly6d4" />
                     <div class="my-mask flex-center rgba-stylish-light">
-                        <a href="#" class="youtube-link" youtubeid="1uIs7bm2rv4">
+                        <a href="#" class="youtube-link" youtubeid="<?=$project->video_small;?>">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="74" viewBox="0 0 76 74"><g><g transform="translate(-946 -3606)"><image width="76" height="74" transform="translate(946 3606)" xlink:href="data:image/png;base64,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"/></g></g></svg>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 d-flex flex-column justify-content-center">
-                <div class="review-name pb-2">Александра Тимофеев</div>
+                <div class="review-name pb-2"><?=$project->customer_name;?></div>
                 <div class="task-value review-text">
-                    Отзыв от владельцы фирмы Elisoft
+                    <?=$project->customer_review;?>
                 </div>
             </div>
         </div>
@@ -160,9 +160,9 @@
         <div class="row">
             <div class="col-12">
                 <form action="#" class="d-flex justify-content-around flex-wrap">
-                    <input type="text" class="form-input my-3" placeholder="Имя">
-                    <input type="text" class="form-input my-3" placeholder="Телефон">
-                    <button class="project-button form-button my-3">Заказать подобный</button>
+                    <input type="text" class="form-input my-3" placeholder="Имя" name="name" required>
+                    <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-input my-3" placeholder="Телефон" required>
+                    <button type="button" class="project-button form-button my-3">Заказать подобный</button>
                 </form>
             </div>
         </div>

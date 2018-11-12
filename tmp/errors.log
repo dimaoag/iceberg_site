@@ -17959,3 +17959,168 @@
 [2018-11-09 08:18:20] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
         
 ====================='=
+[2018-11-09 08:28:21] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 08:28:21] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 10:11:55] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 10:11:56] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 10:31:42] Text error: Controller app\controllers\admin\ArticleController not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 54 
+        
+====================='=
+[2018-11-09 10:32:23] Text error: View /var/www/iceberg_site/app/views/admin/Project/add-video.php not found | File: /var/www/iceberg_site/vendor/iceberg/core/base/View.php | Line: 60 
+        
+====================='=
+[2018-11-09 10:33:05] Text error: View /var/www/iceberg_site/app/views/admin/Project/add-video.php not found | File: /var/www/iceberg_site/vendor/iceberg/core/base/View.php | Line: 60 
+        
+====================='=
+[2018-11-09 10:36:22] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 10:36:22] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 11:17:33] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 11:17:34] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 11:17:49] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 11:17:50] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 12:08:52] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 13:20:48] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 13:21:30] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 13:21:35] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 13:22:02] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 13:22:11] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 13:22:37] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 14:23:02] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg.article' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 188 
+        
+====================='=
+[2018-11-09 14:27:01] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= LIMIT 1   -- keep-cache' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 188 
+        
+====================='=
+[2018-11-09 14:27:51] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '= LIMIT 1   -- keep-cache' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 188 
+        
+====================='=
+[2018-11-09 14:43:11] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''img_preview' = '4feb65feb26e553ac65a9e62558cf475.jpg' WHERE id = '3'' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 188 
+        
+====================='=
+[2018-11-09 14:47:26] Text error: View /var/www/iceberg_site/app/views/admin/Project/delete-video.php not found | File: /var/www/iceberg_site/vendor/iceberg/core/base/View.php | Line: 60 
+        
+====================='=
+[2018-11-09 15:02:26] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:03:25] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:03:46] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:05:14] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:05:47] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:05:50] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:05:52] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:05:55] Text error: Page not found | File: /var/www/iceberg_site/app/controllers/admin/AdminController.php | Line: 29 
+        
+====================='=
+[2018-11-09 15:09:10] Text error: Controller app\controllers\admin\ArticleController not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 54 
+        
+====================='=
+[2018-11-09 15:09:32] Text error: Controller app\controllers\admin\ArticleController not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 54 
+        
+====================='=
+[2018-11-09 15:27:26] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:31:53] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:41:02] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:41:17] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:41:29] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:43:00] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:43:00] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:45:27] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:45:27] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:45:47] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:45:47] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:46:21] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:46:22] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:58:32] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:58:32] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:59:32] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:59:32] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:59:47] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 15:59:47] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=
+[2018-11-09 16:00:44] Text error: Page not found | File: /var/www/iceberg_site/vendor/iceberg/core/Router.php | Line: 57 
+        
+====================='=

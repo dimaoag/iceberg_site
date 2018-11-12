@@ -103,98 +103,87 @@
                     <h1 class="sec-4-title" id="projects">Каждый проект мы делаем как для себя</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="tabs">
-                        <span class="tab">Landing page</span>
-                        <span class="tab">Квиз</span>
-                    </div>
-                </div>
-            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-12">-->
+<!--                    <div class="tabs">-->
+<!--                        <span class="tab">Landing page</span>-->
+<!--                        <span class="tab">Квиз</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="row mt-3">
                 <div class="col-12">
                     <div class="tab-content">
-                        <div class="tab-item">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="nav-text mb-3">
-                                        <h3>Кликните по картинке</h3>
-                                        <a href="#">
-                                            <div class="nav-link-tab">
-                                                <i class="fa fa-link" aria-hidden="true"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="slider-images">
-                                        <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
-                                            <ol class="carousel-indicators">
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                            </ol>
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <a href="./manicure/index.html">
-                                                        <img class="d-block w-100" src="images/project2.png" alt="First slide">
-                                                    </a>
+                        <?php if (!empty($projects)): ?>
+
+                            <div class="tab-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="slider-images">
+                                            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
+<!--                                                <ol class="carousel-indicators">-->
+<!--                                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
+<!--                                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
+<!--                                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+<!--                                                </ol>-->
+                                                <div class="carousel-inner">
+                                                    <?php $i = 1; ?>
+                                                    <?php foreach ($projects as $project): ?>
+
+                                                        <div class="carousel-item<?= ($i == 1) ? ' active' : ''?>">
+                                                            <a href="<?=PATH?>/project/index?id=<?=$project->id;?>">
+                                                                <img class="d-block w-100" src="images/<?=$project->img_preview;?>" alt="<?=$project->img_preview;?>">
+                                                            </a>
+                                                        </div>
+
+                                                    <?php endforeach; ?>
+
                                                 </div>
-                                                <div class="carousel-item">
-                                                    <a href="http://salon.meri-shop.com">
-                                                        <img class="d-block w-100" src="images/project3.png" alt="Second slide">
-                                                    </a>
-                                                </div>
-                                                <div class="carousel-item">
-                                                    <a href="./doors/index.html">
-                                                        <img class="d-block w-100" src="images/project4.png" alt="Third slide">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Previous</span>
-                                            </a>
-                                            <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="sr-only">Next</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-item">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="nav-text mb-3">
-                                        <h3>Кликните по картинке</h3>
-                                        <a href="#">
-                                            <div class="nav-link-tab">
-                                                <i class="fa fa-link" aria-hidden="true"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="slider-images">
-                                        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <a href="./vorota/index.html">
-                                                        <img class="d-block w-100" src="images/kvith.png" alt="First slide">
-                                                    </a>
-                                                </div>
+                                                <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
+                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
+                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+
+                        <?php endif; ?>
+
+<!--                        <div class="tab-item">-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-12">-->
+<!--                                    <div class="nav-text mb-3">-->
+<!--                                        <h3>Кликните по картинке</h3>-->
+<!--                                        <a href="#">-->
+<!--                                            <div class="nav-link-tab">-->
+<!--                                                <i class="fa fa-link" aria-hidden="true"></i>-->
+<!--                                            </div>-->
+<!--                                        </a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="row">-->
+<!--                                <div class="col-12">-->
+<!--                                    <div class="slider-images">-->
+<!--                                        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">-->
+<!--                                            <div class="carousel-inner">-->
+<!--                                                <div class="carousel-item active">-->
+<!--                                                    <a href="./vorota/index.html">-->
+<!--                                                        <img class="d-block w-100" src="images/kvith.png" alt="First slide">-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
                 </div>
             </div>

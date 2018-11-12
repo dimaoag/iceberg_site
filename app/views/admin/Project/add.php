@@ -126,13 +126,29 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="form-group has-feedback">
+                                    <label for="url">Ссылка на сайт проэкта</label>
+                                    <input type="text" name="url" class="form-control" id="url" placeholder="http://site.com"
+                                           data-error="Minimum of 4 chars" data-minlength="6"
+                                           required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label for="video_small">Ссылка на видео с отзывом (Youtube)</label>
+                                    <input type="text" name="video_small" class="form-control" id="video_small" placeholder="ukiWU9ly6d4"
+                                           data-error="Minimum of 4 chars" data-minlength="6"
+                                           required>
+                                    <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                    <div class="help-block with-errors"></div>
+                                </div>
                                 <div class="form-group">
                                     <div class="box box-info box-solid file-upload">
                                         <div class="box-header">
                                             <h3 class="box-title">Видео о проэкте</h3>
                                         </div>
                                         <div class="box-body">
-                                            <div id="video_big" class="btn btn-success" data-url="/article/add-image" data-name="video_big" data-act="add" data-id="0">
+                                            <div id="video_big" class="btn btn-success" data-url="/project/add-video" data-name="video_big" data-act="add" data-id="0">
                                                 Выберите файл
                                             </div>
                                             <div class="video_big"></div>
@@ -170,6 +186,7 @@
 
                 </div>
                 <!-- /.box-body -->
+
             </div>
             <!-- /.box -->
         </div>

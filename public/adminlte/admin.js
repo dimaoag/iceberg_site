@@ -24,43 +24,43 @@ $('#editor1').ckeditor();
 
 
 
-//upload images
-if ($('div').is('#article')){
-    var buttonArticle = $('#article'),
+//upload image preview
+if ($('div').is('#img_preview')){
+    var buttonImgPreview = $('#img_preview'),
         file;
 }
 
-if (buttonArticle){
-    new AjaxUpload(buttonArticle, {
-        action: adminPath + buttonArticle.data('url') + "?upload=1",
+if (buttonImgPreview){
+    new AjaxUpload(buttonImgPreview, {
+        action: adminPath + buttonImgPreview.data('url') + "?upload=1",
         data: {
-            name: buttonArticle.data('name'),
-            act: buttonArticle.data('act'),
-            id: buttonArticle.data('id')
+            name: buttonImgPreview.data('name'),
+            act: buttonImgPreview.data('act'),
+            id: buttonImgPreview.data('id')
         },
-        name: buttonArticle.data('name'), //параметр
+        name: buttonImgPreview.data('name'), //параметр
         onSubmit: function(file, ext){ //при нажатии на кнопку выполняется функция (названия файла и его расширения)
             if (! (ext && /^(jpg|png|jpeg|gif)$/i.test(ext))){
                 alert('Error! Allowed only images.');
                 return false;
             }
-            buttonArticle.closest('.file-upload').find('.overlay').css({'display':'block'});
+            buttonImgPreview.closest('.file-upload').find('.overlay').css({'display':'block'});
             //первый предок (родитель с класом .file-upload) >  ищеи .find('.overlay') и показуем спинер
 
         },
         onComplete: function(file, response){ // по завершению аякс запроса
             setTimeout(function(){ // чтобы лоадер (спинер) дольше покрутился
-                buttonArticle.closest('.file-upload').find('.overlay').css({'display':'none'});
+                buttonImgPreview.closest('.file-upload').find('.overlay').css({'display':'none'});
 
                 response = JSON.parse(response);
-                $('.article').html('<img src="/images/' + response.file + '" style="max-height: 100px;">');
+                $('.'+buttonImgPreview.data('name')).html('<img src="/images/' + response.file + '" style="max-height: 100px;">');
             }, 1000);
         }
     });
 }
 
-//delete images from  article
-$('.del-img-article').on('click', function () {
+//delete image preview
+$('.del_img_preview').on('click', function () {
     var res = confirm('Вы действительно хотите удалить фото?');
     if (!res) return false;
 
@@ -70,7 +70,7 @@ $('.del-img-article').on('click', function () {
         type = this_img.data('type');
 
     $.ajax({
-        url: adminPath + '/article/delete-image',
+        url: adminPath + '/project/delete-image',
         data: {id: id, src: src, type: type},
         type: 'post',
         beforeSend: function () {
@@ -93,6 +93,221 @@ $('.del-img-article').on('click', function () {
     });
 
 });
+
+
+//upload image banner
+if ($('div').is('#img_banner')){
+    var buttonImgBanner = $('#img_banner'),
+        file;
+}
+
+if (buttonImgBanner){
+    new AjaxUpload(buttonImgBanner, {
+        action: adminPath + buttonImgBanner.data('url') + "?upload=1",
+        data: {
+            name: buttonImgBanner.data('name'),
+            act: buttonImgBanner.data('act'),
+            id: buttonImgBanner.data('id')
+        },
+        name: buttonImgBanner.data('name'), //параметр
+        onSubmit: function(file, ext){ //при нажатии на кнопку выполняется функция (названия файла и его расширения)
+            if (! (ext && /^(jpg|png|jpeg|gif)$/i.test(ext))){
+                alert('Error! Allowed only images.');
+                return false;
+            }
+            buttonImgBanner.closest('.file-upload').find('.overlay').css({'display':'block'});
+            //первый предок (родитель с класом .file-upload) >  ищеи .find('.overlay') и показуем спинер
+
+        },
+        onComplete: function(file, response){ // по завершению аякс запроса
+            setTimeout(function(){ // чтобы лоадер (спинер) дольше покрутился
+                buttonImgBanner.closest('.file-upload').find('.overlay').css({'display':'none'});
+
+                response = JSON.parse(response);
+                $('.'+buttonImgBanner.data('name')).html('<img src="/images/' + response.file + '" style="max-height: 100px;">');
+            }, 1000);
+        }
+    });
+}
+
+//delete image banner
+$('.del_img_banner').on('click', function () {
+    var res = confirm('Вы действительно хотите удалить фото?');
+    if (!res) return false;
+
+    var this_img = $(this),
+        id = this_img.data('id'),
+        src = this_img.data('src'),
+        type = this_img.data('type');
+
+    $.ajax({
+        url: adminPath + '/project/delete-image',
+        data: {id: id, src: src, type: type},
+        type: 'post',
+        beforeSend: function () {
+            this_img.closest('.file-upload').find('.overlay').css({'display': 'block'});
+        },
+        success: function (res) {
+            setTimeout(function () {
+                this_img.closest('.file-upload').find('.overlay').css({'display': 'none'});
+                if (res == 1){
+                    this_img.fadeOut();
+                }
+            }, 1000);
+        },
+        error: function () {
+            setTimeout(function () {
+                this_img.closest('.file-upload').find('.overlay').css({'display': 'none'});
+                alert('Error!')
+            }, 1000);
+        },
+    });
+
+});
+
+
+//upload image responsive
+if ($('div').is('#img_responsive')){
+    var buttonImgResponsive = $('#img_responsive'),
+        file;
+}
+
+if (buttonImgResponsive){
+    new AjaxUpload(buttonImgResponsive, {
+        action: adminPath + buttonImgResponsive.data('url') + "?upload=1",
+        data: {
+            name: buttonImgResponsive.data('name'),
+            act: buttonImgResponsive.data('act'),
+            id: buttonImgResponsive.data('id')
+        },
+        name: buttonImgResponsive.data('name'), //параметр
+        onSubmit: function(file, ext){ //при нажатии на кнопку выполняется функция (названия файла и его расширения)
+            if (! (ext && /^(jpg|png|jpeg|gif)$/i.test(ext))){
+                alert('Error! Allowed only images.');
+                return false;
+            }
+            buttonImgResponsive.closest('.file-upload').find('.overlay').css({'display':'block'});
+            //первый предок (родитель с класом .file-upload) >  ищеи .find('.overlay') и показуем спинер
+        },
+        onComplete: function(file, response){ // по завершению аякс запроса
+            setTimeout(function(){ // чтобы лоадер (спинер) дольше покрутился
+                buttonImgResponsive.closest('.file-upload').find('.overlay').css({'display':'none'});
+
+                response = JSON.parse(response);
+                $('.'+buttonImgResponsive.data('name')).html('<img src="/images/' + response.file + '" style="max-height: 100px;">');
+            }, 1000);
+        }
+    });
+}
+
+//delete image responsive
+$('.del_img_responsive').on('click', function () {
+    var res = confirm('Вы действительно хотите удалить фото?');
+    if (!res) return false;
+
+    var this_img = $(this),
+        id = this_img.data('id'),
+        src = this_img.data('src'),
+        type = this_img.data('type');
+
+    $.ajax({
+        url: adminPath + '/project/delete-image',
+        data: {id: id, src: src, type: type},
+        type: 'post',
+        beforeSend: function () {
+            this_img.closest('.file-upload').find('.overlay').css({'display': 'block'});
+        },
+        success: function (res) {
+            setTimeout(function () {
+                this_img.closest('.file-upload').find('.overlay').css({'display': 'none'});
+                if (res == 1){
+                    this_img.fadeOut();
+                }
+            }, 1000);
+        },
+        error: function () {
+            setTimeout(function () {
+                this_img.closest('.file-upload').find('.overlay').css({'display': 'none'});
+                alert('Error!')
+            }, 1000);
+        },
+    });
+
+});
+
+//upload video
+if ($('div').is('#video_big')){
+    var buttonVideo = $('#video_big'),
+        file;
+}
+
+if (buttonVideo){
+    new AjaxUpload(buttonVideo, {
+        action: adminPath + buttonVideo.data('url') + "?upload=1",
+        data: {
+            name: buttonVideo.data('name'),
+            act: buttonVideo.data('act'),
+            id: buttonVideo.data('id')
+        },
+        name: buttonVideo.data('name'), //параметр
+        onSubmit: function(file, ext){ //при нажатии на кнопку выполняется функция (названия файла и его расширения)
+            if (! (ext && /^(mp4|gif|jpg)$/i.test(ext))){
+                alert('Error! Allowed only videos.');
+                return false;
+            }
+            buttonVideo.closest('.file-upload').find('.overlay').css({'display':'block'});
+            //первый предок (родитель с класом .file-upload) >  ищеи .find('.overlay') и показуем спинер
+        },
+        onComplete: function(file, response){ // по завершению аякс запроса
+            setTimeout(function(){ // чтобы лоадер (спинер) дольше покрутился
+                buttonVideo.closest('.file-upload').find('.overlay').css({'display':'none'});
+
+                response = JSON.parse(response);
+                $('.'+buttonVideo.data('name')).html('<video src="/videos/' + response.file + '" style="max-height: 100px; margin-top: 10px" controls></video>');
+            }, 1000);
+        }
+    });
+}
+
+//delete image responsive
+$('.del_video_big').on('click', function () {
+    var res = confirm('Вы действительно хотите удалить видео?');
+    if (!res) return false;
+
+    var this_img = $(this),
+        id = this_img.data('id'),
+        src = this_img.data('src'),
+        type = this_img.data('type');
+
+    $.ajax({
+        url: adminPath + '/project/delete-video',
+        data: {id: id, src: src, type: type},
+        type: 'post',
+        beforeSend: function () {
+            this_img.closest('.file-upload').find('.overlay').css({'display': 'block'});
+        },
+        success: function (res) {
+            setTimeout(function () {
+                this_img.closest('.file-upload').find('.overlay').css({'display': 'none'});
+                if (res == 1){
+                    this_img.fadeOut();
+                }
+            }, 1000);
+        },
+        error: function () {
+            setTimeout(function () {
+                this_img.closest('.file-upload').find('.overlay').css({'display': 'none'});
+                alert('Error!')
+            }, 1000);
+        },
+    });
+
+});
+
+
+
+
+
 
 
 //upload images gallery
@@ -165,7 +380,7 @@ $('.del-gallery').on('click', function () {
 });
 
 
-
+// var myDropzone = new Dropzone(".fallback", { url: "/file/post"});
 
 
 
