@@ -506,3 +506,16 @@
 };
 
 
+$('.menu-content').hide();
+
+$('.menu-item').click(function () {
+	var id = $(this).data('id');
+	$('.my-menu').addClass(' menu-active');
+	$('.menu-items').hide();
+    $('#menu-content-' + id).show();
+});
+$('.my-menu-close').click(function () {
+    $('.my-menu').removeClass('menu-active');
+    $('.menu-items').show();
+    $('.menu-content').hide();
+});

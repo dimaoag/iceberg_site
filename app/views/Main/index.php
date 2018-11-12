@@ -11,7 +11,7 @@
             <div class="section__img-inner" style="background-image: url(img/section_1_bg_image.png)"></div>
         </div>
     </div>
-    <div class="section__more">
+    <div class="section__more block-none hidden">
         <div class="section__more-inner section__more-inner--bg1">
 <!--            <span class="section__more-text">Want to know more?</span>-->
             <a href="#" class="section__more-link">
@@ -20,8 +20,8 @@
             </a>
         </div>
     </div>
-    <div class="section__expander"></div>
-    <ul class="section__facts">
+    <div class="section__expander block-none hidden"></div>
+    <ul class="section__facts block-none hidden">
         <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
             <h3 class="section__facts-title">Портфолио</h3>
         </li>
@@ -67,7 +67,7 @@
 <!--        </li>-->
 
     </ul>
-    <div class="section__gallery" id="gallery1">
+    <div class="section__gallery block-none hidden" id="gallery1">
         <h3 class="section__gallery-item section__gallery-item--title">More impressions 1</h3>
         <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
         <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
@@ -76,7 +76,7 @@
         <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
         <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
     </div>
-    <div class="section__gallery" id="gallery2">
+    <div class="section__gallery block-none hidden" id="gallery2">
         <h3 class="section__gallery-item section__gallery-item--title">More impressions 2</h3>
         <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
         <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
@@ -85,7 +85,7 @@
         <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
         <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
     </div>
-    <div class="section__gallery" id="gallery3">
+    <div class="section__gallery block-none hidden" id="gallery3">
         <h3 class="section__gallery-item section__gallery-item--title">More impressions 3</h3>
         <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
         <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
@@ -107,7 +107,7 @@
     <div class="section__img">
         <div class="section__img-inner" style="background-image: url(img/section_2_bg_image.png)"></div>
     </div>
-    <div class="section__more">
+    <div class="section__more block-none hidden">
         <div class="section__more-inner section__more-inner--bg2">
 <!--            <span class="section__more-text">Want to know more?</span>-->
             <a href="#" class="section__more-link">
@@ -116,8 +116,8 @@
             </a>
         </div>
     </div>
-    <div class="section__expander"></div>
-    <ul class="section__facts">
+    <div class="section__expander block-none hidden"></div>
+    <ul class="section__facts block-none hidden">
         <li class="section__facts-item">
             <h3 class="section__facts-title">Biggest lake</h3>
             <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
@@ -139,15 +139,6 @@
 <!--            <span class="section__facts-detail">A collection of images</span>-->
 <!--        </li>-->
     </ul>
-<!--    <div class="section__gallery" id="gallery2">-->
-<!--        <h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>-->
-<!--        <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>-->
-<!--        <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>-->
-<!--        <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>-->
-<!--        <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>-->
-<!--        <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>-->
-<!--        <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>-->
-<!--    </div>-->
 </section><!--/ section -->
 <section class="section section-3">
     <div class="section__content">
@@ -161,7 +152,7 @@
     <div class="section__img">
         <div class="section__img-inner" style="background-image: url(img/section_3_bg_image.png)"></div>
     </div>
-    <div class="section__more">
+    <div class="section__more block-none hidden">
         <div class="section__more-inner section__more-inner--bg3">
 <!--            <span class="section__more-text">Want to know more?</span>-->
             <a href="#" class="section__more-link">
@@ -170,8 +161,8 @@
             </a>
         </div>
     </div>
-    <div class="section__expander"></div>
-    <ul class="section__facts">
+    <div class="section__expander block-none hidden"></div>
+    <ul class="section__facts block-none hidden">
         <li class="section__facts-item">
             <h3 class="section__facts-title">Lovely paths</h3>
             <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
@@ -202,7 +193,7 @@
     <div class="section__img">
         <div class="section__img-inner" style="background-image: url(img/section_4_bg_image.png)"></div>
     </div>
-    <div class="section__more">
+    <div class="section__more block-none hidden">
         <div class="section__more-inner section__more-inner--bg4">
 <!--            <span class="section__more-text">Want to know more?</span>-->
             <a href="#" class="section__more-link">
@@ -211,8 +202,8 @@
             </a>
         </div>
     </div>
-    <div class="section__expander"></div>
-    <ul class="section__facts">
+    <div class="section__expander block-none hidden"></div>
+    <ul class="section__facts block-none hidden">
         <li class="section__facts-item">
             <h3 class="section__facts-title">River romantics</h3>
             <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
