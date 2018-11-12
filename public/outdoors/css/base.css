@@ -15,10 +15,10 @@ body {
 	--color-bg-facts: #000;
 	--color-text-facts: #fff;
 	--color-bg-img: #000;
-	--color-bg-more-1: #fee9b1;
-	--color-bg-more-2: #e0f3ca;
-	--color-bg-more-3: #f3cae8;
-	--color-bg-more-4: #cacaf3;
+	--color-bg-more-1: #f6f5f5;
+	--color-bg-more-2: #f6f5f5;
+	--color-bg-more-3: #f6f5f5;
+	--color-bg-more-4: #f6f5f5;
 	--color-nav: #ddd;
 	--color-nav-hover: #000;
 	--color-link: #000;
@@ -126,7 +126,8 @@ button:focus {
 }
 
 .title {
-	text-transform: lowercase;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
 	font-size: 1.35rem;
 	margin: 0;
 }
@@ -224,14 +225,44 @@ button:focus {
 .section__content {
 	padding: 2rem;
 }
-
+.section-1 .char8{
+	margin-left: 15px;
+}
 .section__title {
-	font-size: 10vw;
-	text-transform: lowercase;
+	font-size: 5vw;
+	text-transform: uppercase;
 	margin: 0;
 	letter-spacing: -0.35vw;
 	position: relative;
 	overflow: hidden;
+	white-space: nowrap;
+}
+.section-1 .section__title{
+	font-size: 2.7vw;
+}
+.section-1 .char8{
+	margin-left: 15px;
+}
+
+.section-2 .section__title{
+	font-size: 2.7vw;
+}
+.section-2 .char6, .section-2 .char9, .section-2 .char16{
+	margin-left: 15px;
+}
+
+.section-3 .section__title{
+	font-size: 2.7vw;
+}
+.section-3 .char11{
+	margin-left: 15px;
+}
+
+.section-4 .section__title{
+	font-size: 2.7vw;
+}
+.section-4 .char10{
+	margin-left: 15px;
 }
 
 .section__title span {
@@ -254,7 +285,6 @@ button:focus {
 	height: 45vh;
 	pointer-events: none;
 }
-
 .section__img-inner {
 	width: 100%;
 	height: 100%;
@@ -272,6 +302,7 @@ button:focus {
 
 .section__facts-item {
 	margin: 0 0 2.5rem 0;
+	cursor: pointer;
 }
 
 .section__facts-img {
@@ -317,6 +348,7 @@ button:focus {
 }
 
 .section__facts-title {
+	cursor: pointer;
 	font-size: 1em;
 	margin: 0 0 0.5rem;
 }
@@ -572,7 +604,7 @@ button:focus {
 		pointer-events: auto;
 	}
 	.section__content {
-		padding: 0 4rem;
+		padding: 0 3rem;
 		grid-area: slide-content;
 	}
 	.section__expander {

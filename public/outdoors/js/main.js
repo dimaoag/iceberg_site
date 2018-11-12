@@ -8,6 +8,8 @@
  * Copyright 2018, Codrops
  * http://www.codrops.com
  */
+
+
 {
 	// From https://davidwalsh.name/javascript-debounce-function.
 	function debounce(func, wait, immediate) {
@@ -82,7 +84,7 @@
 		}
 		toggle(direction) {
 			this.direction = direction; 
-			return Promise.all([this.toggleTitle(!this.isHidden), 
+			return Promise.all([this.toggleTitle(!this.isHidden),
 								this.toggleDescription(!this.isHidden),
 								this.toggleImage(!this.isHidden),
 								this.toggleMore(!this.isHidden),
@@ -502,3 +504,5 @@
 		new Slideshow(document.querySelector('.sections'));
 	});
 };
+
+

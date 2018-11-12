@@ -1,331 +1,233 @@
-
-<div id="ip-container" class="ip-container">
-    <!-- initial header -->
-    <header class="ip-header">
-        <div class="preload-img">
-            <img src="<?=PATH?>/images/logo_preloader.JPG" alt="">
-        </div>
-        <div class="ip-loader">
-            <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
-                <path class="ip-loader-circlebg" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-                <path id="ip-loader-circle" class="ip-loader-circle" d="M40,10C57.351,10,71,23.649,71,40.5S57.351,71,40.5,71 S10,57.351,10,40.5S23.649,10,40.5,10z"/>
-            </svg>
-        </div>
-    </header>
-</div>
-
-<div>
-    <section class="section1">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <div class="sections">
-                        <header class="sections__header">
-                            <h1 class="title">ICEBERG</h1>
-                        </header>
-                        <nav class="menu">
-                            <ul class="menu__inner">
-                                <li class="menu__item"><a class="menu__item-link" href="#about-us">О нас</a></li>
-                                <li class="menu__item"><a class="menu__item-link" href="#projects">Примеры работ</a></li>
-                                <li class="menu__item"><a class="menu__item-link" href="#reviews">Отзывы</a></li>
-                                <li class="menu__item"><a class="menu__item-link" href="#contacts">Контакты</a></li>
-                            </ul>
-                            <div class="menu__toggle">
-                                    <span class="menu__toggle-inner menu__toggle-inner--open">
-                                        <i class="fa fa-bars"></i>
-                                    </span>
-                                <span class="menu__toggle-inner menu__toggle-inner--close">
-                                        <i class="fa fa-close text-white"></i>
-                                    </span>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="sec-1-wrap">
-                        <div class="sec-1-left-block">
-                            <div class="sec-1-title"><p id="fittext3">Создаем и улучшаем сайты.</p></div>
-                            <div class="center-wrap">
-                                <div class="text-simple">Ответьте на 4 вопроса и получите расчёт стоимости и бесплатною консультацию</div>
-                            </div>
-                            <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="particles-button sec-1-btn">Рассчитать стоимость</a>
-                        </div>
-                        <div class="sec-1-right-block">
-                            <img src="<?=PATH?>/images/sec_1.png" alt="image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section3">
-        <div class="container pl-4">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="section-3-title" id="about-us">Как студия. Но сосвсем другое дело</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-video">
-                    <div class="sec-6-video">
-                        <!--<a href="https://www.youtube.com/embed/BwDnMLQd-XI?autoplay=1" class="js-iframe">-->
-                        <!--<img src="http://img.youtube.com/vi/BwDnMLQd-XI/maxresdefault.jpg" alt="" />-->
-                        <!--</a>-->
-                        <!--<iframe src="https://www.youtube.com/embed/BwDnMLQd-XI"></iframe>-->
-                        <video  style="width: 100%;" controls="controls">
-                            <source src="videos/problem.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div class="text-under-video">
-                        <p>Узнайте за 60 сек. чем мы отличаемся от других</p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="sec-3-right-block h-100">
-                        <h2 class="text-below-form">Получите расчёт стоимости и бесплатною консультацию</h2>
-                        <form class="sec-3-form form-sec-3 js-form d-flex flex-column align-items-end" onsubmit="yaCounter50094541.reachGoal('Razbor'); return true;">
-                            <input data-mask="callback-catalog-phone" type="text" placeholder="Введите телефон" name="phone" required>
-                            <!--<div class="clear clearfix"></div>-->
-                            <button type="submit" class="clearfix" onclick="ga('send','event','Form','Otprav','Yarlik2');">Рассчитать стоимость</button>
-                            <!--<div class="clear clearfix"></div>-->
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section4">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="sec-4-title" id="projects">Каждый проект мы делаем как для себя</h1>
-                </div>
-            </div>
-<!--            <div class="row">-->
-<!--                <div class="col-12">-->
-<!--                    <div class="tabs">-->
-<!--                        <span class="tab">Landing page</span>-->
-<!--                        <span class="tab">Квиз</span>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-            <div class="row mt-3">
-                <div class="col-12">
-                    <div class="tab-content">
-                        <?php if (!empty($projects)): ?>
-
-                            <div class="tab-item">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="slider-images">
-                                            <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
-<!--                                                <ol class="carousel-indicators">-->
-<!--                                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-<!--                                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-<!--                                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-<!--                                                </ol>-->
-                                                <div class="carousel-inner">
-                                                    <?php $i = 1; ?>
-                                                    <?php foreach ($projects as $project): ?>
-
-                                                        <div class="carousel-item<?= ($i == 1) ? ' active' : ''?>">
-                                                            <a href="<?=PATH?>/project/index?id=<?=$project->id;?>">
-                                                                <img class="d-block w-100" src="images/<?=$project->img_preview;?>" alt="<?=$project->img_preview;?>">
-                                                            </a>
-                                                        </div>
-
-                                                    <?php endforeach; ?>
-
-                                                </div>
-                                                <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
-                                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Previous</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
-                                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                    <span class="sr-only">Next</span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        <?php endif; ?>
-
-<!--                        <div class="tab-item">-->
-<!--                            <div class="row">-->
-<!--                                <div class="col-12">-->
-<!--                                    <div class="nav-text mb-3">-->
-<!--                                        <h3>Кликните по картинке</h3>-->
-<!--                                        <a href="#">-->
-<!--                                            <div class="nav-link-tab">-->
-<!--                                                <i class="fa fa-link" aria-hidden="true"></i>-->
-<!--                                            </div>-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="row">-->
-<!--                                <div class="col-12">-->
-<!--                                    <div class="slider-images">-->
-<!--                                        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">-->
-<!--                                            <div class="carousel-inner">-->
-<!--                                                <div class="carousel-item active">-->
-<!--                                                    <a href="./vorota/index.html">-->
-<!--                                                        <img class="d-block w-100" src="images/kvith.png" alt="First slide">-->
-<!--                                                    </a>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section6">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="sec-6-title" id="reviews">Почему наши клиенты <br>обращаються к нам больше 2 раз</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div id="carouselExampleControls6" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="sec-6-video">
-
-                                            <a href="https://www.youtube.com/embed/BwDnMLQd-XI?autoplay=1" class="b-video js-iframe" id="js-iframe">
-                                                <img src="http://img.youtube.com/vi/BwDnMLQd-XI/maxresdefault.jpg" alt="" />
-                                                <div class="b-play">
-                                                    <!--<svg class="svg" width="21" height="29"><use xlink:href="./images/sprite.svg#play"></use></svg>-->
-                                                    <!--<svg class="svg" width="21" height="29"><use xlink:href="./images/play.svg"></use></svg>-->
-                                                    <img class="svg" src="images/play_pn.png">
-                                                </div>
-                                            </a>
-
-                                            <!--<iframe src="https://www.youtube.com/embed/BwDnMLQd-XI"></iframe>-->
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="sec-6-right-block">
-                                            <div class="sec-6-text-hide">
-                                                <h2>...Я не понимала куда деваються деньги...</h2>
-                                                <div class="sec-6-right-block-text">
-                                                    <img src="images/double-arrow-pointing-to-left.png" alt="">
-                                                    <p>Здравствуйте, я хозяйка салона красоты Meri Meri. Я не знала сколько у меня клиентов и не знала вообще куда деваются деньги. Благодаря этой компании Iceberg мы выросли в пять раз. Они навели мне порядок в  учете клиентов, в сайте и инстаграм. Я хочу их порекомендовать, если вы еще думаете или ищите команду, которая могла бы вам помочь вырасти, то смело обращайтесь!</p>
-                                                    <img src="images/double-arrow-pointing-to-right.png" alt="">
-                                                </div>
-                                                <div class="text-right name">Дарморос Марина </div>
-                                            </div>
-                                            <div class="salon-meri d-flex flex-wrap justify-content-between">
-                                                <p class="">Cалон красоты «Meri & Meri»</p>
-                                                <a href="http://salon.meri-shop.com" class="">salon.meri-shop.com</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="row">-->
-            <!--<div class="col-12">-->
-            <!--<div class="sec-6-nav float-right mt-3">-->
-            <!--<a href="#carouselExampleControls6" role="button" data-slide="prev">-->
-            <!--<img src="images/left_white.png" alt="">-->
-            <!--</a>-->
-            <!--<a href="#carouselExampleControls6" role="button" data-slide="next">-->
-            <!--<img src="images/right_white.png" alt="">-->
-            <!--</a>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</div>-->
-        </div>
-    </section>
-    <section class="section7">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h1 class="sec-7-title" id="contacts">Нас не нужно будет искать, вы всегда можете прийти к нам в гости и задать любые вопросы</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-9 mb-2">
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.6762685709534!2d28.487934321404854!3d49.23516652853881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c8de213a975376!2z0JzQtdGA0Lgg0LzQtdGA0Lgg0LHRjNGO0YLQuCDQutC70YPQsQ!5e0!3m2!1sru!2sua!4v1541410325715" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-3">
-                    <div class="sec-7-way">
-                        <a href="https://www.google.com/maps/dir//49.235413,28.48937/@49.235172,28.4848191,16z?hl=uk">
-                            <p class="d-block map-text map-way">Посмотреть маршрут <img src="images/turn_right.png" alt=""></p>
-                        </a>
-                    </div>
-                    <p class="d-block map-text">г. Винница, ул. 600-летия, 17</p>
-                    <p class="d-block map-text">с Пн по Пт    9:00 - 18:00</p>
-                    <p class="d-block map-text"><a href="tel:0939178871" style="color: #3d3d3d;">+38 (093) 91 78 871</a></p>
-                    <p class="d-block map-text"><a href="tel:0962965202" style="color: #3d3d3d;">+38 (096) 29 65 202</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section8">
-        <div class="container footer">
-            <div class="row">
-                <div class="col-lg-6 footer-left-block">
-                    <h2 class="footer-left-title-1">Остались вопросы?</h2>
-                    <h3 class="footer-left-title-2">Свяжитесь с нами через удобный мессенджер или закажите звонок, заполнив форму</h3>
-                </div>
-                <div class="col-lg-6 footer-right-block">
-                    <div class="socs">
-                        <a href="viber://chat?number=+380939179871">
-                            <img class="soc-img" src="images/viber.png" alt="">
-                        </a>
-                        <a href="tg://resolve?domain=sergey_sots">
-                            <img class="soc-img" src="images/telegram.png" alt="">
-                        </a>
-                        <a href="whatsapp://send?phone=+380939179871">
-                            <img class="soc-img" src="images/whatsapp.png" alt="">
-                        </a>
-                    </div>
-                    <form class="footer-form form-sec-8 js-form" onsubmit="yaCounter50094541.reachGoal('Cons'); return true;">
-                        <input data-mask="callback-catalog-phone" type="text"
-                               placeholder="Введите телефон" name="phone" class="form_phone"
-                               required>
-                        <button type="submit" onclick="ga('send','event','Form','Otprav','Yarlik2');">Получить консультацию</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<div class="is-hidden">
-    <div class="popup popup-thanks popup_my" id=popup-thanks>
-        <h1 class="pop-title-text">Спасибо! Ваша заявка отправлена</h1>
-        <!--<div class="pop-vid-wrap">-->
-        <!--<div class="popup-video">-->
-        <!--<video  style="width: 100%;" controls="controls" id="vid">-->
-        <!--<source src="IMG_5724.mp4" type="video/mp4">-->
-        <!--<source src="IMG_5724.mp4" type="video/ogg">-->
-        <!--</video>-->
-        <!--&lt;!&ndash;<iframe src="https://www.youtube.com/embed/BwDnMLQd-XI?autoplay=1"></iframe>&ndash;&gt;-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="pop-btn-wrap">-->
-        <!--<a href="http://iceberg.vn.ua/download.php?filename=ilovepdf_merged.pdf" class="pop-btn">Скачать чек-лист</a>-->
-        <!--</div>-->
+<!-- sections -->
+<section class="section section-1 section--current ">
+    <div class="section__content">
+        <h2 class="section__title">Создаем сайты</h2>
+        <p class="section__description">
+            <span class="section__description-inner">Лендинги. Интернет-магазины. Визитки. Корпоративные сайты.</span>
+        </p>
     </div>
-</div>
+    <div class="section__img">
+        <div class="section__img-inner">
+            <div class="section__img-inner" style="background-image: url(img/section_1_bg_image.png)"></div>
+        </div>
+    </div>
+    <div class="section__more">
+        <div class="section__more-inner section__more-inner--bg1">
+<!--            <span class="section__more-text">Want to know more?</span>-->
+            <a href="#" class="section__more-link">
+                <span class="section__more-linktext">Рассчитать стоимость</span>
+                <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+            </a>
+        </div>
+    </div>
+    <div class="section__expander"></div>
+    <ul class="section__facts">
+        <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
+            <h3 class="section__facts-title">Портфолио</h3>
+        </li>
+        <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery2">
+            <h3 class="section__facts-title">Цены и сроки</h3>
+        </li>
+        <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery3">
+            <h3 class="section__facts-title">Контакты</h3>
+        </li>
+<!--        <li class="section__facts-item">-->
+<!--            <h3 class="section__facts-title">Месседжеры</h3>-->
+<!--            <span class="section__facts-detail section__facts-item--clickable d-block">-->
+<!--                <a href="#" class="mr-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 24 22"><g><g transform="translate(-1442 -704)"><image width="24" height="22" transform="translate(1442 704)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAB5ElEQVRIS7WVz4tPYRTGP4/QZEGKMUnNZiYLK2wUFjY2o1lIw+ZbyihEYSPKj93IQhbq+weQklIzs7JQ8wfI/AEzirJTUxaKxKNze+/t+nbv/b4YZ3vP+3ze9zznnCv+U9jeApzSeuvbngAuAWeB9+sCsL0BOJGEjwOlbv+fALZ3AueAC8B4QzV6fwWwfSjd9jSwuaPMk9mAZNoZ4DKwP8O7T5JGhwIGTNveIPwTCA8GY1HSdCOgw7S6yHdgATgKjDYAbkma+w2QYVqp8wp4AjwCdrSU65ikpQLwB6Z9AK4Dn4GXwNYW8R/ANklfZPs2cAfY2GHcN+ABMAdMAc+ATR35y5IOxPfyBbuAHjAL7B04uAhck/TO9kXgcYup9WN9STHN1cRVH20fBq4A0eM3Jd1PZbwL3Mtoz0jpSXraCEhiMTwfgSVJM7angflM8UiblLTaCkiQqPlVYE+6eZQnJ4oBKxNbBy0N2ApwAzgPxJbMiWLAhgLSK14D+4BogjLC5JPA7hZaMWC5gBngeU2oMN32GPACONIAKQYsF1CaHWu56qj0upiDh2n5lXrVgGUBamavle06eGPb8efqAyPAW0kH6zk523RE0tcud22HaKyOMDjWeRVDATltk14aZRyX9KZ+5hfoepxKPEyqqQAAAABJRU5ErkJggg=="/></g></g></svg>-->
+<!--                </a>-->
+<!--                <a href="#" class="mr-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22"><g><g transform="translate(-1477 -704)"><image width="22" height="22" transform="translate(1477 704)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAADEElEQVRIS4WVa4iVZRSFn5VGhnbRCPFHZFLhvXDwgqCNEYb9StIEUQRvUaSMCjII3pEUg7FIG9EfYvSjKShRNBz9oah4AxFvmVoGGWbBjBoKVu5Yw/6GzzPH6YWPw/ne911n7b3XWkdUrIh4BHg9n1eBl4FngKfz6F3gDvATcBzYBeyVdL8MpfKXiHgXWAf0BXzwEnAG+BNoAe4BTwFPAkPy6QZcBj6Q1FzgtQNHhAEXAxeADcBXkm5WVlRB5HFgErASeAH4UNJGn2kDjoipwJf5zJRkZg+siHge8CWzN7MmSX/n/R7Ad9m+MZIOKyIM7pIN9kpxuArwi8B2oD/QE/gReEfS2QT3u/PARUm1BvaATpXLiIjXgFWABzlH0g95+SXgOvAm8HlWXCPpl9xfmveeM/A04AtgqKQzWbLZ3ADcw7+AYcAg4GAqYhnwfaqiWdLbCTw8300xcB3QAPSS1BIR07PkUcCjCbYZmA9MBmZlLz200cACoLekPyLi2SRUZ+AVwHKgq6R/I2IEcCwvuNyLZilpYLJ6DLgKHM1hepDjLbWI6AL8Y5W0A0sqS+8E0AcYmSWvl+TBta2IWG8iwFpgHzBN0unci86A30hJNUha2JmWq6inHbge+MhuknS7xGobMMN9lfRNslmSvd5jM7mvFYZ5ArgF1LsVHsZWYLCkcyVgi/5A2talNkWEe2trDwWuZW/bpJg/7Cj4GXivrOP3JTVWMPCUza4G+AxYDZile7/bQ5Y0oQRs2X0LjC2cdwVolWS9Vlq5e2bHbOB34FPAg3IE7JNk2RWMvwbechoWWTEvL8yVtKXasCJiDLAG8KeXM6O2aF9EjEuFbJI0rwAujOCSbZjGynwtsRoA9AMOS2rN/J4JfAL8Bgz3+7J23U8nlN3kPPDUbfUOKyKscVu8FpgCOKBOAhMl/eoLlUHv0HGETgR22BQR4Yy2HL3XYQTpQA/WMWrXta0HgKsMrtD4fuBQad9adUSelORed1gPBY6IRcDHwE7/S1QL/2qA/8s4Io6kZu28Dv8onYF67z8Mi1SLwX7/sAAAAABJRU5ErkJggg=="/></g></g></svg>-->
+<!--                </a>-->
+<!--                <a href="#" class="mr-2">-->
+<!--                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="21" viewBox="0 0 22 21"><g><g transform="translate(-1509 -705)"><image width="22" height="21" transform="translate(1509 705)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAB/UlEQVRIS6WVzatOURTGf4+PUCQiEyEMfeVmJjEgyc2Awc0dmJEJMuFPMKC4AykDDK4iZeArKRmYKEoMjF0DyWcmQnq0jnXY93jPfd+3d8/OWWv99tprP2tt0bJsLwdGge3AOmBhun4CXgAPgHFJrzsh1PxpezFwCjgATG/bOP//Aq4AJyW9L30ngW1vBm4AS7oAm+Z3wD5Jj2vDX7DtrcBdYE4a3wCLiu9ue30Ddkl6FI4V2PYy4DmwIKOfAVuAtcC94n83+Gdgg6SJGnwL2F1EjUq6mpsG/GFm3w0c9tuShmV7IxAZlmtbfaSEnwGO90JNn6EAnwOONILKjHdkOab1AR4LcGgyjluui5IOZrYhvRN9QMP1ZYB/ADMbgV+BlZI+2l4KxE2v6gP+M8BuCbgg6XBmHfBQx5pe4QEO/c1uCRiRdC3h0ZF3gE2Fb7R33eoloso49Lu+Bfw9RR9yC73PBy4BoaSo+83s1OFGfFXjs8DRKY4Yd3BI0uVOPrZn5LzYX9grVXTScSfGdeCYpLdNo+15wBegluRQW+e1HSBKM54leArE92rgdI6AiPvTeVm7mGh7e73xKfz+zQrbs4APwNwBwZOnm+2dqdFBuP/PY9vngaoRQlE5kCaAPQO9ILafAK+A+/GOSYqyhGZXACNADKGYJTH0Y/X05v0GOmXAGLk4QhgAAAAASUVORK5CYII="/></g></g></svg>-->
+<!--                </a>-->
+<!--            </span>-->
+<!--        </li>-->
+
+<!--        <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery2">-->
+<!--            <div class="section__facts-img">-->
+<!--                <img src="img/thumb1.jpg" alt="Some image"/>-->
+<!--                <svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>-->
+<!--            </div>-->
+<!--            <h3 class="section__facts-title">More impressions</h3>-->
+<!--            <span class="section__facts-detail">A collection of images</span>-->
+<!--        </li>-->
+<!--        <li class="section__facts-item">-->
+<!--            <h3 class="section__facts-title">Телефоны</h3>-->
+<!--            <span class="section__facts-detail section__facts-item--clickable d-flex flex-column">-->
+<!--                <a href="tel:0939179871" class="text-white my-1">+38 (093) 917-98-71</a>-->
+<!--                <a href="tel:0939179871" class="text-white my-1">+38 (093) 917-98-71</a>-->
+<!--            </span>-->
+<!--        </li>-->
+<!--        <li class="section__facts-item">-->
+<!--            <h3 class="section__facts-title">Офисс</h3>-->
+<!--            <span class="section__facts-detail">г. Винница, <br> вул. Нансена 7А</span>-->
+<!--        </li>-->
+
+    </ul>
+    <div class="section__gallery" id="gallery1">
+        <h3 class="section__gallery-item section__gallery-item--title">More impressions 1</h3>
+        <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
+    </div>
+    <div class="section__gallery" id="gallery2">
+        <h3 class="section__gallery-item section__gallery-item--title">More impressions 2</h3>
+        <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
+    </div>
+    <div class="section__gallery" id="gallery3">
+        <h3 class="section__gallery-item section__gallery-item--title">More impressions 3</h3>
+        <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
+        <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
+    </div>
+</section><!--/ section -->
+<section class="section section-2">
+    <div class="section__content">
+        <h2 class="section__title">Пишем на Чистом коде</h2>
+        <p class="section__description">
+            <span class="section__description-inner">
+                Мы не используем конструкторы или CMS. Все пишеться с нуля, что делает сайт более защищеным, быстрым, а также позволяет сделаеть любой функционал.
+            </span>
+        </p>
+    </div>
+    <div class="section__img">
+        <div class="section__img-inner" style="background-image: url(img/section_2_bg_image.png)"></div>
+    </div>
+    <div class="section__more">
+        <div class="section__more-inner section__more-inner--bg2">
+<!--            <span class="section__more-text">Want to know more?</span>-->
+            <a href="#" class="section__more-link">
+                <span class="section__more-linktext">Рассчитать стоимость</span>
+                <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+            </a>
+        </div>
+    </div>
+    <div class="section__expander"></div>
+    <ul class="section__facts">
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Biggest lake</h3>
+            <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Coolest activity</h3>
+            <span class="section__facts-detail">Kayaking the whole lake</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Lake depth</h3>
+            <span class="section__facts-detail">With 55m it's the deepest</span>
+        </li>
+<!--        <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery2">-->
+<!--            <div class="section__facts-img">-->
+<!--                <img src="img/thumb2.jpg" alt="Some image"/>-->
+<!--                <svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>-->
+<!--            </div>-->
+<!--            <h3 class="section__facts-title">More impressions</h3>-->
+<!--            <span class="section__facts-detail">A collection of images</span>-->
+<!--        </li>-->
+    </ul>
+<!--    <div class="section__gallery" id="gallery2">-->
+<!--        <h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>-->
+<!--        <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>-->
+<!--        <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>-->
+<!--        <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>-->
+<!--        <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>-->
+<!--        <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>-->
+<!--        <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>-->
+<!--    </div>-->
+</section><!--/ section -->
+<section class="section section-3">
+    <div class="section__content">
+        <h2 class="section__title">Управление сайтом</h2>
+        <p class="section__description">
+            <span class="section__description-inner">
+                После сдачи проекта Вы сможете самостоятельно менять текста и картинки на сайте, управлять ассортиментом товаров и заявками.
+            </span>
+        </p>
+    </div>
+    <div class="section__img">
+        <div class="section__img-inner" style="background-image: url(img/section_3_bg_image.png)"></div>
+    </div>
+    <div class="section__more">
+        <div class="section__more-inner section__more-inner--bg3">
+<!--            <span class="section__more-text">Want to know more?</span>-->
+            <a href="#" class="section__more-link">
+                <span class="section__more-linktext">Рассчитать стоимость</span>
+                <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+            </a>
+        </div>
+    </div>
+    <div class="section__expander"></div>
+    <ul class="section__facts">
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Lovely paths</h3>
+            <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Haunted ways</h3>
+            <span class="section__facts-detail">Kayaking the whole lake</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Running and more</h3>
+            <span class="section__facts-detail">With 55m it's the deepest</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Starting to walk</h3>
+            <span class="section__facts-detail">An aerial view of the lake</span>
+        </li>
+    </ul>
+</section><!--/ section -->
+<section class="section section-4">
+    <div class="section__content">
+        <h2 class="section__title">Поддержка сайтов</h2>
+        <p class="section__description">
+            <span class="section__description-inner">
+                За дополнительную плату подключим нужный функционал, добавим новые страницы, сделаем изменения в дизайне.
+            </span>
+        </p>
+    </div>
+    <div class="section__img">
+        <div class="section__img-inner" style="background-image: url(img/section_4_bg_image.png)"></div>
+    </div>
+    <div class="section__more">
+        <div class="section__more-inner section__more-inner--bg4">
+<!--            <span class="section__more-text">Want to know more?</span>-->
+            <a href="#" class="section__more-link">
+                <span class="section__more-linktext">Рассчитать стоимость</span>
+                <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
+            </a>
+        </div>
+    </div>
+    <div class="section__expander"></div>
+    <ul class="section__facts">
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">River romantics</h3>
+            <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">History call</h3>
+            <span class="section__facts-detail">Kayaking the whole lake</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">Walking around</h3>
+            <span class="section__facts-detail">With 55m it's the deepest</span>
+        </li>
+        <li class="section__facts-item">
+            <h3 class="section__facts-title">How many miles?</h3>
+            <span class="section__facts-detail">An aerial view of the lake</span>
+        </li>
+    </ul>
+</section><!--/ section -->

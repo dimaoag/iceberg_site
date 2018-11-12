@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--    <link rel="shortcut icon" href="favicon.ico">-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/mdb.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
@@ -57,8 +60,9 @@
 </svg>
 <main>
     <div class="sections">
-        <header class="sections__header">
+        <header class="sections__header d-flex justify-content-between align-items-start flex-wrap">
             <h1 class="title">IceBerg</h1>
+            <a href="tel:0939179871" class="mr-3">+38 (093) 917-98-71</a>
         </header>
 
         <!-- menu -->
@@ -81,13 +85,13 @@
         <!-- facts expander with toggles; content for each is in its section -->
         <div class="facts">
             <div class="facts__toggle">
-						<span class="facts__toggle-inner facts__toggle-inner--more">
+						<span class="facts__toggle-inner facts__toggle-inner--more d-flex align-items-center">
 							<svg class="icon icon--dot"><use xlink:href="#icon-dot"></use></svg>
-							<span class="facts__toggle-text">See more facts</span>
+							<span class="facts__toggle-text h6">Больше</span>
 						</span>
-                <span class="facts__toggle-inner facts__toggle-inner--less">
+                <span class="facts__toggle-inner facts__toggle-inner--less d-flex align-items-center">
 							<svg class="icon icon--cross"><use xlink:href="#icon-cross"></use></svg>
-							<span class="facts__toggle-text">See less facts</span>
+							<span class="facts__toggle-text h6">Скрыть</span>
 						</span>
             </div>
             <button class="button-contentclose">
@@ -110,183 +114,23 @@
                 <svg class="icon icon--navdown"><use xlink:href="#icon-navdown"></use></svg>
             </button>
         </nav>
-        <!-- sections -->
-        <section class="section section--current">
-            <div class="section__content">
-                <h2 class="section__title">Hiking</h2>
-                <p class="section__description"><span class="section__description-inner">Hiking is the preferred term, in Canada and the United States, for a long, vigorous walk, usually on trails (footpaths), in the countryside, while the word walking is used for shorter, particularly urban walks.</span></p>
-            </div>
-            <div class="section__img">
-                <div class="section__img-inner" style="background-image: url(img/1.jpg)"></div>
-            </div>
-            <div class="section__more">
-                <div class="section__more-inner section__more-inner--bg1">
-                    <span class="section__more-text">Want to know more?</span>
-                    <a href="#" class="section__more-link">
-                        <span class="section__more-linktext">Explore all hikes</span>
-                        <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="section__expander"></div>
-            <ul class="section__facts">
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Biggest lake</h3>
-                    <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Coolest activity</h3>
-                    <span class="section__facts-detail">Kayaking the whole lake</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Lake depth</h3>
-                    <span class="section__facts-detail">With 55m it's the deepest</span>
-                </li>
-                <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
-                    <div class="section__facts-img">
-                        <img src="img/thumb1.jpg" alt="Some image"/>
-                        <svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>
-                    </div>
-                    <h3 class="section__facts-title">More impressions</h3>
-                    <span class="section__facts-detail">A collection of images</span>
-                </li>
-            </ul>
-            <div class="section__gallery" id="gallery1">
-                <h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>
-                <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
-            </div>
-        </section><!--/ section -->
-        <section class="section">
-            <div class="section__content">
-                <h2 class="section__title">Lakes</h2>
-                <p class="section__description"><span class="section__description-inner">A lake is an area filled with water, localized in a basin, that is surrounded by land, apart from any river or other outlet that serves to feed or drain the lake. Lakes lie on land and are not part of the ocean.</span></p>
-            </div>
-            <div class="section__img">
-                <div class="section__img-inner" style="background-image: url(img/2.jpg)"></div>
-            </div>
-            <div class="section__more">
-                <div class="section__more-inner section__more-inner--bg2">
-                    <span class="section__more-text">Want to know more?</span>
-                    <a href="#" class="section__more-link">
-                        <span class="section__more-linktext">Explore the lakes</span>
-                        <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="section__expander"></div>
-            <ul class="section__facts">
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Biggest lake</h3>
-                    <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Coolest activity</h3>
-                    <span class="section__facts-detail">Kayaking the whole lake</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Lake depth</h3>
-                    <span class="section__facts-detail">With 55m it's the deepest</span>
-                </li>
-                <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery2">
-                    <div class="section__facts-img">
-                        <img src="img/thumb2.jpg" alt="Some image"/>
-                        <svg class="icon icon--grid"><use xlink:href="#icon-grid"></use></svg>
-                    </div>
-                    <h3 class="section__facts-title">More impressions</h3>
-                    <span class="section__facts-detail">A collection of images</span>
-                </li>
-            </ul>
-            <div class="section__gallery" id="gallery2">
-                <h3 class="section__gallery-item section__gallery-item--title">More impressions</h3>
-                <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
-            </div>
-        </section><!--/ section -->
-        <section class="section">
-            <div class="section__content">
-                <h2 class="section__title">Paths</h2>
-                <p class="section__description"><span class="section__description-inner">A footpath (also pedestrian way, walking trail, nature trail) is a type of thoroughfare that is intended for use only by pedestrians and not other forms of traffic such as motorized vehicles, cycles, and horses.</span></p>
-            </div>
-            <div class="section__img">
-                <div class="section__img-inner" style="background-image: url(img/3.jpg)"></div>
-            </div>
-            <div class="section__more">
-                <div class="section__more-inner section__more-inner--bg3">
-                    <span class="section__more-text">Want to know more?</span>
-                    <a href="#" class="section__more-link">
-                        <span class="section__more-linktext">Explore the paths</span>
-                        <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="section__expander"></div>
-            <ul class="section__facts">
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Lovely paths</h3>
-                    <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Haunted ways</h3>
-                    <span class="section__facts-detail">Kayaking the whole lake</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Running and more</h3>
-                    <span class="section__facts-detail">With 55m it's the deepest</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Starting to walk</h3>
-                    <span class="section__facts-detail">An aerial view of the lake</span>
-                </li>
-            </ul>
-        </section><!--/ section -->
-        <section class="section">
-            <div class="section__content">
-                <h2 class="section__title">Rivers</h2>
-                <p class="section__description"><span class="section__description-inner">A river is a natural flowing watercourse, usually freshwater, flowing towards an ocean, sea, lake or another river. In some cases a river flows into the ground and becomes dry at the end of its course without reaching another body of water.</span></p>
-            </div>
-            <div class="section__img">
-                <div class="section__img-inner" style="background-image: url(img/4.jpg)"></div>
-            </div>
-            <div class="section__more">
-                <div class="section__more-inner section__more-inner--bg4">
-                    <span class="section__more-text">Want to know more?</span>
-                    <a href="#" class="section__more-link">
-                        <span class="section__more-linktext">Explore all rivers</span>
-                        <svg class="icon icon--arrowlong"><use xlink:href="#icon-arrowlong"></use></svg>
-                    </a>
-                </div>
-            </div>
-            <div class="section__expander"></div>
-            <ul class="section__facts">
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">River romantics</h3>
-                    <span class="section__facts-detail">Caspian sea in Kazakhstan</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">History call</h3>
-                    <span class="section__facts-detail">Kayaking the whole lake</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">Walking around</h3>
-                    <span class="section__facts-detail">With 55m it's the deepest</span>
-                </li>
-                <li class="section__facts-item">
-                    <h3 class="section__facts-title">How many miles?</h3>
-                    <span class="section__facts-detail">An aerial view of the lake</span>
-                </li>
-            </ul>
-        </section><!--/ section -->
+
+        <?= $content; ?>
+
+
+
     </div><!--/ sections -->
 </main>
+
+<script>
+    var path = '<?=PATH;?>';
+</script>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/mdb.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/wow.min.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/charming.min.js"></script>
 <script src="js/anime.min.js"></script>
