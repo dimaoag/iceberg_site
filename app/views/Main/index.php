@@ -3,7 +3,7 @@
     <!-- initial header -->
     <header class="ip-header">
         <div class="preload-img">
-            <img src="images/logo_preloader.JPG" alt="">
+            <img src="<?=PATH?>/images/logo_preloader.JPG" alt="">
         </div>
         <div class="ip-loader">
             <svg class="ip-inner" width="60px" height="60px" viewBox="0 0 80 80">
@@ -53,7 +53,7 @@
                             <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="particles-button sec-1-btn">Рассчитать стоимость</a>
                         </div>
                         <div class="sec-1-right-block">
-                            <img src="images/sec_1.png" alt="image">
+                            <img src="<?=PATH?>/images/sec_1.png" alt="image">
                         </div>
                     </div>
                 </div>

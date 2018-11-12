@@ -8,7 +8,7 @@ define("CORE", ROOT . "/vendor/iceberg/core");
 define("LIBS", ROOT . "/vendor/iceberg/core/libs");
 define("CACHE", ROOT . "/tmp/cache");
 define("CONFIG", ROOT . "/config");
-define("LAYOUT", "iceberg");
+define("LAYOUT", "outdoors");
 
 //http://shop2.com
 $app_path = "http://{$_SERVER['HTTP_HOST']}";
