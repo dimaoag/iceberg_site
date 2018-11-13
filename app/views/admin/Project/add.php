@@ -22,6 +22,19 @@
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
                                 </div>
+                                <div class="form-group has-feedback">
+                                    <label for="cat_id">Категорыи</label>
+                                    <select class="form-control" id="cat_id" name="cat_id" required>
+                                        <option value="">Выберите категори</option>
+
+                                        <?php if (!empty($cats)): ?>
+                                            <?php foreach ($cats as $id => $title):?>
+                                                <option value="<?=$id?>"><?=$title?></option>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                     <label for="editor1">Описание</label>
                                     <textarea name="description" id="description" cols="30" rows="3" class="form-control"></textarea>

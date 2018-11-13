@@ -9,6 +9,7 @@ class ProjectEdit extends AppModel {
 
     public $attributes = [
         'title' => '',
+        'cat_id' => '',
         'description' => '',
         'task' => '',
         'design' => '',
@@ -26,6 +27,7 @@ class ProjectEdit extends AppModel {
     public $rules = [
         'required' => [
             ['title'],
+            ['cat_id'],
             ['description'],
             ['color_1'],
             ['color_2'],
@@ -36,6 +38,7 @@ class ProjectEdit extends AppModel {
         ],
         'integer' => [
             ['status'],
+            ['cat_id'],
         ],
         'url' => [
             ['url'],

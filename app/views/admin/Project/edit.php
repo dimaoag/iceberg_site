@@ -23,6 +23,23 @@
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
                                 </div>
+                                <div class="form-group has-feedback">
+                                    <label for="cat_id">Категория</label>
+                                    <select class="form-control" id="cat_id" name="cat_id" required>
+                                        <option value="">Выберите категорию</option>
+
+                                        <?php if (!empty($cats)): ?>
+                                            <?php foreach ($cats as $id => $cat):?>
+                                                <?php if ($cat->id == $project->cat_id):?>
+                                                    <option value="<?=$cat->id?>" selected><?=$cat->title?></option>
+                                                    <?php  continue; ?>
+                                                <?php endif; ?>
+                                                <option value="<?=$cat->id?>"><?=$cat->title?></option>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+
+                                    </select>
+                                </div>
                                 <div class="form-group">
                                     <label for="editor1">Описание</label>
                                     <textarea name="description" id="description" cols="30" rows="3" class="form-control"><?=$project->description;?></textarea>

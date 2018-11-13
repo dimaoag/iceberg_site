@@ -19,6 +19,7 @@
                             <tr>
                                 <th>Фото</th>
                                 <th>Название</th>
+                                <th>Категория</th>
                                 <th>Url</th>
                                 <th>Заказчик</th>
                                 <th>Статус</th>
@@ -32,6 +33,7 @@
                                         <img style="max-width: 50px" src="/images/<?=$project['img_preview'];?>" alt="">
                                     </td>
                                     <td><?=$project['title'];?></td>
+                                    <td><?=$project['cat_title'];?></td>
                                     <td><a href="<?=$project['url'];?>"><?=$project['url'];?></a></td>
                                     <td><?=$project['customer_name'];?></td>
                                     <td><?=$project['status'] ? 'Показывать' : 'Скрывать';?></td>

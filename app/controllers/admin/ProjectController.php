@@ -15,7 +15,7 @@ class ProjectController extends AdminController {
         $count = \R::count('project');
         $pagination = new Pagination($page, $perpage, $count);
         $start = $pagination->getStart();
-        $projects = \R::getAll("SELECT project.* FROM project ORDER BY project.created_at DESC LIMIT $start, $perpage");
+        $projects = \R::getAll("SELECT project.*, category_project.title AS cat_title  FROM project JOIN category_project ON project.cat_id = category_project.id  ORDER BY project.created_at DESC LIMIT $start, $perpage");
 
 
         $this->setMeta('Все проэкты');
@@ -63,9 +63,10 @@ class ProjectController extends AdminController {
         }
         $id = $this->getRequestId();
         $project = \R::findOne('project', 'id = ?', [$id]);
+        $cats = \R::findAll('category_project');
 
         $this->setMeta("Изменить {$project->title}");
-        $this->setData(compact( 'project'));
+        $this->setData(compact( 'project', 'cats'));
     }
 
 

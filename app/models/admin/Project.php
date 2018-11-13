@@ -9,6 +9,7 @@ class Project extends AppModel {
 
     public $attributes = [
         'title' => '',
+        'cat_id' => '',
         'description' => '',
         'task' => '',
         'design' => '',
@@ -30,6 +31,7 @@ class Project extends AppModel {
     public $rules = [
         'required' => [
             ['title'],
+            ['cat_id'],
             ['description'],
             ['color_1'],
             ['color_2'],
@@ -40,6 +42,7 @@ class Project extends AppModel {
         ],
         'integer' => [
             ['status'],
+            ['cat_id'],
         ],
         'url' => [
             ['url'],

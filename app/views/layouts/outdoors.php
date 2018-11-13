@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/mdb.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/set2.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
     <!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
@@ -61,27 +62,28 @@
 <main>
     <div class="sections">
         <header class="sections__header d-flex justify-content-between align-items-start flex-wrap">
-            <h1 class="title">IceBerg</h1>
-            <a href="tel:0939179871" class="mr-3">+38 (093) 917-98-71</a>
-        </header>
-
-        <!-- menu -->
-        <nav class="menu">
-            <ul class="menu__inner">
-                <li class="menu__item"><a class="menu__item-link" href="#">Our Story</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="#">Adventures</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="#">Testimonials</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="#">Contact</a></li>
-            </ul>
-            <div class="menu__toggle">
+            <h1 class="title ml-3 mt-3">IceBerg</h1>
+            <a href="tel:0939179871" class="header-phone mt-3 mr-3">+38 (093) 917-98-71</a>
+            <!-- menu -->
+            <nav class="menu block-none hidden">
+                <ul class="menu__inner">
+                    <li class="menu__item"><a class="menu__item-link" href="#">Our Story</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Adventures</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Testimonials</a></li>
+                    <li class="menu__item"><a class="menu__item-link" href="#">Contact</a></li>
+                </ul>
+                <div class="menu__toggle">
 						<span class="menu__toggle-inner menu__toggle-inner--open">
 							<svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg>
 						</span>
-                <span class="menu__toggle-inner menu__toggle-inner--close">
+                    <span class="menu__toggle-inner menu__toggle-inner--close">
 							<svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg>
 						</span>
-            </div>
-        </nav>
+                </div>
+            </nav>
+        </header>
+
+
         <!-- facts expander with toggles; content for each is in its section -->
         <div class="facts d-flex">
             <div class="facts__toggle block-none hidden">
@@ -103,15 +105,189 @@
                         <p class="menu-item" data-id="4" id="menu-tab-4">Контакты</p>
                     </div>
                     <div class="menu-content" id="menu-content-1">
-                        <span class="my-menu-close text-white"><i class="fa fa-times"></i></span>
+                        <div class="my-menu-close text-dark open" id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+<!--                        <span class="my-menu-close text-white"><i class="fa fa-times"></i></span>-->
                         <h1 class="text-white my-click">hello world 11111</h1>
                     </div>
                     <div class="menu-content" id="menu-content-2">
-                        <span class="my-menu-close text-white"><i class="fa fa-times"></i></span>
-                        <h1 class="text-white my-click">hello world 222222</h1>
+                        <div class="my-menu-close text-dark open" id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+<!--                        <span class="my-menu-close text-white"><i class="fa fa-times"></i></span>-->
+                        <div class="container">
+                            <!-- Filter Controls - Simple Mode -->
+                            <div class="row h-100">
+                                <div class="col-md-5 filter-controls">
+                                    <ul class="simplefilter text-white">
+                                        <li class="fltr-controls active" data-filter="all">Все проекты</li>
+                                        <li class="fltr-controls" data-filter="1">Сайт-визитка</li>
+                                        <li class="fltr-controls" data-filter="2">Лендинги</li>
+                                        <li class="fltr-controls" data-filter="3">Интернет-магазины</li>
+                                        <li class="fltr-controls" data-filter="4">Корпоративные</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-7 portfolio-wrap">
+                                    <div class="portfolio push-down">
+                                        <!-- This is the set up of a basic gallery, your items must have the categories they belong to in a data-category
+                                        attribute, which starts from the value 1 and goes up from there -->
+                                        <div class="filtr-container d-flex flex-column">
+                                            <div class="row">
+                                                <div class="col-md-6 filtr-item" data-category="1" data-sort="Busy streets">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/city_1.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">Elisoft.com.ua</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/city_1.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="2, 4" data-sort="Luminous night">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/nature_2.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">Luminous night</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/nature_2.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="1, 4" data-sort="City wonders">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/city_3.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">city wonders</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/city_3.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="3" data-sort="In production">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/industrial_1.jpg" alt="sample image">-->
+<!--                                                    <span class="item-desc text-white">in production</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/industrial_1.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="3, 4" data-sort="Industrial site">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/industrial_2.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">industrial site</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/industrial_2.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/nature_1.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">peaceful lake</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/nature_1.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="1, 2" data-sort="City lights">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/city_2.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">city lights</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/city_2.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="2, 4" data-sort="Dreamhouse">
+<!--                                                    <a href="#">-->
+<!--                                                         <img class="img-responsive" src="img/nature_3.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">dreamhouse</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/nature_3.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 filtr-item" data-category="3" data-sort="Restless machines">
+<!--                                                    <a href="#">-->
+<!--                                                        <img class="img-responsive" src="img/industrial_3.jpg" alt="sample image">-->
+<!--                                                    </a>-->
+<!--                                                    <span class="item-desc text-white">restless machines</span>-->
+                                                    <div class="grid">
+                                                        <figure class="effect-apollo">
+                                                            <img src="img/industrial_3.jpg" alt="img18"/>
+                                                            <figcaption>
+                                                                <h2><span>Strong Apollo</span></h2>
+                                                                <a href="#">View more</a>
+                                                            </figcaption>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
                     </div>
                     <div class="menu-content" id="menu-content-3">
-                        <span class="my-menu-close text-white"><i class="fa fa-times"></i></span>
+                        <div class="my-menu-close text-dark open" id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+<!--                        <span class="my-menu-close text-white"><i class="fa fa-times"></i></span>-->
                         <div class="prices-wrap">
                             <div class="prices">
                                 <div class="price">
@@ -140,7 +316,12 @@
                         </div>
                     </div>
                     <div class="menu-content" id="menu-content-4">
-                        <span class="my-menu-close text-dark"><i class="fa fa-times"></i></span>
+                        <div class="my-menu-close text-dark open" id="nav-icon1">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+<!--                        <span class="my-menu-close text-dark"><i class="fa fa-times"></i></span>-->
                         <div class="contact-wrap d-flex">
                             <div class="contact-left">
                                 <div class="contact-left-wrap">
@@ -162,8 +343,8 @@
                                         <div class="contact-left-item-messages">
                                             <h3 class="messages-title">Телефоны</h3>
                                             <div class="contact-left-item-socs d-flex flex-column">
-                                                <a href="#" class="text-white py-2">+38 (093) 917-98-71</a>
-                                                <a href="#" class="text-white py-2">+38 (093) 917-98-71</a>
+                                                <a href="tel:0939179871" class="text-white py-2">+38 (093) 917-98-71</a>
+                                                <a href="tel:0939179871" class="text-white py-2">+38 (093) 917-98-71</a>
                                             </div>
                                         </div>
                                         <div class="contact-left-item-messages">
@@ -183,8 +364,8 @@
                     </div>
                 </div>
                 <div class="button-section d-flex align-items-center justify-content-center">
-                    <a href="#" class="button-rass text-dark">Рассчитать стоимость</a>
-                    <svg class="icon icon--arrowlong ml-2"><use xlink:href="#icon-arrowlong"></use></svg>
+                    <a href="#" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Рассчитать стоимость</p> <svg class="icon icon--arrowlong ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
+
                 </div>
             </div>
 
@@ -207,6 +388,20 @@
             <button class="sections__nav-item sections__nav-item--next">
                 <svg class="icon icon--navdown"><use xlink:href="#icon-navdown"></use></svg>
             </button>
+            <div class="socs-header-bottom">
+                <div class="cocs-header-container">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18"><g><g class="svg-header-icon" transform="translate(-2431 -2421)"><image width="18" height="18" transform="translate(2431 2421)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABBklEQVQ4T63UzStFURQF8N8jMSHkK5QUShkolDLgD/BPm0rykYyJhJeJMhPtOlfX61yH653p3mettdfa53Qwgk1MaXe6OOtg9x8gFXU3gA5bCLnGC9YxGffbAL3iBKu4wV4J6B23ifkD41jCAI6SiLmkqlFRsB5jGrPp0jMesIUxvGG0siU3WigJxg3M9PgXvpxiH0P1Wg6oGidWIneuMIyVEtB5WoeFBqCn5N12CegiRbrYAPSIu+TVV0tutGiK5jA1d4IoTF4uKYqow+w1zPcgxViXOMBgCSjqEW3EH8z1+CO1nXrsP8Vf1ULZfW0hJxABfFPyG6A/PcE2by1L0NdvpC8f2yfxYjW7O077uwAAAABJRU5ErkJggg=="/></g></g></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18"><g><g class="svg-header-icon" transform="translate(-2461 -2421)"><image width="18" height="18" transform="translate(2461 2421)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAxklEQVQ4T92UsQ4BQRCGvxNENBLRSVTU6MQDoPC4Wp5BpVAojkZyNQWF7GYumUtsZu9OZbtJZr7559/JJEAHmAEDqr0MOCbAogYkb5050LaakGJVLOgOpMBTlU+BXh7HgG7Ogy+ql0C/DOgAPH4B2inIHGhK7NS0yijSoI0CFUSGPHoDF8k8q4ox0JB4JDvowxDI/c7eWIsV0LZGs0DOm7VuFFL0Ak6SeFUFQxmtC0xiQDqnltl/ArLOSIxH/oxYh80C+cP2AeepI7uUOO+yAAAAAElFTkSuQmCC"/></g></g></svg>
+                    </a>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="18" viewBox="0 0 24 18"><g><g class="svg-header-icon" transform="translate(-2491 -2420)"><image width="24" height="18" transform="translate(2491 2420)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAYAAABB7B6eAAAA30lEQVQ4T73VvUqDQRCF4SeKikYUFMRCMYgoYuMNCIm1F2/pP4KxsrFQBLGQ0SkNmXzJ5zbLwu55h50zMx2/awcHWM3ztNsb7jDspPjptIoj3l8GYIBuS4D3AFy0JP4jWwG8YgWLTQKpAG7wkCbYx9wkoCrgPoXncYTdKqQKGOIMt3hMUxxjaxxoEsB5in3gGs/YRIDWR4GaAD5xhSds4ARrswD0M9lRoUsZ+fasvihctIAvHKKXFh+nX6qDsGkkdy8dFKDyquTgBctNG2EFUI72r4v/0uxiFrTarlsdON++4itd3l7engAAAABJRU5ErkJggg=="/></g></g></svg>
+                    </a>
+                </div>
+                <p>© Iceberg, 2017–2018.</p>
+            </div>
         </nav>
 
         <?= $content; ?>
@@ -228,6 +423,7 @@
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/charming.min.js"></script>
 <script src="js/anime.min.js"></script>
+<script src="js/jquery.filterizr.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
