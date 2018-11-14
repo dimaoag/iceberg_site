@@ -1,7 +1,7 @@
 <?php
 return [
-//    'admin_email' => 'elisoft.meb@gmail.com',
-    'admin_email' => 'dimaoag@gmail.com',
+    'admin_email' => 'iceberg.vn.ua@gmail.com',
+//    'admin_email' => 'dimaoag@gmail.com',
     'shop_name' => 'Iceberg.vn.ua',
     'pagination' => 6,
     'preview_width' => 1920,
