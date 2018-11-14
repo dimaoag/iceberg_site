@@ -36,6 +36,7 @@
     <script src="js/bootstrap.js"></script>
     <script src="js/mdb.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/libs.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/charming.min.js"></script>

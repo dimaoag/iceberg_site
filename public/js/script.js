@@ -51,9 +51,9 @@ var w = window.innerWidth;
 // });
 
 
-function thanks(){
-    $('.bnt-thanks').trigger('click');
-}
+// function thanks(){
+//     $('.bnt-thanks').trigger('click');
+// }
 
 
 // Preload all the images in the page..
@@ -203,74 +203,6 @@ $('.menu__item-link').click(function () {
 
 
 
-// Initialize a new instance of Particles to disintegrate/integrate the button
-// $('.sec-1-btn').click(function () {
-//     // $('.sec-1-btn').hide();
-//     var particles = new Particles('.sec-1-btn');
-//     particles.disintegrate();
-// });
-
-
-
-
-
-
-//form
-// $( ".form-sec-3 button").click(function() {
-//     var phone = $(".form-sec-3 input").val();
-//     $.ajax({
-//         url: 'mail_2.php',
-//         data: {phone: phone},
-//         type: 'post',
-//         success: function (res) {
-//             $.magnificPopup.open({
-//                 items: {
-//                     src: '#popup-thanks'
-//                 },
-//                 type: 'inline',
-//                 mainClass: 'mfp-zoom-in',
-//                 removalDelay: 400,
-//                 autoFocusLast: false
-//             });
-//         },
-//         error: function () {
-//             alert('Error!')
-//         },
-//     });
-//     var empty = '';
-//     $(".form-sec-3 input").val(empty);
-//     return false;
-// });
-
-
-//form
-// $( ".form-sec-8 button").click(function() {
-//
-//     var phone = $(".form-sec-8 input").val();
-//     $.ajax({
-//         url: 'mail_2.php',
-//         data: {phone: phone},
-//         type: 'post',
-//         success: function (res) {
-//             $.magnificPopup.open({
-//                 items: {
-//                     src: '#popup-thanks'
-//                 },
-//                 type: 'inline',
-//                 mainClass: 'mfp-zoom-in',
-//                 removalDelay: 400,
-//                 autoFocusLast: false
-//             });
-//         },
-//         error: function () {
-//             alert('Error!')
-//         },
-//     });
-//     var empty = '';
-//     $(".form-sec-8 input").val(empty);
-//     return false;
-// });
-
 $('.js-form').each(function(){
     var $this = $(this);
     $this.validate({
@@ -302,21 +234,17 @@ $('.js-form').each(function(){
             }
         },
         submitHandler: function(form) {
-            var phone = $this.find('input').val();
+            var phone = $this.find("input[name='phone']").val();
+            var name = $this.find("input[name='name']").val();
+
+
             $.ajax({
-                url: 'mail_2.php',
-                data: {phone: phone},
+                url: path + '/main/send-order',
+                data: {phone: phone, name: name},
                 type: 'post',
                 success: function (res) {
-                    $.magnificPopup.open({
-                        items: {
-                            src: '#popup-thanks'
-                        },
-                        type: 'inline',
-                        mainClass: 'mfp-zoom-in',
-                        removalDelay: 400,
-                        autoFocusLast: false
-                    });
+                    $('.bnt-thanks').trigger('click');
+                    $('.js-form')[0].reset();
                 },
                 error: function () {
                     alert('Error!')

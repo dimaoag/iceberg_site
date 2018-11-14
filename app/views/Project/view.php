@@ -159,10 +159,10 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="#" class="d-flex justify-content-around flex-wrap" onsubmit="thanks();">
+                <form action="#" class="d-flex justify-content-around flex-wrap js-form">
                     <input type="text" class="form-input my-3" placeholder="Имя" name="name" required>
                     <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-input my-3" placeholder="Телефон" required>
-                    <button type="button" class="project-button form-button my-3">Заказать подобный</button>
+                    <button type="submit" class="project-button form-button my-3">Заказать подобный</button>
                 </form>
             </div>
         </div>
