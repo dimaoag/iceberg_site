@@ -4,7 +4,7 @@ namespace app\controllers;
 
 class ProjectController extends AppController {
 
-    public function indexAction(){
+    public function viewAction(){
 
         $id = $_GET['id'] ? (int)$_GET['id'] : null;
 

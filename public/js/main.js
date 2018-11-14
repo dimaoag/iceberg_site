@@ -9,7 +9,8 @@
  * http://www.codrops.com
  */
 
-if ($("header").is(".sections__header")) {
+if ($("div").is(".index-wrap")) {
+
     {
         // From https://davidwalsh.name/javascript-debounce-function.
         function debounce(func, wait, immediate) {
@@ -84,11 +85,11 @@ if ($("header").is(".sections__header")) {
             }
             toggle(direction) {
                 this.direction = direction;
-                return Promise.all([this.toggleTitle(),
-                    this.toggleDescription(),
-                    this.toggleImage(),
-                    this.toggleMore(),
-                    this.toggleFacts()]);
+                return Promise.all([this.toggleTitle(!this.isHidden),
+                    this.toggleDescription(!this.isHidden),
+                    this.toggleImage(!this.isHidden),
+                    this.toggleMore(!this.isHidden),
+                    this.toggleFacts(!this.isHidden)]);
             }
             toggleTitle() {
                 anime.remove(this.DOM.titleLetters);
@@ -184,24 +185,23 @@ if ($("header").is(".sections__header")) {
                         close: this.DOM.el.querySelector('.menu > .menu__toggle > .menu__toggle-inner--close')
                     }
                 };
-                // this.DOM.factsContainer = this.DOM.el.querySelector('.facts');
-                // this.DOM.factsCtrls = {
-                // 	toggle: this.DOM.factsContainer.querySelector('.facts__toggle'),
-                // 	more: this.DOM.factsContainer.querySelector('.facts__toggle > .facts__toggle-inner--more'),
-                // 	less: this.DOM.factsContainer.querySelector('.facts__toggle > .facts__toggle-inner--less'),
-                // };
-                // this.DOM.previewCloseCtrl = this.DOM.factsContainer.querySelector('.button-contentclose');
-                // this.DOM.pagination = this.DOM.el.querySelector('.sections__index .sections__index-inner');
-                // this.DOM.navigation = this.DOM.el.querySelector('.sections__nav');
-                // this.DOM.navigation.prevCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--prev');
-                // this.DOM.navigation.nextCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--next');
+                this.DOM.factsContainer = this.DOM.el.querySelector('.facts');
+                this.DOM.factsCtrls = {
+                    toggle: this.DOM.factsContainer.querySelector('.facts__toggle'),
+                    more: this.DOM.factsContainer.querySelector('.facts__toggle > .facts__toggle-inner--more'),
+                    less: this.DOM.factsContainer.querySelector('.facts__toggle > .facts__toggle-inner--less'),
+                };
+                this.DOM.previewCloseCtrl = this.DOM.factsContainer.querySelector('.button-contentclose');
+                this.DOM.pagination = this.DOM.el.querySelector('.sections__index .sections__index-inner');
+                this.DOM.navigation = this.DOM.el.querySelector('.sections__nav');
+                this.DOM.navigation.prevCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--prev');
+                this.DOM.navigation.nextCtrl = this.DOM.navigation.querySelector('button.sections__nav-item--next');
                 this.DOM.entries = Array.from(this.DOM.el.querySelectorAll('.section'), entry => new Entry(entry));
                 this.entriesTotal = this.DOM.entries.length;
                 this.currentPos = 0;
 
-                // this.layout();
+                this.layout();
                 // Init/Bind events.
-
                 this.initEvents();
             }
             layout() {
@@ -230,47 +230,47 @@ if ($("header").is(".sections__header")) {
             }
             initEvents() {
                 // Navigation
-                // this.onPrevClick = () => this.navigate('prev');
-                // this.onNextClick = () => this.navigate('next');
-                // this.DOM.navigation.prevCtrl.addEventListener('click', this.onPrevClick);
-                // this.DOM.navigation.nextCtrl.addEventListener('click', this.onNextClick);
+                this.onPrevClick = () => this.navigate('prev');
+                this.onNextClick = () => this.navigate('next');
+                this.DOM.navigation.prevCtrl.addEventListener('click', this.onPrevClick);
+                this.DOM.navigation.nextCtrl.addEventListener('click', this.onNextClick);
 
                 // Main menu
                 this.DOM.menu.menuCtrls.toggle.addEventListener('click', () => this.toggleMenu());
 
                 // Facts Container
-                // this.DOM.factsCtrls.toggle.addEventListener('click', () => this.toggleFactsContainer());
+                this.DOM.factsCtrls.toggle.addEventListener('click', () => this.toggleFactsContainer());
 
                 // Facts (clickable facts)
-                // for ( let i = 0; i <= this.entriesTotal - 1; ++i ) {
-                // 	const entry = this.DOM.entries[i];
-                // 	entry.DOM.facts.items
-                // 		 .filter(fact => fact.classList.contains('section__facts-item--clickable'))
-                // 		 .forEach(clickableFact => clickableFact.addEventListener('click', () => this.preview(clickableFact.dataset.gallery)));
-                // }
+                for ( let i = 0; i <= this.entriesTotal - 1; ++i ) {
+                    const entry = this.DOM.entries[i];
+                    entry.DOM.facts.items
+                        .filter(fact => fact.classList.contains('section__facts-item--clickable'))
+                        .forEach(clickableFact => clickableFact.addEventListener('click', () => this.preview(clickableFact.dataset.gallery)));
+                }
 
                 // Close preview
-                // this.DOM.previewCloseCtrl.addEventListener('click', () => this.closePreview());
+                this.DOM.previewCloseCtrl.addEventListener('click', () => this.closePreview());
 
                 // Window resize
-                // this.onResize = () => {
-                // 	win = {width: window.innerWidth, height: window.innerHeight};
-                // 	this.layout();
-                // 	if ( this.isFactsOpen ) {
-                // 		// Toggle the factsCtrls state
-                // 		this.DOM.factsCtrls.more.style.opacity = 1;
-                // 		this.DOM.factsCtrls.less.style.opacity = 0;
-                // 		this.isFactsOpen = !this.isFactsOpen;
-                // 		this.toggleNavigationCtrls({opacity: 1, duration: 1});
-                // 		this.isFactsAnimating = false;
-                // 	}
-                // 	if ( this.gallery ) {
-                // 		this.DOM.previewCloseCtrl.style.opacity = 0;
-                // 		this.toggleGallery(this.gallery, {duration: 1,opacity: 0}).then(() => this.gallery = null);
-                // 	}
-                // 	this.DOM.el.classList.remove('sections--factsopen');
-                // };
-                // window.addEventListener('resize', debounce(() => this.onResize(), 20));
+                this.onResize = () => {
+                    win = {width: window.innerWidth, height: window.innerHeight};
+                    this.layout();
+                    if ( this.isFactsOpen ) {
+                        // Toggle the factsCtrls state
+                        this.DOM.factsCtrls.more.style.opacity = 1;
+                        this.DOM.factsCtrls.less.style.opacity = 0;
+                        this.isFactsOpen = !this.isFactsOpen;
+                        this.toggleNavigationCtrls({opacity: 1, duration: 1});
+                        this.isFactsAnimating = false;
+                    }
+                    if ( this.gallery ) {
+                        this.DOM.previewCloseCtrl.style.opacity = 0;
+                        this.toggleGallery(this.gallery, {duration: 1,opacity: 0}).then(() => this.gallery = null);
+                    }
+                    this.DOM.el.classList.remove('sections--factsopen');
+                };
+                window.addEventListener('resize', debounce(() => this.onResize(), 20));
             }
             navigate(direction) {
                 if ( this.isEntriesAnimating || this.isFactsAnimating ) return;
@@ -291,10 +291,10 @@ if ($("header").is(".sections__header")) {
                     // hide the current entry and show the next/previous one.
                     // when both updatePageNumber, hide and show are finished:
                     Promise.all([this.currentEntry.hide(this.direction), newEntry.show(this.direction), this.updatePageNumber()]).then(() => {
+                        this.isEntriesAnimating = false;
                         this.currentEntry.DOM.el.classList.remove('section--current');
                         newEntry.DOM.el.classList.add('section--current');
                         this.currentEntry = newEntry;
-                        this.isEntriesAnimating = false;
                     });
                 };
 
@@ -367,7 +367,7 @@ if ($("header").is(".sections__header")) {
                 });
             }
             toggleFactsContainer() {
-                if ( this.isFactsAnimating || this.isEntriesAnimating && !this.isFactsOpen ) {
+                if ( this.isFactsAnimating ) {
                     return;
                 };
                 this.isFactsAnimating = true;
@@ -505,5 +505,142 @@ if ($("header").is(".sections__header")) {
             new Slideshow(document.querySelector('.sections'));
         });
     };
+
+
+    $('.menu-content').hide();
+
+    $('.menu-item').click(function () {
+        var id = $(this).data('id');
+        $('.my-menu').addClass(' menu-active');
+        $('.menu-items').hide();
+        $('#menu-content-' + id).show();
+    });
+    $('.my-menu-close').click(function () {
+        $('.my-menu').removeClass('menu-active');
+        $('.menu-items').show();
+        $('.menu-content').hide();
+    });
+
+
+
+
+// Default options
+    var options = {
+        animationDuration: 0.5, // in seconds
+        filter: 'all', // Initial filter
+        callbacks: {
+            onFilteringStart: function() { },
+            onFilteringEnd: function() { },
+            onShufflingStart: function() { },
+            onShufflingEnd: function() { },
+            onSortingStart: function() { },
+            onSortingEnd: function() { }
+        },
+        controlsSelector: '', // Selector for custom controls
+        delay: 0, // Transition delay in ms
+        delayMode: 'progressive', // 'progressive' or 'alternate'
+        easing: 'ease-out',
+        filterOutCss: { // Filtering out animation
+            opacity: 0,
+            transform: 'scale(0.5)'
+        },
+        filterInCss: { // Filtering in animation
+            opacity: 0,
+            transform: 'scale(1)'
+        },
+        layout: 'vertical', // See layouts  sameSize  sameHeight  vertical
+        multifilterLogicalOperator: 'or',
+        selector: '.filtr-container',
+        setupControls: true // Should be false if controlsSelector is set
+    };
+
+
+// You can override any of these options and then call...
+    var filterizd = $('.filtr-container').filterizr(options);
+
+// If you have already instantiated your Filterizr then call...
+    filterizd.filterizr('setOptions', options);
+
+    $(function() {
+        //Simple filter controls
+        $('.simplefilter li').click(function() {
+            $('.simplefilter li').removeClass('active');
+            $(this).addClass('active');
+        });
+        //Multifilter controls
+        $('.multifilter li').click(function() {
+            $(this).toggleClass('active');
+        });
+        //Shuffle control
+        $('.shuffle-btn').click(function() {
+            $('.sort-btn').removeClass('active');
+        });
+        //Sort controls
+        $('.sort-btn').click(function() {
+            $('.sort-btn').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+
+
+
+
+// Default options
+    var options_mobile = {
+        animationDuration: 0.5, // in seconds
+        filter: 'all', // Initial filter
+        callbacks: {
+            onFilteringStart: function() { },
+            onFilteringEnd: function() { },
+            onShufflingStart: function() { },
+            onShufflingEnd: function() { },
+            onSortingStart: function() { },
+            onSortingEnd: function() { }
+        },
+        controlsSelector: '', // Selector for custom controls
+        delay: 0, // Transition delay in ms
+        delayMode: 'progressive', // 'progressive' or 'alternate'
+        easing: 'ease-out',
+        filterOutCss: { // Filtering out animation
+            opacity: 0,
+            transform: 'scale(0.5)'
+        },
+        filterInCss: { // Filtering in animation
+            opacity: 0,
+            transform: 'scale(1)'
+        },
+        layout: 'sameSize', // See layouts  sameSize  sameHeight  vertical
+        multifilterLogicalOperator: 'or',
+        selector: '.filtr-container-mobile',
+        setupControls: true // Should be false if controlsSelector is set
+    };
+
+
+// You can override any of these options and then call...
+    var filterizd = $('.filtr-container-mobile').filterizr(options_mobile);
+
+// If you have already instantiated your Filterizr then call...
+    filterizd.filterizr('setOptions', options_mobile);
+
+    $(function() {
+        //Simple filter controls
+        $('.nav-gallery-mobile li').click(function() {
+            $('.nav-gallery-mobile li').removeClass('filtr-active');
+            $(this).addClass(' filtr-active');
+        });
+        // //Multifilter controls
+        // $('.multifilter li').click(function() {
+        //     $(this).toggleClass('active');
+        // });
+        // //Shuffle control
+        // $('.shuffle-btn').click(function() {
+        //     $('.sort-btn').removeClass('active');
+        // });
+        // //Sort controls
+        // $('.sort-btn').click(function() {
+        //     $('.sort-btn').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+    });
 }
 

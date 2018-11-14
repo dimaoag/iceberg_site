@@ -8,12 +8,13 @@ class MainController extends AppController
 {
     public function indexAction(){
 
-        $projects = \R::findAll('project');
+        $projects = \R::findAll('project' ,'status = 1');
+        $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
 
 
         $this->setMeta('IceBerg');
-        $this->setData(compact('projects'));
+        $this->setData(compact('projects', 'cats'));
     }
 
 
