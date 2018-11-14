@@ -1367,6 +1367,7 @@ a.view-header-phone:hover{
 	padding: 10px!important;
 	border-bottom: 2px solid black;
 	width: 280px;
+	border-radius: 0;
 }
 .form-button{
 	margin: 0;
