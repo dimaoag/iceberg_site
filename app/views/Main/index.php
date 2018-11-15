@@ -45,7 +45,7 @@
     </symbol>
 </svg>
 <main>
-    <div class="sections">
+    <div class="sections" id="sections">
         <header class="sections__header d-flex justify-content-between align-items-start flex-wrap">
             <h1 class="title ml-3 mt-3">IceBerg</h1>
             <a href="tel:0939179871" class="header-phone mt-3 mr-3">+38 (093) 917-98-71</a>

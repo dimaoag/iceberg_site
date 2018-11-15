@@ -1,4 +1,4 @@
-var w = window.innerWidth;
+// var w = window.innerWidth;
 //
 // if (w > 1125){
 //     loadjscssfile("./css/full-page-scroll.css", "css"); ////dynamically load and add this .css file
@@ -255,6 +255,92 @@ $('.js-form').each(function(){
     });
 });
 
+var w = '';
+var w_default = window.innerWidth;
+
+if (w_default > 879) {
+    var elem = document.getElementById('sections');
+
+    if (elem.addEventListener) {
+        if ('onwheel' in document) {
+            // IE9+, FF17+
+            elem.addEventListener("wheel", onWheel);
+        } else if ('onmousewheel' in document) {
+            // устаревший вариант события
+            elem.addEventListener("mousewheel", onWheel);
+        } else {
+            // Firefox < 17
+            elem.addEventListener("MozMousePixelScroll", onWheel);
+        }
+    } else { // IE8-
+        elem.attachEvent("onmousewheel", onWheel);
+    }
+
+
+// Это решение предусматривает поддержку IE8-
+    function onWheel(e) {
+        e = e || window.event;
+
+        // deltaY, detail содержат пиксели
+        // wheelDelta не дает возможность узнать количество пикселей
+        // onwheel || MozMousePixelScroll || onmousewheel
+        var delta = e.deltaY || e.detail || e.wheelDelta;
+
+
+        if (delta > 0) {
+            $('.sections__nav-item--next').trigger('click');
+        } else {
+            $('.sections__nav-item--prev').trigger('click');
+        }
+
+        e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+    }
+}
+
+window.onresize = function(event) {
+    w = window.innerWidth;
+   
+    if (w > 879) {
+        var elem = document.getElementById('sections');
+
+        if (elem.addEventListener) {
+            if ('onwheel' in document) {
+                // IE9+, FF17+
+                elem.addEventListener("wheel", onWheel);
+            } else if ('onmousewheel' in document) {
+                // устаревший вариант события
+                elem.addEventListener("mousewheel", onWheel);
+            } else {
+                // Firefox < 17
+                elem.addEventListener("MozMousePixelScroll", onWheel);
+            }
+        } else { // IE8-
+            elem.attachEvent("onmousewheel", onWheel);
+        }
+
+
+// Это решение предусматривает поддержку IE8-
+        function onWheel(e) {
+            e = e || window.event;
+
+            // deltaY, detail содержат пиксели
+            // wheelDelta не дает возможность узнать количество пикселей
+            // onwheel || MozMousePixelScroll || onmousewheel
+            var delta = e.deltaY || e.detail || e.wheelDelta;
+
+
+            if (delta > 0) {
+                $('.sections__nav-item--next').trigger('click');
+            } else {
+                $('.sections__nav-item--prev').trigger('click');
+            }
+
+            e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+        }
+    }
+    
+    
+};
 
 
 

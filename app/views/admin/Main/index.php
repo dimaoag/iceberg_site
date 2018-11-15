@@ -17,7 +17,7 @@
             <div class="small-box bg-aqua">
                 <div class="inner">
                     <h3>
-                       0
+                       <?=$countProjects;?>
                     </h3>
                     <p>Проэкты</p>
                 </div>
