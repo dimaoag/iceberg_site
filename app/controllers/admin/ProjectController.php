@@ -42,7 +42,10 @@ class ProjectController extends AdminController {
             }
             redirect();
         }
+        $cats = \R::findAll('category_project', 'ORDER BY id ASC');
         $this->setMeta('Добавить новый проэкт');
+        $this->setData(compact('cats'));
+
     }
 
 

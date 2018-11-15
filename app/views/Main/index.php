@@ -301,31 +301,13 @@
                 </li>
             </ul>
             <div class="section__gallery block-none hidden" id="gallery1">
-                <h3 class="section__gallery-item section__gallery-item--title">More impressions 1</h3>
-                <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
+
             </div>
             <div class="section__gallery block-none hidden" id="gallery2">
-                <h3 class="section__gallery-item section__gallery-item--title">More impressions 2</h3>
-                <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
+
             </div>
             <div class="section__gallery block-none hidden" id="gallery3">
-                <h3 class="section__gallery-item section__gallery-item--title">More impressions 3</h3>
-                <a class="section__gallery-item" href="#"><img src="img/thumb1.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb2.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb3.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb4.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb5.jpg" alt="Some image"/></a>
-                <a class="section__gallery-item" href="#"><img src="img/thumb6.jpg" alt="Some image"/></a>
+
             </div>
         </section><!--/ section -->
         <div class="mobile-portfolio desc-hide">
@@ -529,13 +511,13 @@
                             <div class="contact-left-item-messages">
                                 <h3 class="messages-title">Месседжеры</h3>
                                 <div class="contact-left-item-socs">
-                                    <a href="#" class="mr-2">
+                                    <a href="tg://resolve?domain=sergey_sots" class="mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 24 22"><g><g transform="translate(-1442 -704)"><image width="24" height="22" transform="translate(1442 704)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAB5ElEQVRIS7WVz4tPYRTGP4/QZEGKMUnNZiYLK2wUFjY2o1lIw+ZbyihEYSPKj93IQhbq+weQklIzs7JQ8wfI/AEzirJTUxaKxKNze+/t+nbv/b4YZ3vP+3ze9zznnCv+U9jeApzSeuvbngAuAWeB9+sCsL0BOJGEjwOlbv+fALZ3AueAC8B4QzV6fwWwfSjd9jSwuaPMk9mAZNoZ4DKwP8O7T5JGhwIGTNveIPwTCA8GY1HSdCOgw7S6yHdgATgKjDYAbkma+w2QYVqp8wp4AjwCdrSU65ikpQLwB6Z9AK4Dn4GXwNYW8R/ANklfZPs2cAfY2GHcN+ABMAdMAc+ATR35y5IOxPfyBbuAHjAL7B04uAhck/TO9kXgcYup9WN9STHN1cRVH20fBq4A0eM3Jd1PZbwL3Mtoz0jpSXraCEhiMTwfgSVJM7angflM8UiblLTaCkiQqPlVYE+6eZQnJ4oBKxNbBy0N2ApwAzgPxJbMiWLAhgLSK14D+4BogjLC5JPA7hZaMWC5gBngeU2oMN32GPACONIAKQYsF1CaHWu56qj0upiDh2n5lXrVgGUBamavle06eGPb8efqAyPAW0kH6zk523RE0tcud22HaKyOMDjWeRVDATltk14aZRyX9KZ+5hfoepxKPEyqqQAAAABJRU5ErkJggg=="/></g></g></svg>
                                     </a>
-                                    <a href="#" class="mr-2">
+                                    <a href="viber://chat?number=+380939179871" class="mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22"><g><g transform="translate(-1477 -704)"><image width="22" height="22" transform="translate(1477 704)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAADEElEQVRIS4WVa4iVZRSFn5VGhnbRCPFHZFLhvXDwgqCNEYb9StIEUQRvUaSMCjII3pEUg7FIG9EfYvSjKShRNBz9oah4AxFvmVoGGWbBjBoKVu5Yw/6GzzPH6YWPw/ne911n7b3XWkdUrIh4BHg9n1eBl4FngKfz6F3gDvATcBzYBeyVdL8MpfKXiHgXWAf0BXzwEnAG+BNoAe4BTwFPAkPy6QZcBj6Q1FzgtQNHhAEXAxeADcBXkm5WVlRB5HFgErASeAH4UNJGn2kDjoipwJf5zJRkZg+siHge8CWzN7MmSX/n/R7Ad9m+MZIOKyIM7pIN9kpxuArwi8B2oD/QE/gReEfS2QT3u/PARUm1BvaATpXLiIjXgFWABzlH0g95+SXgOvAm8HlWXCPpl9xfmveeM/A04AtgqKQzWbLZ3ADcw7+AYcAg4GAqYhnwfaqiWdLbCTw8300xcB3QAPSS1BIR07PkUcCjCbYZmA9MBmZlLz200cACoLekPyLi2SRUZ+AVwHKgq6R/I2IEcCwvuNyLZilpYLJ6DLgKHM1hepDjLbWI6AL8Y5W0A0sqS+8E0AcYmSWvl+TBta2IWG8iwFpgHzBN0unci86A30hJNUha2JmWq6inHbge+MhuknS7xGobMMN9lfRNslmSvd5jM7mvFYZ5ArgF1LsVHsZWYLCkcyVgi/5A2talNkWEe2trDwWuZW/bpJg/7Cj4GXivrOP3JTVWMPCUza4G+AxYDZile7/bQ5Y0oQRs2X0LjC2cdwVolWS9Vlq5e2bHbOB34FPAg3IE7JNk2RWMvwbechoWWTEvL8yVtKXasCJiDLAG8KeXM6O2aF9EjEuFbJI0rwAujOCSbZjGynwtsRoA9AMOS2rN/J4JfAL8Bgz3+7J23U8nlN3kPPDUbfUOKyKscVu8FpgCOKBOAhMl/eoLlUHv0HGETgR22BQR4Yy2HL3XYQTpQA/WMWrXta0HgKsMrtD4fuBQad9adUSelORed1gPBY6IRcDHwE7/S1QL/2qA/8s4Io6kZu28Dv8onYF67z8Mi1SLwX7/sAAAAABJRU5ErkJggg=="/></g></g></svg>
                                     </a>
-                                    <a href="#" class="mr-2">
+                                    <a href="whatsapp://send?phone=+380939179871" class="mr-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="21" viewBox="0 0 22 21"><g><g transform="translate(-1509 -705)"><image width="22" height="21" transform="translate(1509 705)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAB/UlEQVRIS6WVzatOURTGf4+PUCQiEyEMfeVmJjEgyc2Awc0dmJEJMuFPMKC4AykDDK4iZeArKRmYKEoMjF0DyWcmQnq0jnXY93jPfd+3d8/OWWv99tprP2tt0bJsLwdGge3AOmBhun4CXgAPgHFJrzsh1PxpezFwCjgATG/bOP//Aq4AJyW9L30ngW1vBm4AS7oAm+Z3wD5Jj2vDX7DtrcBdYE4a3wCLiu9ue30Ddkl6FI4V2PYy4DmwIKOfAVuAtcC94n83+Gdgg6SJGnwL2F1EjUq6mpsG/GFm3w0c9tuShmV7IxAZlmtbfaSEnwGO90JNn6EAnwOONILKjHdkOab1AR4LcGgyjluui5IOZrYhvRN9QMP1ZYB/ADMbgV+BlZI+2l4KxE2v6gP+M8BuCbgg6XBmHfBQx5pe4QEO/c1uCRiRdC3h0ZF3gE2Fb7R33eoloso49Lu+Bfw9RR9yC73PBy4BoaSo+83s1OFGfFXjs8DRKY4Yd3BI0uVOPrZn5LzYX9grVXTScSfGdeCYpLdNo+15wBegluRQW+e1HSBKM54leArE92rgdI6AiPvTeVm7mGh7e73xKfz+zQrbs4APwNwBwZOnm+2dqdFBuP/PY9vngaoRQlE5kCaAPQO9ILafAK+A+/GOSYqyhGZXACNADKGYJTH0Y/X05v0GOmXAGLk4QhgAAAAASUVORK5CYII="/></g></g></svg>
                                     </a>
                                 </div>

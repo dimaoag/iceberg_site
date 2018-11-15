@@ -28,8 +28,8 @@
                                         <option value="">Выберите категори</option>
 
                                         <?php if (!empty($cats)): ?>
-                                            <?php foreach ($cats as $id => $title):?>
-                                                <option value="<?=$id?>"><?=$title?></option>
+                                            <?php foreach ($cats as $cat):?>
+                                                <option value="<?=$cat->id?>"><?=$cat->title?></option>
                                             <?php endforeach; ?>
                                         <?php endif; ?>
 
