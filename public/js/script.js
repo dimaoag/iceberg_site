@@ -55,6 +55,8 @@
 //     $('.bnt-thanks').trigger('click');
 // }
 
+new WOW().init();
+
 
 // Preload all the images in the page..
 imagesLoaded(document.querySelectorAll('img'), () => {

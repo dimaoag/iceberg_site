@@ -206,8 +206,8 @@
                                         <div class="contact-left-item-messages">
                                             <h3 class="messages-title">Телефоны</h3>
                                             <div class="contact-left-item-socs d-flex flex-column">
-                                                <a href="tel:0939179871" class="text-white py-2">+38 (093) 917-98-71</a>
-                                                <a href="tel:0962965202" class="text-white py-2">+38 (096) 296-52-02</a>
+                                                <a href="tel:0939179871" class="py-2">+38 (093) 917-98-71</a>
+                                                <a href="tel:0962965202" class="py-2">+38 (096) 296-52-02</a>
                                             </div>
                                         </div>
                                         <div class="contact-left-item-messages">
@@ -227,8 +227,7 @@
                     </div>
                 </div>
                 <div class="button-section d-flex align-items-center justify-content-center">
-                    <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Рассчитать стоимость</p> <svg class="icon icon--arrowlong ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
-
+                    <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Рассчитать стоимость</p> <svg class="icon icon--arrowlong icon-rass ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
                 </div>
             </div>
 
@@ -525,8 +524,8 @@
                             <div class="contact-left-item-messages">
                                 <h3 class="messages-title">Телефоны</h3>
                                 <div class="contact-left-item-socs d-flex flex-column">
-                                    <a href="tel:0939179871" class="text-white py-2">+38 (093) 917-98-71</a>
-                                    <a href="tel:0939179871" class="text-white py-2">+38 (093) 917-98-71</a>
+                                    <a href="tel:0939179871" class="py-2">+38 (093) 917-98-71</a>
+                                    <a href="tel:0939179871" class="py-2">+38 (093) 917-98-71</a>
                                 </div>
                             </div>
                             <div class="contact-left-item-messages">

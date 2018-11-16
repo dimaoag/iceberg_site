@@ -265,8 +265,8 @@
                                             <div class="contact-left-item-messages">
                                                 <h3 class="messages-title">Телефоны</h3>
                                                 <div class="contact-left-item-socs d-flex flex-column">
-                                                    <a href="tel:0939179871" class="text-white py-2">+38 (093) 917-98-71</a>
-                                                    <a href="tel:0962965202" class="text-white py-2">+38 (096) 296-52-02</a>
+                                                    <a href="tel:0939179871" class="py-2">+38 (093) 917-98-71</a>
+                                                    <a href="tel:0962965202" class="py-2">+38 (096) 296-52-02</a>
                                                 </div>
                                             </div>
                                             <div class="contact-left-item-messages">
@@ -286,7 +286,7 @@
                         </div>
                     </div>
                     <div class="button-view-url button-section d-flex align-items-center justify-content-center">
-                        <a href="<?=$project->url?>" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Перейти на сайт</p> <svg class="icon icon--arrowlong ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
+                        <a href="<?=$project->url?>" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Перейти на сайт</p> <svg class="icon icon--arrowlong icon-rass ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
                     </div>
                 </div>
 
@@ -377,18 +377,18 @@
 
     <div class="container section-task">
         <div class="row">
-            <div class="col-md-4 mb-3">
+            <div class="col-md-4 mb-3 wow slideInLeft">
                 <div class="task-name">Задача проекта</div>
                 <div class="task-line"></div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 wow slideInRight">
                 <div class="task-value">
                     <?=h($project->task);?>
                 </div>
             </div>
         </div>
         <div class="empty-space"></div>
-        <div class="row">
+        <div class="row wow fadeInUp">
             <div class="col-md-4 mb-3">
                 <div class="task-name">Дизайн сайта</div>
                 <div class="task-line"></div>
@@ -407,7 +407,7 @@
 
 
     <div class="container">
-        <div class="row">
+        <div class="row wow fadeIn" data-wow-delay="0.5s">
             <div class="col-12">
                 <div class="video-project-bg"
                      data-vide-bg="mp4: videos/<?=$project->video_big;?>, poster: images/<?=$project->img_preview;?>"
@@ -425,12 +425,12 @@
 
     <div class="container view-phone-section">
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="image-phone">
                     <img src="images/<?=$project->img_responsive;?>" alt="images">
                 </div>
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="col-lg-6 d-flex flex-column justify-content-center wow slideInRight">
                 <div>
                     <div class="task-name">Адаптивная версия</div>
                     <div class="task-line mb-3"></div>
@@ -445,7 +445,7 @@
 
     <div class="container view-review-wrap">
         <div class="row my-3">
-            <div class="col-lg-8">
+            <div class="col-lg-8 wow bounceInUp">
                 <div class="view overlay">
                     <img src="https://i.ytimg.com/vi/<?=$project->video_small;?>/maxresdefault.jpg" alt="ukiWU9ly6d4" />
                     <div class="my-mask flex-center rgba-stylish-light">
@@ -455,7 +455,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex flex-column justify-content-center">
+            <div class="col-lg-4 d-flex flex-column justify-content-center wow bounceInDown">
                 <div class="review-name pb-2"><?=$project->customer_name;?></div>
                 <div class="task-value review-text">
                     <?=$project->customer_review;?>
@@ -464,7 +464,7 @@
         </div>
     </div>
 
-    <div class="container view-form">
+    <div class="container view-form wow flipInX">
         <div class="row">
             <div class="col-12">
                 <div class="form-title text-center">Понравился проект?</div>
@@ -474,32 +474,39 @@
         <div class="row">
             <div class="col-12">
                 <form action="#" class="d-flex justify-content-around flex-wrap js-form">
-                    <input type="text" class="form-input my-3" placeholder="Имя" name="name" required>
-                    <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-input my-3" placeholder="Телефон" required>
+                    <div class="form-group d-flex flex-column">
+                        <input type="text" class="form-input my-3" placeholder="Имя" name="name" required>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                        <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-input my-3" placeholder="Телефон" required>
+                    </div>
                     <button type="submit" class="project-button form-button my-3">Заказать подобный</button>
                 </form>
             </div>
         </div>
     </div>
 
-    <div class="container view-footer-arrow">
-        <div class="row">
-            <div class="col-12 d-flex justify-content-between">
-                <div class="case-arrow-left">
-                    <a href="<?=PATH?>/project/view?id=<?=$link_prev?>">
-                        <div class="case-arrow case-arrow-left-line"></div>
-                        <div class="case-arrow-text text-center">предыдущий кейс</div>
-                    </a>
-                </div>
-                <div class="case-arrow-right">
-                    <a href="<?=PATH?>/project/view?id=<?=$link_next?>">
-                        <div class="case-arrow case-arrow-right-line"></div>
-                        <div class="case-arrow-text text-center">следующий кейс</div>
-                    </a>
+    <div class="view-footer-arrow-wrap">
+        <div class="container view-footer-arrow">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between">
+                    <div class="case-arrow-left">
+                        <a href="<?=PATH?>/project/view?id=<?=$link_prev?>" class="project-arrow">
+                            <div class="case-arrow case-arrow-left-line"></div>
+                            <div class="case-arrow-text text-left">предыдущий кейс</div>
+                        </a>
+                    </div>
+                    <div class="case-arrow-right">
+                        <a href="<?=PATH?>/project/view?id=<?=$link_next?>" class="project-arrow">
+                            <div class="case-arrow case-arrow-right-line float-right"></div>
+                            <div class="case-arrow-text text-right">следующий кейс</div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <div class="container view-footer-text">
         <div class="row">

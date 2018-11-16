@@ -500,9 +500,28 @@ button:focus {
 	cursor: pointer;
 	margin: 10px 0;
 }
+.fltr-controls:hover{
+	opacity: 0.4;
+	transition: all 0.3s linear;
+}
 .simplefilter .active{
 	opacity: 0.3;
 	text-decoration: line-through
+}
+.button-rass > .icon-rass{
+	margin-top: 2px;
+	transition: all 0.3s linear;
+}
+.button-rass:hover > p{
+	color: #555555;
+	transition: all 0.3s linear;
+}
+.button-rass:hover > .icon-rass{
+	width: 40px;
+	transition: all 0.3s linear;
+}
+.icon-rass{
+
 }
 #menu-content-2 .my-menu-close{
 	right: 25px;
@@ -532,9 +551,26 @@ button:focus {
 }
 .header-phone{
 	margin-right: 30px;
+	transition: all 0.3s linear;
+}
+.header-phone:hover{
+	opacity: 0.7;
+	transition: all 0.3s linear;
 }
 .desc-hide{
 	display: none;
+}
+.contact-left-item-socs a{
+	color: white;
+	transition: all 0.3s linear;
+}
+.contact-left-item-socs a:hover{
+	color: #b2b2b2;
+	transition: all 0.3s linear;
+}
+label.error{
+	color: red;
+	font-size: 0.9rem;
 }
 
 @media screen and (min-width: 55em) and (min-height: 40em) {
@@ -831,8 +867,16 @@ button:focus {
 	line-height: 36px;
 	color: white;
 }
+.menu-item-1{
+	text-decoration:line-through;
+	opacity: 0.3;
+}
+.menu-item:hover, .menu-item-one:hover{
+	transition: all 0.3s linear;
+	opacity: 0.5;
+}
 .project-name{
-	font-size: 4rem;
+	font-size: 4.5rem;
 }
 .project-desc{
 	font-size: 1.5rem;
@@ -849,10 +893,7 @@ button:focus {
 	height: 100%;
 	position: relative;
 }
-.menu-item-1{
-	text-decoration:line-through;
-	opacity: 0.3;
-}
+
 .my-menu-close{
 	position: absolute;
 	top: 15px;
@@ -1390,6 +1431,14 @@ a.view-header-phone:hover{
 	border: none;
 	outline: none;
 	cursor: pointer;
+	height: 56px;
+	transition: all 0.2s linear;
+}
+.form-button:hover{
+	color: black;
+	border: 2px solid black;
+	background-color: white;
+	transition: all 0.2s linear;
 }
 .view-form{
 	padding: 100px 0;
@@ -1405,6 +1454,7 @@ a.view-header-phone:hover{
 	background-color: black;
 	margin-bottom: 10px;
 	position: relative;
+	transition: width 0.5s linear;
 }
 .case-arrow-left-line{
 	margin-left: 10px;
@@ -1549,6 +1599,14 @@ a.view-header-phone:hover{
 	width: 100%;
 	height: 600px;
 }
+.project-arrow:hover > .case-arrow{
+	width: 50px;
+	transition: width 0.5s linear;
+}
+.project-arrow:hover > .case-arrow-text{
+	opacity: 0.6;
+	transition: all 0.3s linear;
+}
 @media all and (max-width: 1199px){
 	.video-project-bg{
 		height: 500px;
@@ -1585,6 +1643,18 @@ a.view-header-phone:hover{
 	}
 	.view-form{
 		padding: 0 0 50px 0;
+	}
+	.view-footer-text{
+		margin-bottom: 80px;
+	}
+	.view-footer-arrow-wrap{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
+		background-color: #f6f5f5;
+		padding-top: 10px;
 	}
 }
 @media all and (max-width: 767px){
