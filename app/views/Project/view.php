@@ -111,7 +111,7 @@
             <header class="sections__header d-flex justify-content-between align-items-start flex-wrap">
                 <a class='view-breadcrumb view-back d-flex align-items-center ml-3 mt-3' href="/">
                     <div class="breadcrumbs-arrow"></div>
-                    <h1 class="title">IceBerg</h1>
+                    <p class="title">назад</p>
                 </a>
                 <a href="tel:0939179871" class="header-phone mt-3 mr-3">+38 (093) 917-98-71</a>
                 <!-- menu -->
@@ -286,7 +286,7 @@
                         </div>
                     </div>
                     <div class="button-view-url button-section d-flex align-items-center justify-content-center">
-                        <a href="<?=$project->url?>" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Перейти на сайт</p> <svg class="icon icon--arrowlong icon-rass ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
+                        <a href="<?=$project->url?>" class="button-rass d-flex align-items-center justify-content-center text-dark"><p class="mr-2">Перейти на сайт</p><span class="rass-right-arrow"></a>
                     </div>
                 </div>
 
@@ -377,18 +377,18 @@
 
     <div class="container section-task">
         <div class="row">
-            <div class="col-md-4 mb-3 wow slideInLeft">
+            <div class="col-md-4 mb-3 wow fadeIn">
                 <div class="task-name">Задача проекта</div>
                 <div class="task-line"></div>
             </div>
-            <div class="col-md-8 wow slideInRight">
+            <div class="col-md-8 wow fadeIn">
                 <div class="task-value">
                     <?=h($project->task);?>
                 </div>
             </div>
         </div>
         <div class="empty-space"></div>
-        <div class="row wow fadeInUp">
+        <div class="row wow fadeIn">
             <div class="col-md-4 mb-3">
                 <div class="task-name">Дизайн сайта</div>
                 <div class="task-line"></div>
@@ -407,7 +407,7 @@
 
 
     <div class="container">
-        <div class="row wow fadeIn" data-wow-delay="0.5s">
+        <div class="row wow fadeIn">
             <div class="col-12">
                 <div class="video-project-bg"
                      data-vide-bg="mp4: videos/<?=$project->video_big;?>, poster: images/<?=$project->img_preview;?>"
@@ -425,12 +425,12 @@
 
     <div class="container view-phone-section">
         <div class="row">
-            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+            <div class="col-lg-6 wow fadeIn">
                 <div class="image-phone">
                     <img src="images/<?=$project->img_responsive;?>" alt="images">
                 </div>
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center wow slideInRight">
+            <div class="col-lg-6 d-flex flex-column justify-content-center wow fadeIn">
                 <div>
                     <div class="task-name">Адаптивная версия</div>
                     <div class="task-line mb-3"></div>
@@ -445,7 +445,7 @@
 
     <div class="container view-review-wrap">
         <div class="row my-3">
-            <div class="col-lg-8 wow bounceInUp">
+            <div class="col-lg-8 wow fadeIn">
                 <div class="view overlay">
                     <img src="https://i.ytimg.com/vi/<?=$project->video_small;?>/maxresdefault.jpg" alt="ukiWU9ly6d4" />
                     <div class="my-mask flex-center rgba-stylish-light">
@@ -455,7 +455,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex flex-column justify-content-center wow bounceInDown">
+            <div class="col-lg-4 d-flex flex-column justify-content-center wow fadeIn">
                 <div class="review-name pb-2"><?=$project->customer_name;?></div>
                 <div class="task-value review-text">
                     <?=$project->customer_review;?>
@@ -464,7 +464,7 @@
         </div>
     </div>
 
-    <div class="container view-form wow flipInX">
+    <div class="container view-form wow fadeIn">
         <div class="row">
             <div class="col-12">
                 <div class="form-title text-center">Понравился проект?</div>

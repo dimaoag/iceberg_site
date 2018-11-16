@@ -127,8 +127,7 @@ button:focus {
 
 .title {
 	font-family: "Montserrat", sans-serif;
-	text-transform: uppercase;
-	font-size: 1.35rem;
+	font-size: 1.2rem;
 	margin: 0;
 }
 
@@ -508,20 +507,43 @@ button:focus {
 	opacity: 0.3;
 	text-decoration: line-through
 }
-.button-rass > .icon-rass{
-	margin-top: 2px;
+.button-rass > .rass-right-arrow{
 	transition: all 0.3s linear;
 }
 .button-rass:hover > p{
 	color: #555555;
 	transition: all 0.3s linear;
 }
-.button-rass:hover > .icon-rass{
-	width: 40px;
+.button-rass:hover > .rass-right-arrow{
+	width: 50px;
 	transition: all 0.3s linear;
 }
-.icon-rass{
-
+.rass-right-arrow{
+	display: block;
+	width: 35px;
+	height: 1px;
+	background-color: black;
+	position: relative;
+}
+.rass-right-arrow:before{
+	content: "";
+	width: 1px;
+	height: 6px;
+	background-color: black;
+	position: absolute;
+	top: -1px;
+	right: 2px;
+	transform: rotate(45deg);
+}
+.rass-right-arrow:after{
+	content: "";
+	width: 1px;
+	height: 6px;
+	background-color: black;
+	position: absolute;
+	bottom: -1px;
+	right: 2px;
+	transform: rotate(-45deg);
 }
 #menu-content-2 .my-menu-close{
 	right: 25px;

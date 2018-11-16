@@ -227,7 +227,7 @@
                     </div>
                 </div>
                 <div class="button-section d-flex align-items-center justify-content-center">
-                    <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="button-rass d-flex align-items-center justify-content-center text-dark"><p>Рассчитать стоимость</p> <svg class="icon icon--arrowlong icon-rass ml-2"><use xlink:href="#icon-arrowlong"></use></svg></a>
+                    <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="button-rass d-flex align-items-center justify-content-center text-dark"><p class="mr-2">Рассчитать стоимость</p><span class="rass-right-arrow"></span></a>
                 </div>
             </div>
 
