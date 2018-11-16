@@ -13,33 +13,45 @@ class ProjectController extends AppController {
             redirect();
         }
 
-        $projects = \R::findAll('project' ,'status = 1');
+        $ids = \R::getCol( 'SELECT id FROM project' );
         $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
-        $link_next = null;
-        $link_prev = null;
+        $next_id = '';
+        $prev_id = '';
+        $i = 0;
 
-        $next_id = $id + 1;
-        $prev_id = $id - 1;
+        foreach ($ids as $key => $value){
+            if($value == $id){
+                if (empty($ids[$i + 1])){
+                    $next_id = $id;
+                } else {
+                    $next_id = $ids[$i + 1];
+                }
+                if (empty($ids[$i - 1])){
+                    $prev_id = $id;
+                } else {
+                    $prev_id = $ids[$i - 1];
+                }
 
-
-
-        $project_next = \R::findOne('project', 'id = ? AND status = 1', [$next_id]);
-        $project_prev = \R::findOne('project', 'id = ? AND status = 1', [$prev_id]);
-
-        if (empty($project_next)){
-            $link_next = $id;
-        } else{
-            $link_next = $project_next->id;
+            }
+            $i++;
         }
-        if (empty($project_prev)){
-            $link_prev = $id;
-        } else {
-            $link_prev = $project_prev->id;
+
+
+
+        $last_element = end($ids);
+        $first_element = $ids[0];
+        if ($last_element == $id) {
+            $next_id = array_shift($ids);
         }
+        if ($first_element == $id) {
+            $prev_id = end($ids);
+        }
+
+
 
         $this->setMeta("Проэкт \"{$project->title}\"");
-        $this->setData(compact('project', 'projects', 'cats', 'link_prev', 'link_next'));
+        $this->setData(compact('project', 'projects', 'cats', 'next_id', 'prev_id'));
 
     }
 

@@ -11,8 +11,6 @@ class MainController extends AppController
         $projects = \R::findAll('project' ,'status = 1');
         $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
-
-
         $this->setMeta('IceBerg');
         $this->setData(compact('projects', 'cats'));
     }

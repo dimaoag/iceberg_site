@@ -491,13 +491,13 @@
             <div class="row">
                 <div class="col-12 d-flex justify-content-between">
                     <div class="case-arrow-left">
-                        <a href="<?=PATH?>/project/view?id=<?=$link_prev?>" class="project-arrow">
+                        <a href="<?=PATH?>/project/view?id=<?=$prev_id;?>" class="project-arrow">
                             <div class="case-arrow case-arrow-left-line"></div>
                             <div class="case-arrow-text text-left">предыдущий кейс</div>
                         </a>
                     </div>
                     <div class="case-arrow-right">
-                        <a href="<?=PATH?>/project/view?id=<?=$link_next?>" class="project-arrow">
+                        <a href="<?=PATH?>/project/view?id=<?=$next_id;?>" class="project-arrow">
                             <div class="case-arrow case-arrow-right-line float-right"></div>
                             <div class="case-arrow-text text-right">следующий кейс</div>
                         </a>
