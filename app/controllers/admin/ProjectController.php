@@ -30,7 +30,6 @@ class ProjectController extends AdminController {
             $data['status'] = '1';
             $project->load($data);
             $project->getImg('img_preview');
-            $project->getImg('img_banner');
             $project->getImg('img_responsive');
             $project->getImg('video_big');
             if (!$project->validate($data)){
@@ -77,7 +76,6 @@ class ProjectController extends AdminController {
         $id = $this->getRequestId();
         $project = \R::findOne('project', "id = ?", [$id]);
         @unlink(WWW . '/images/' . $project->img_preview);
-        @unlink(WWW . '/images/' . $project->img_banner);
         @unlink(WWW . '/images/' . $project->img_responsive);
         @unlink(WWW . '/videos/' . $project->video_big);
         \R::exec("DELETE FROM project WHERE id = ?", [$id]);
@@ -101,10 +99,6 @@ class ProjectController extends AdminController {
                     case 'img_preview':
                         $wmax = App::$app->getProperty('preview_width');
                         $hmax = App::$app->getProperty('preview_height');
-                        break;
-                    case 'img_banner':
-                        $wmax = App::$app->getProperty('banner_width');
-                        $hmax = App::$app->getProperty('banner_height');
                         break;
                     case 'img_responsive':
                         $wmax = App::$app->getProperty('responsive_width');

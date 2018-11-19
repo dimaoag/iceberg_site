@@ -83,33 +83,6 @@
                                     <label for="responsive">Адаптивная версия</label>
                                     <textarea name="responsive" id="responsive" cols="30" rows="6" class="form-control"><?= $project->responsive; ?></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <div class="box box-info box-solid file-upload">
-                                        <div class="box-header">
-                                            <h3 class="box-title">Фото на странице просмотра проэкта (баннер)</h3>
-                                        </div>
-                                        <div class="box-body">
-                                            <div id="img_banner" class="btn btn-success" data-url="/project/add-image" data-name="img_banner" data-act="edit" data-id="<?=$project->id;?>">
-                                                Выберите изображение
-                                            </div>
-                                            <p>
-                                                <small>
-                                                    Recommended size:
-                                                    <?=\iceberg\App::$app->getProperty('banner_width'); ?>
-                                                    x
-                                                    <?=\iceberg\App::$app->getProperty('banner_height'); ?>
-                                                </small>
-                                            </p>
-                                            <div class="img_banner">
-                                                <img src="/images/<?= $project->img_banner; ?>" alt="image" class="img-single del_img_banner"
-                                                     data-type="img_banner" data-id="<?= $project->id; ?>" data-src="<?= $project->img_banner; ?>">
-                                            </div>
-                                        </div>
-                                        <div class="overlay">
-                                            <i class="fa fa-refresh fa-spin"></i>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="form-group has-feedback">
                                     <label for="color_1">Цвет 1</label>
                                     <input type="text" name="color_1" class="form-control" id="color_1" placeholder="#000000"

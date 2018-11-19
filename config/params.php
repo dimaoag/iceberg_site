@@ -5,7 +5,7 @@ return [
     'shop_name' => 'Iceberg.vn.ua',
     'pagination' => 6,
     'preview_width' => 1920,
-    'preview_height' => 1080,
+    'preview_height' => 1000,
     'banner_width' => 947,
     'banner_height' => 664,
     'responsive_width' => 232,

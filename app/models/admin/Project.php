@@ -19,7 +19,6 @@ class Project extends AppModel {
         'video_big' => '',
         'video_small' => '',
         'img_preview' => '',
-        'img_banner' => '',
         'img_responsive' => '',
         'customer_name' => '',
         'customer_review' => '',

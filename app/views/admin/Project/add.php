@@ -75,30 +75,6 @@
                                     <label for="responsive">Адаптивная версия</label>
                                     <textarea name="responsive" id="responsive" cols="30" rows="6" class="form-control"></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <div class="box box-info box-solid file-upload">
-                                        <div class="box-header">
-                                            <h3 class="box-title">Фото на странице просмотра проэкта (баннер)</h3>
-                                        </div>
-                                        <div class="box-body">
-                                            <div id="img_banner" class="btn btn-success" data-url="/project/add-image" data-name="img_banner" data-act="add" data-id="0">
-                                                Выберите изображение
-                                            </div>
-                                            <p>
-                                                <small>
-                                                    Recommended size:
-                                                    <?=\iceberg\App::$app->getProperty('banner_width'); ?>
-                                                    x
-                                                    <?=\iceberg\App::$app->getProperty('banner_height'); ?>
-                                                </small>
-                                            </p>
-                                            <div class="img_banner"></div>
-                                        </div>
-                                        <div class="overlay">
-                                            <i class="fa fa-refresh fa-spin"></i>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="form-group has-feedback">
                                     <label for="color_1">Цвет 1</label>
                                     <input type="text" name="color_1" class="form-control" id="color_1" placeholder="#000000"
