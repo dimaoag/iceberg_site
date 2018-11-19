@@ -858,7 +858,7 @@ label.error{
 	display: block;
 	z-index: 201;
 	width: 50%;
-	height: 35%;
+	height: 40%;
 	background-color: black;
 	transition: all 0.3s linear;
 }

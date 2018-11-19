@@ -82,7 +82,6 @@ $('.project-title').scalem({
     styles: 'border-width',
 });
 
-// $().prettyEmbed({ useFitVids: true });
 
 
 $(".youtube-link").grtyoutube();
@@ -154,18 +153,6 @@ if ($("div").is(".view-section-1")) {
     });
 
 }
-
-
-
-// Initialize and add the map
-// function initMap() {
-//     var iceberg = {lat: 49.235373, lng: 28.489296};
-//     // The map, centered at Uluru
-//     var map = new google.maps.Map(
-//         document.getElementById('map'), {zoom: 19, center: iceberg});
-//     // The marker, positioned at Uluru
-//     var marker = new google.maps.Marker({position: iceberg, map: map});
-// }
 
 
 $(document).ready(function(){
@@ -262,6 +249,7 @@ var w_default = window.innerWidth;
 
 if (w_default > 879) {
     var elem = document.getElementById('sections');
+    var facts = document.getElementById('facts');
 
     if (elem.addEventListener) {
         if ('onwheel' in document) {
@@ -277,6 +265,13 @@ if (w_default > 879) {
     } else { // IE8-
         elem.attachEvent("onmousewheel", onWheel);
     }
+
+    if (facts.addEventListener) {
+        facts.addEventListener("wheel", function (event) {
+            event.stopPropagation()
+        });
+    }
+
 
 
 // Это решение предусматривает поддержку IE8-

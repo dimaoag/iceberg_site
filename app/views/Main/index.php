@@ -68,7 +68,7 @@
             </nav>
         </header>
 
-        <div class="facts d-flex">
+        <div class="facts d-flex" id="facts">
             <div class="facts__toggle block-none hidden">
                 <!--						<span class="facts__toggle-inner facts__toggle-inner--more d-flex align-items-center">-->
                 <!--							<svg class="icon icon--dot"><use xlink:href="#icon-dot"></use></svg>-->

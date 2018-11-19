@@ -11,7 +11,7 @@ class MainController extends AppController
         $projects = \R::findAll('project' ,'status = 1');
         $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
-        $this->setMeta('IceBerg');
+        $this->setMeta('Создание лендингов, интернет-магазинов, корпоративных сайтов, визиток','Делаем защищенные, быстрые сайты с любым функционалом и понятным управлением! Воплотим вашу идею: создание логотипа, дизайн, наполнение, поддержка.');
         $this->setData(compact('projects', 'cats'));
     }
 
