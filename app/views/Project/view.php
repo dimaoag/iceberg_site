@@ -489,7 +489,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="#" class="d-flex justify-content-around flex-wrap js-form" onsubmit="gtag('event', 'send',{event_category: 'form'}); return true">
+                <form action="#" class="d-flex justify-content-around flex-wrap js-form" onsubmit="yaCounter50094541.reachGoal('form'); return true;">
                     <div class="form-group d-flex flex-column">
                         <input type="text" class="form-input my-3" placeholder="Имя" name="name" required>
                     </div>
@@ -547,3 +547,4 @@
         </div>
     </div>
 </div>
+
