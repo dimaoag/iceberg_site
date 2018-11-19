@@ -50,7 +50,7 @@ class ProjectController extends AppController {
         }
 
 
-        $this->setMeta("Проэкт \"{$project->title}\"");
+        $this->setMeta("Проект \"{$project->title}\"");
         $this->setData(compact('project', 'projects', 'cats', 'next_id', 'prev_id'));
 
     }

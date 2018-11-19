@@ -220,8 +220,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="contact-right">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.1835746313945!2d28.486501125310433!3d49.23500864841576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c8de213a975376!2z0JzQtdGA0Lgg0LzQtdGA0Lgg0LHRjNGO0YLQuCDQutC70YPQsQ!5e0!3m2!1sru!2sua!4v1542040611089" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="contact-right" id="map_menu">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.291143930845!2d28.488794829261362!3d49.23536887438654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDE0JzA3LjMiTiAyOMKwMjknMjEuNiJF!5e0!3m2!1sru!2sua!4v1542632434854" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
@@ -467,7 +467,7 @@
                 </p>
             </div>
             <div class="section__img">
-                <div class="section__img-inner" style="background-image: url(img/section_4_bg_image.png)"></div>
+                <div class="section__img-inner" style="background-image: url(img/68_min.jpg)"></div>
             </div>
             <div class="section__more block-none hidden">
                 <div class="section__more-inner section__more-inner--bg4">
@@ -500,8 +500,8 @@
         <div class="mobile-contacts desc-hide">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 mt-5 mobile-map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.1835746313945!2d28.486501125310433!3d49.23500864841576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c8de213a975376!2z0JzQtdGA0Lgg0LzQtdGA0Lgg0LHRjNGO0YLQuCDQutC70YPQsQ!5e0!3m2!1sru!2sua!4v1542040611089" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="col-12 mt-5 mobile-map" id="map_mobile">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d651.291143930845!2d28.488794829261362!3d49.23536887438654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDE0JzA3LjMiTiAyOMKwMjknMjEuNiJF!5e0!3m2!1sru!2sua!4v1542632434854" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <div class="row">
