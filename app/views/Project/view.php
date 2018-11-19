@@ -285,7 +285,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-view-url button-section d-flex align-items-center justify-content-center">
+                    <div class="button-view-url button-section">
                         <a href="<?=$project->url?>" class="button-rass d-flex align-items-center justify-content-center text-dark"><p class="mr-2">Перейти на сайт</p><span class="rass-right-arrow"></a>
                     </div>
                 </div>
@@ -338,6 +338,18 @@
                         <div class="section__img-inner" style="background-image: url(images/<?=$project->img_preview;?>)"></div>
                     </div>
                 </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="button-view-url button-section button-link-project">
+                                <a href="<?=$project->url?>" class="button-rass d-flex align-items-center justify-content-center text-dark"><p class="mr-2">Перейти на сайт</p><span class="rass-right-arrow"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
                 <div class="section__more block-none hidden">
                     <div class="section__more-inner section__more-inner--bg1">
                         <a href="#" class="section__more-link">

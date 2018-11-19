@@ -513,6 +513,7 @@ if ($("div").is(".index-wrap")) {
         var id = $(this).data('id');
         $('.my-menu').addClass(' menu-active');
         $('.menu-items').hide();
+        $('.button-link-project').hide();
         $('#menu-content-' + id).show();
         var desScroll = document.getElementById('menu-content-' + id);
 

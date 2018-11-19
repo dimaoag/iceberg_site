@@ -869,6 +869,12 @@ label.error{
 	background-color: #f6f5f5;
 	width: 50%;
 	height: 20%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.button-link-project{
+	display: none;
 }
 .my-click{
 
@@ -1644,9 +1650,6 @@ a.view-header-phone:hover{
 	}
 }
 @media all and (max-width: 991px){
-	.button-view-url{
-		display: none;
-	}
 	.section-task{
 		padding-top: 50px;
 	}
@@ -1678,6 +1681,12 @@ a.view-header-phone:hover{
 	.view-footer-text{
 		margin-bottom: 80px;
 	}
+}
+
+@media all and (max-width: 879px){
+	.button-view-url{
+		display: none;
+	}
 	.view-footer-arrow-wrap{
 		position: fixed;
 		bottom: 0;
@@ -1686,6 +1695,9 @@ a.view-header-phone:hover{
 		z-index: 10;
 		background-color: #f6f5f5;
 		padding-top: 10px;
+	}
+	.button-link-project{
+		display: block;
 	}
 }
 @media all and (max-width: 767px){
