@@ -1066,15 +1066,6 @@ label.error{
 	-o-transform: rotate(-135deg);
 	transform: rotate(-135deg);
 }
-#menu-content-4 #nav-icon1{
-	background-color: white;
-	width: 36px;
-	height: 36px;
-}
-#menu-content-4 #nav-icon1 span{
-	background-color: black;
-
-}
 
 
 @media all and (max-width: 1300px){

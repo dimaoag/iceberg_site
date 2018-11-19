@@ -180,13 +180,13 @@
                         </div>
                     </div>
                     <div class="menu-content" id="menu-content-4">
-                        <div class="my-menu-close text-dark open" id="nav-icon1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
                         <div class="contact-wrap d-flex">
                             <div class="contact-left">
+                                <div class="my-menu-close open" id="nav-icon1">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                                 <div class="contact-left-wrap">
                                     <div class="contact-left-item d-flex flex-column justify-content-between">
                                         <div class="contact-left-item-messages">
