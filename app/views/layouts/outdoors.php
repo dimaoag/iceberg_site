@@ -101,6 +101,7 @@
     <script src="js/pathLoader.js"></script>
     <script src="js/scrollspy.js"></script>
     <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 

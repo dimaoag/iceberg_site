@@ -1644,6 +1644,13 @@ a.view-header-phone:hover{
 	opacity: 0.6;
 	transition: all 0.3s linear;
 }
+.section-video-wrap{
+	display: flex;
+	align-items: center;
+}
+.section-video-wrap .container-fluid{
+	max-width: 1280px;
+}
 @media all and (max-width: 1199px){
 	.video-project-bg{
 		height: 500px;

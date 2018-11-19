@@ -418,21 +418,24 @@
     </div>
 
 
-    <div class="container">
-        <div class="row wow fadeIn">
-            <div class="col-12">
-                <div class="video-project-bg"
-                     data-vide-bg="mp4: videos/<?=$project->video_big;?>, poster: images/<?=$project->img_preview;?>"
-                     data-vide-options="loop: true, posterType: detect, autoplay: true, muted: true, position: 0% 0%">
+    <div class="section-video-wrap">
+        <div class="container-fluid">
+            <div class="row wow fadeIn">
+                <div class="col-12">
+                    <div class="video-project-bg"
+                         data-vide-bg="mp4: videos/<?=$project->video_big;?>, poster: images/<?=$project->img_preview;?>"
+                         data-vide-options="loop: true, posterType: detect, autoplay: true, muted: true, position: 0% 0%">
+                    </div>
+                    <!---->
+                    <!--                <video class="video" id="video" width="100%" height="100%" title="video" src="videos/m.mp4" muted="muted">-->
+                    <!---->
+                    <!--                </video>-->
+                    <!--<div class="project-video pretty-embed" data-pe-videoid="Cbti19KM3wk" data-pe-fitvids="true"></div>-->
                 </div>
-<!---->
-<!--                <video class="video" id="video" width="100%" height="100%" title="video" src="videos/m.mp4" muted="muted">-->
-<!---->
-<!--                </video>-->
-                <!--<div class="project-video pretty-embed" data-pe-videoid="Cbti19KM3wk" data-pe-fitvids="true"></div>-->
             </div>
         </div>
     </div>
+
 
 
     <div class="container view-phone-section">

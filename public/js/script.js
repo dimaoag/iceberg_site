@@ -339,6 +339,9 @@ window.onresize = function(event) {
     
 };
 
+if ($("div").is(".section-video-wrap")) {
+    $(".video-project-bg").fitVids();
+}
 
 
 
