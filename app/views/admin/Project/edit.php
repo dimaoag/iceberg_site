@@ -140,9 +140,7 @@
                                 <div class="form-group has-feedback">
                                     <label for="video_small">Ссылка на видео с отзывом (Youtube)</label>
                                     <input type="text" name="video_small" class="form-control" id="video_small" placeholder="ukiWU9ly6d4"
-                                           data-error="Minimum of 4 chars" data-minlength="6"
-                                           value="<?=$project->video_small;?>"
-                                           required>
+                                           value="<?=$project->video_small;?>">
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
                                 </div>
@@ -168,18 +166,14 @@
                                 <div class="form-group has-feedback">
                                     <label for="customer_name">Имя и фамилия заказчика</label>
                                     <input type="text" name="customer_name" class="form-control" id="customer_name" placeholder="Имя и фамилия"
-                                           data-error="Minimum of 4 chars" data-minlength="6"
-                                           value="<?=$project->customer_name;?>"
-                                           required>
+                                           value="<?=$project->customer_name;?>">
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
                                 </div>
                                 <div class="form-group has-feedback">
                                     <label for="customer_review">Отзыв заказчика</label>
                                     <input type="text" name="customer_review" class="form-control" id="customer_review" placeholder="Отзыв"
-                                           data-error="Minimum of 4 chars" data-minlength="6"
-                                           value="<?=$project->customer_review;?>"
-                                           required>
+                                           value="<?=$project->customer_review;?>">
                                     <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
                                     <div class="help-block with-errors"></div>
                                 </div>

@@ -34,9 +34,6 @@ class Project extends AppModel {
             ['description'],
             ['color_1'],
             ['color_2'],
-            ['video_small'],
-            ['customer_name'],
-            ['customer_review'],
             ['url'],
         ],
         'integer' => [
