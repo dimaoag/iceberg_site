@@ -13,7 +13,7 @@ class ProjectController extends AppController {
             redirect();
         }
 
-        $ids = \R::getCol( 'SELECT id FROM project' );
+        $ids = \R::getCol( 'SELECT id FROM project WHERE status = 1' );
         $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
         $next_id = '';
@@ -36,7 +36,6 @@ class ProjectController extends AppController {
             }
             $i++;
         }
-
 
 
         $last_element = end($ids);
