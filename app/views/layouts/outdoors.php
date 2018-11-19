@@ -20,20 +20,13 @@
     <link rel="stylesheet" href="css/effect2.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/base.css" />
-    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
-
     <script src="js/modernizr.custom.js" type="text/javascript"></script>
 
 
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 
-    <!-- Marquiz script start -->
-    <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            Marquiz.init({ id: '5bae909889ae8b0043f1262d' });
-        });
-    </script>
-    <!-- Marquiz script end -->
+
+
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127488819-1"></script>
@@ -110,5 +103,17 @@
     <script src="js/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
+
+
+    <!-- Marquiz script start -->
+        <script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                Marquiz.init({ id: '5bae909889ae8b0043f1262d' });
+            });
+        </script>
+    <!-- Marquiz script end -->
+
+
 </body>
 </html>

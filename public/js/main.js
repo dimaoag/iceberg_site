@@ -514,7 +514,15 @@ if ($("div").is(".index-wrap")) {
         $('.my-menu').addClass(' menu-active');
         $('.menu-items').hide();
         $('#menu-content-' + id).show();
+        var desScroll = document.getElementById('menu-content-' + id);
+
+        if (desScroll.addEventListener) {
+            desScroll.addEventListener("wheel", function (event) {
+                event.stopPropagation()
+            });
+        }
     });
+
     $('.my-menu-close').click(function () {
         $('.my-menu').removeClass('menu-active');
         $('.menu-items').show();

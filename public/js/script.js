@@ -249,7 +249,7 @@ var w_default = window.innerWidth;
 
 if (w_default > 879) {
     var elem = document.getElementById('sections');
-    var facts = document.getElementById('facts');
+    // var facts = document.getElementById('facts');
 
     if (elem.addEventListener) {
         if ('onwheel' in document) {
@@ -266,11 +266,11 @@ if (w_default > 879) {
         elem.attachEvent("onmousewheel", onWheel);
     }
 
-    if (facts.addEventListener) {
-        facts.addEventListener("wheel", function (event) {
-            event.stopPropagation()
-        });
-    }
+    // if (facts.addEventListener) {
+    //     facts.addEventListener("wheel", function (event) {
+    //         event.stopPropagation()
+    //     });
+    // }
 
 
 
