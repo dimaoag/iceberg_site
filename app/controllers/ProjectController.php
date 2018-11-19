@@ -13,6 +13,8 @@ class ProjectController extends AppController {
             redirect();
         }
 
+        $projects = \R::findAll('project', 'status = 1');
+
         $ids = \R::getCol( 'SELECT id FROM project WHERE status = 1' );
         $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
@@ -46,7 +48,6 @@ class ProjectController extends AppController {
         if ($first_element == $id) {
             $prev_id = end($ids);
         }
-
 
 
         $this->setMeta("Проэкт \"{$project->title}\"");

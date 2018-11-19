@@ -584,7 +584,6 @@ if ($("div").is(".index-wrap")) {
 
 
 
-
 // Default options
     var options_mobile = {
         animationDuration: 0.5, // in seconds
