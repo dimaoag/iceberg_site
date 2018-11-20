@@ -1,61 +1,25 @@
-// var w = window.innerWidth;
-//
-// if (w > 1125){
-//     loadjscssfile("./css/full-page-scroll.css", "css"); ////dynamically load and add this .css file
-//     loadjscssfile("js/full-page-scroll.js", "js"); //dynamically load and add this .js file
-//     $(document).ready(function(){
-//         new fullScroll({
-//             mainElement: 'main',
-//             displayDots: true,
-//             dotsPosition: 'right',
-//             animateTime: 0.5,
-//             animateFunction: 'ease'
-//         });
-//     });
-//
-// } else {
-//     document.styleSheets[2].disabled = true;
-//     loadjscssfile("./css/media_small.css", "css");
-// }
-
-
-// function loadjscssfile(filename, filetype){
-//     if (filetype=="js"){ //if filename is a external JavaScript file
-//         var fileref=document.createElement('script');
-//         fileref.setAttribute("type","text/javascript");
-//         fileref.setAttribute("src", filename);
-//     }
-//     else if (filetype=="css"){ //if filename is an external CSS file
-//         var fileref=document.createElement("link");
-//         fileref.setAttribute("rel", "stylesheet");
-//         fileref.setAttribute("type", "text/css");
-//         fileref.setAttribute("href", filename);
-//     }
-//     if (typeof fileref!="undefined")
-//         document.getElementsByTagName("head")[0].appendChild(fileref)
-// }
-
-// $(document).ready(function($) {
-//     $(window).load(function() {
-//         setTimeout(function() {
-//             $('#preloader').fadeOut('slow', function() {});
-//         }, 1000);
-//
-//     });
-// });
-
-
-// window.addEventListener('resize', function(event){
-//     var w = window.innerWidth;
-//     console.log(w);
-// });
-
-
-// function thanks(){
-//     $('.bnt-thanks').trigger('click');
-// }
 
 new WOW().init();
+
+
+// Other way to detect iOS
+var isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+
+if (isIOS) {
+    $("#video-all").hide();
+    var canvasVideo = new CanvasVideoPlayer({
+        videoSelector: '.js-video',
+        canvasSelector: '.js-canvas',
+        timelineSelector: '.js-timeline',
+        audio: false,
+        autoplay: true,
+    });
+}
+else {
+    $("#video-ios").hide();
+}
+
+
 
 
 // Preload all the images in the page..
@@ -102,9 +66,6 @@ if (w > 700){
     });
 }
 
-// $('#video').on('scrollSpy:exit', function() {
-//     $('#video').trigger('pause');
-// });
 
 
 if ($("div").is(".view-section-1")) {
@@ -142,13 +103,7 @@ if ($("div").is(".view-section-1")) {
                 x: `${Math.min(tx,graphicInterval.from)}`
             });
 
-            // const txText = lineEq(textInterval.from, textInterval.to, distanceThreshold.max, distanceThreshold.min, distance);
-            // const bw = lineEq(grayscaleInterval.from, grayscaleInterval.to, distanceThreshold.max, distanceThreshold.min, distance);
-            // TweenMax.to(bttnText, 0.5, {
-            //     ease: 'Expo.easeOut',
-            //     x: `${Math.min(txText,graphicInterval.to)}`,
-            //     filter: `grayscale(${Math.min(bw,grayscaleInterval.from)})`
-            // });
+
         }
     });
 
@@ -316,11 +271,6 @@ if (w_default > 879) {
         elem.attachEvent("onmousewheel", onWheel);
     }
 
-    // if (facts.addEventListener) {
-    //     facts.addEventListener("wheel", function (event) {
-    //         event.stopPropagation()
-    //     });
-    // }
 
 
 

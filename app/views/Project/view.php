@@ -422,15 +422,28 @@
         <div class="container-fluid">
             <div class="row wow fadeIn">
                 <div class="col-12">
-                    <div class="video-project-bg"
-                         data-vide-bg="mp4: videos/<?=$project->video_big;?>, poster: images/<?=$project->img_preview;?>"
+                    <div class="video-wrapper js-video-wrapper" id="video-ios">
+                        <div class="video-responsive">
+                            <video class="video js-video" muted>
+<!--                                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.webm" type="video/webm">-->
+                                <source src="videos/<?= $project->video_big; ?>" type="video/mp4">
+<!--                                <source src="http://www.quirksmode.org/html5/videos/big_buck_bunny.ogv" type="video/ogg">-->
+                            </video>
+
+                            <canvas class="canvas js-canvas"></canvas>
+
+                            <div class="video-timeline js-timeline">
+                                <div class="video-timeline-passed js-timeline-passed">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="video-project-bg" id="video-all"
+                         data-vide-bg="mp4: videos/<?=$project->video_big; ?>, poster: images/<?=$project->img_preview; ?>"
                          data-vide-options="loop: true, posterType: detect, autoplay: true, muted: true, position: 0% 0%">
                     </div>
-                    <!---->
-                    <!--                <video class="video" id="video" width="100%" height="100%" title="video" src="videos/m.mp4" muted="muted">-->
-                    <!---->
-                    <!--                </video>-->
-                    <!--<div class="project-video pretty-embed" data-pe-videoid="Cbti19KM3wk" data-pe-fitvids="true"></div>-->
                 </div>
             </div>
         </div>

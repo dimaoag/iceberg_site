@@ -1242,9 +1242,6 @@ label.error{
 	.mobile-contact-container{
 		height: 450px;
 	}
-	.somedialog_form_p{
-		font-size: 0.8rem;
-	}
 }
 @media all and (max-width: 380px){
 	.section__img{
@@ -1760,4 +1757,79 @@ a.view-header-phone:hover{
 	.content__text {
 		font-size: 1rem;
 	}
+}
+
+
+.video-wrapper {
+	position: relative;
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
+.content {
+	position: relative;
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 1280px;
+}
+
+.video-responsive {
+	padding-bottom: 56.25%;
+	position: relative;
+	width: 100%;
+}
+
+.canvas,
+.video {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	background: #000;
+	z-index: 5;
+	cursor: pointer;
+}
+
+.video-timeline {
+	background: rgba(255, 255, 255, 0.4);
+	bottom: 0;
+	cursor: pointer;
+	height: 12px;
+	left: 0;
+	opacity: 1;
+	position: absolute;
+	transition: all 0.2s;
+	width: 100%;
+	z-index: 12;
+}
+
+.video-timeline-passed {
+	background: #E81D31;
+	height: 100%;
+	width: 0;
+}
+@media screen and (min-width: 768px) {
+	.video-timeline-passed {
+		background: rgba(255, 255, 255, 0.7);
+	}
+}
+
+
+.video-wrapper:hover .video-timeline {
+	height: 12px;
+	opacity: 0.85;
+}
+
+.video-wrapper:hover .video-timeline-passed {
+	background: #E81D31;
+}
+
+.video-wrapper:hover .video-event {
+	bottom: 12px;
+}
+
+.video-wrapper:hover .video-timeline-event {
+	background: #790c17;
+	opacity: 0.8;
 }
