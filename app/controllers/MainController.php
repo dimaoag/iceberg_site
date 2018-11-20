@@ -11,7 +11,7 @@ class MainController extends AppController
         $projects = \R::findAll('project' ,'status = 1');
         $cats = \R::findAll('category_project', 'ORDER BY id ASC');
 
-        $this->setMeta('Создание лендингов, интернет-магазинов, корпоративных сайтов, визиток','Делаем защищенные, быстрые сайты с любым функционалом и понятным управлением! Воплотим вашу идею: создание логотипа, дизайн, наполнение, поддержка.');
+        $this->setMeta('Создания сайтов Винница. Веб-студия IceBerg.','Делаем защищенные, быстрые сайты с любым функционалом и понятным управлением! Воплотим вашу идею: создание логотипа, дизайн, наполнение, поддержка.');
         $this->setData(compact('projects', 'cats'));
     }
 
@@ -61,6 +61,7 @@ class MainController extends AppController
     public function sendOrderAction(){
         $res = 0;
         if (!empty($_POST) ) {
+
             $project_name = App::$app->getProperty('shop_name');
             $admin_email = App::$app->getProperty('admin_email');
             $form_subject = "Заявка с сайта" . $project_name;
@@ -97,6 +98,41 @@ class MainController extends AppController
         echo json_encode($res);
         die();
     }
+
+
+    public function sendPhoneAction(){
+        $res = 0;
+        if (!empty($_POST) ) {
+
+            $project_name = App::$app->getProperty('shop_name');
+            $admin_email = App::$app->getProperty('admin_email');
+            $form_subject = "Заявка с сайта" . $project_name;
+            $phone_key = 'Телефон';
+            $phone_value = str_replace(" ", "", $_POST['phone']);
+            $message = '<table style="width: 100%;">'
+                . '<tr style="background-color: #f8f8f8;">'
+                . '<td style="padding: 10px; border: #e9e9e9 1px solid;"><b>' . $phone_key . '</b></td>'
+                . '<td style="padding: 10px; border: #e9e9e9 1px solid;">' . $phone_value . '</td>'
+                . '</tr></table>';
+
+            function adopt($text){
+                return '=?UTF-8?B?' . base64_encode($text) . '?=';
+            }
+
+            $headers = "MIME-Version: 1.0" . PHP_EOL .
+                "Content-Type: text/html; charset=utf-8" . PHP_EOL .
+                'From: ' . adopt($project_name) .  PHP_EOL .
+                'Reply-To: ' . $admin_email . '' . PHP_EOL;
+
+            mail($admin_email, adopt($form_subject), $message, $headers);
+
+            $res = "1";
+
+        }
+        echo json_encode($res);
+        die();
+    }
+
 
 
 }

@@ -11,7 +11,7 @@ define("CONFIG", ROOT . "/config");
 define("LAYOUT", "outdoors");
 
 //http://shop2.com
-$app_path = "http://{$_SERVER['HTTP_HOST']}";
+$app_path = "https://{$_SERVER['HTTP_HOST']}";
 define("PATH", $app_path);
 define("ADMIN", $app_path . "/admin");
 

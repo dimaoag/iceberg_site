@@ -526,13 +526,14 @@
 
     <div class="container view-footer-text">
         <div class="row">
-            <div class="button-wrap"><button data-dialog="somedialog" class="trigger bnt-thanks"></button></div>
+            <div class="button-wrap"><button data-dialog="somedialog_thanks" class="trigger bnt-thanks"></button></div>
             <div class="col-12 text-center font-small py-4">© Iceberg, 2017–2018.</div>
         </div>
     </div>
+
 </div>
 
-<div id="somedialog" class="dialog">
+<div id="somedialog_thanks" class="dialog">
     <div class="dialog__overlay"></div>
     <div class="dialog__content">
         <div class="morph-shape">

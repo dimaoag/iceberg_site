@@ -128,9 +128,23 @@ button:focus {
 .title {
 	font-family: "Montserrat", sans-serif;
 	font-size: 1.2rem;
+	font-weight: bold;
 	margin: 0;
 }
-
+.somedialog_form{
+	z-index: 100000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#somedialog_form .dialog-inner {
+	padding: 1em;
+}
+.somedialog_form_p{
+	font-size: 1.3rem;
+}
 .menu {
 	position: absolute;
 	width: 100%;
@@ -1198,9 +1212,12 @@ label.error{
 
 }
 
-@media (min-width: 768px){
+@media all and (max-width: 768px){
 	.portfolio-wrap .col-md-6 {
 		max-width: 55%;
+	}
+	.somedialog_form_p{
+		font-size: 1rem;
 	}
 }
 @media all and (max-width: 567px){
@@ -1225,6 +1242,9 @@ label.error{
 	.mobile-contact-container{
 		height: 450px;
 	}
+	.somedialog_form_p{
+		font-size: 0.8rem;
+	}
 }
 @media all and (max-width: 380px){
 	.section__img{
@@ -1238,6 +1258,9 @@ label.error{
 /*------------------------view-page--------------------------------*/
 .view-wrapper{
 	overflow: hidden;
+}
+.view-wrapper .title{
+	font-weight: normal;
 }
 .view-section-1{
 	/*min-height: 100vh;*/

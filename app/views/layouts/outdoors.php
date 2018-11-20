@@ -81,6 +81,7 @@
     </script>
 
     <script src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/mdb.min.js"></script>
     <script src="js/popper.min.js"></script>

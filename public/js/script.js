@@ -244,6 +244,56 @@ $('.js-form').each(function(){
     });
 });
 
+
+$('.js-form-index').each(function(){
+    var $this = $(this);
+    $this.validate({
+        highlight: function(element) {
+            setTimeout(function(){
+                $(element).closest('.b-field').addClass('has-error');
+            }, 100)
+        },
+        unhighlight: function(element) {
+            $(element).closest('.b-field').removeClass('has-error');
+        },
+        onkeyup: false,
+        onclick: false,
+        rules: {
+            Телефон: {
+                required: true,
+                myphone: true
+            },
+        },
+        messages: {
+            Телефон: {
+                required: "Введите номер телефона"
+            }
+        },
+        submitHandler: function(form) {
+            var phone = $this.find("input[name='phone']").val();
+
+            $.ajax({
+                url: path + '/main/send-phone',
+                data: {phone: phone},
+                type: 'post',
+                success: function (res) {
+                    $('.btn-close-index-form').trigger('click');
+                    $('#open-index-thanks').trigger('click');
+                    $('.js-form-index')[0].reset();
+                    console.log('success');
+                },
+                error: function () {
+                    alert('Error!')
+                },
+            });
+            return false;
+        },
+    });
+});
+
+
+
+
 var w = '';
 var w_default = window.innerWidth;
 

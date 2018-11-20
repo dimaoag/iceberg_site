@@ -47,7 +47,7 @@
 <main>
     <div class="sections" id="sections">
         <header class="sections__header d-flex justify-content-between align-items-start flex-wrap">
-            <h1 class="title ml-3 mt-3">IceBerg</h1>
+            <p class="title ml-3 mt-3">IceBerg</p>
             <a href="tel:0939179871" class="header-phone mt-3 mr-3">+38 (093) 917-98-71</a>
             <!-- menu -->
             <nav class="menu block-none hidden">
@@ -227,7 +227,7 @@
                     </div>
                 </div>
                 <div class="button-section d-flex align-items-center justify-content-center">
-                    <a href="#popup:marquiz_5bae909889ae8b0043f1262d" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="button-rass d-flex align-items-center justify-content-center text-dark"><p class="mr-2">Рассчитать стоимость</p><span class="rass-right-arrow"></span></a>
+                    <a data-dialog="somedialog_form" id="open_somedialog_form" onclick="yaCounter50094541.reachGoal('Stoimost'); return true;" class="button-rass d-flex align-items-center justify-content-center text-dark"><p class="mr-2">Рассчитать стоимость</p><span class="rass-right-arrow"></span></a>
                 </div>
             </div>
 
@@ -269,7 +269,7 @@
         <!-- sections -->
         <section class="section section-1 section--current ">
             <div class="section__content">
-                <h2 class="section__title">Создаем сайты</h2>
+                <h1 class="section__title">Создаем сайты</h1>
                 <p class="section__description">
                     <span class="section__description-inner">Лендинги. Интернет-магазины. Визитки. Корпоративные сайты.</span>
                 </p>
@@ -292,21 +292,8 @@
                 <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery1">
                     <h3 class="section__facts-title">Портфолио</h3>
                 </li>
-                <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery2">
-                    <h3 class="section__facts-title">Цены и сроки</h3>
-                </li>
-                <li class="section__facts-item section__facts-item--clickable" data-gallery="gallery3">
-                    <h3 class="section__facts-title">Контакты</h3>
-                </li>
             </ul>
             <div class="section__gallery block-none hidden" id="gallery1">
-
-            </div>
-            <div class="section__gallery block-none hidden" id="gallery2">
-
-            </div>
-            <div class="section__gallery block-none hidden" id="gallery3">
-
             </div>
         </section><!--/ section -->
         <div class="mobile-portfolio desc-hide">
@@ -540,6 +527,61 @@
                 </div>
             </div>
         </div>
-
+        <div class="button-wrap"><button data-dialog="somedialog_form" class="trigger bnt-thanks"></button></div>
     </div><!--/ sections -->
 </main>
+
+<div id="somedialog_form" class="dialog">
+    <div class="dialog__overlay"></div>
+    <div class="dialog__content">
+        <div class="morph-shape">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 560 280" preserveAspectRatio="none">
+                <rect x="3" y="3" fill="none" width="556" height="276"/>
+            </svg>
+        </div>
+        <div class="dialog-inner">
+            <div class="container view-form">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="somedialog_form_p">Оставьте Ваши контакты и получите бесплатную консультацию и расчет стоимости</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <form action="#" class="d-flex justify-content-around flex-wrap js-form-index" onsubmit="yaCounter50094541.reachGoal('form'); return true;">
+                            <div class="form-group d-flex flex-column">
+                                <input type="text" data-mask="callback-catalog-phone" name="phone" class="form-input my-3" placeholder="Телефон" required>
+                            </div>
+                            <button type="submit" class="project-button form-button my-3">Раcсчитать стоимость</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="hidden" id="open-index-thanks" data-toggle="modal" data-target="#basicExampleModal">
+            </button>
+            <div><button class="hidden btn-close-index-form" data-dialog-close></button></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title w-100 text-center" id="exampleModalLabel">Спасибо за заявку</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-center">Наш менеджер в ближайшее время свяжется с Вами</p>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
