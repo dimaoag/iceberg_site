@@ -43,7 +43,7 @@
 <!--                    <div class="project-header">-->
 <!--                        <div class="project-title">--><?php //=$project->title;?><!--</div>-->
 <!--                        <div class="project-description">--><?php //=$project->description;?><!--</div>-->
-<!--                        <!--<a href="#" class="project-button"><span>Посмотреть сайт</span><span class="think-arrow-right"></span></a>-->
+<!--                        <a href="#" class="project-button"><span>Посмотреть сайт</span><span class="think-arrow-right"></span></a>-->
 <!--                        <a class="iconbutton iconbutton--border" href="--><?php //=$project->url;?><!--">-->
 <!--                            <span class="iconbutton__text">Посмотреть сайт</span>-->
 <!--                            <span class="iconbutton__graphic">-->
@@ -232,7 +232,7 @@
                                         <p class="price-price">от 600$</p>
                                         <p class="price-date">30-40 дней</p>
                                     </div>
-                                    <p class="price-footer text-white">Оплата произсходить поетапно, на карту или наличкой</p>
+                                    <p class="price-footer text-white">Оплата производится поэтапно, на карту или наличкой</p>
                                 </div>
 
                             </div>
@@ -249,7 +249,7 @@
                                     <div class="contact-left-wrap">
                                         <div class="contact-left-item d-flex flex-column justify-content-between">
                                             <div class="contact-left-item-messages">
-                                                <h3 class="messages-title">Месседжеры</h3>
+                                                <h3 class="messages-title">Мессенджеры</h3>
                                                 <div class="contact-left-item-socs">
                                                     <a href="tg://resolve?domain=sergey_sots" class="mr-2">
                                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 24 22"><g><g transform="translate(-1442 -704)"><image width="24" height="22" transform="translate(1442 704)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAYAAADafVyIAAAB5ElEQVRIS7WVz4tPYRTGP4/QZEGKMUnNZiYLK2wUFjY2o1lIw+ZbyihEYSPKj93IQhbq+weQklIzs7JQ8wfI/AEzirJTUxaKxKNze+/t+nbv/b4YZ3vP+3ze9zznnCv+U9jeApzSeuvbngAuAWeB9+sCsL0BOJGEjwOlbv+fALZ3AueAC8B4QzV6fwWwfSjd9jSwuaPMk9mAZNoZ4DKwP8O7T5JGhwIGTNveIPwTCA8GY1HSdCOgw7S6yHdgATgKjDYAbkma+w2QYVqp8wp4AjwCdrSU65ikpQLwB6Z9AK4Dn4GXwNYW8R/ANklfZPs2cAfY2GHcN+ABMAdMAc+ATR35y5IOxPfyBbuAHjAL7B04uAhck/TO9kXgcYup9WN9STHN1cRVH20fBq4A0eM3Jd1PZbwL3Mtoz0jpSXraCEhiMTwfgSVJM7angflM8UiblLTaCkiQqPlVYE+6eZQnJ4oBKxNbBy0N2ApwAzgPxJbMiWLAhgLSK14D+4BogjLC5JPA7hZaMWC5gBngeU2oMN32GPACONIAKQYsF1CaHWu56qj0upiDh2n5lXrVgGUBamavle06eGPb8efqAyPAW0kH6zk523RE0tcud22HaKyOMDjWeRVDATltk14aZRyX9KZ+5hfoepxKPEyqqQAAAABJRU5ErkJggg=="/></g></g></svg>
@@ -270,7 +270,7 @@
                                                 </div>
                                             </div>
                                             <div class="contact-left-item-messages">
-                                                <h3 class="messages-title">Офисс</h3>
+                                                <h3 class="messages-title">Офис</h3>
                                                 <div class="contact-left-item-socs d-flex flex-column">
                                                     <p class="text-white m-0">г. Винница, </p>
                                                     <p class="text-white m-0">вул. Нансена 7А</p>
