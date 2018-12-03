@@ -877,10 +877,11 @@ label.error{
 	transition: all 0.3s linear;
 }
 .button-section{
+	overflow: hidden;
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	background-color: #f6f5f5;
+	background-color: #f9f9f9;
 	width: 50%;
 	height: 20%;
 	display: flex;
@@ -1129,7 +1130,7 @@ label.error{
 		right: 0;
 	}
 	.section-1{
-		margin-top: 80px;
+		margin-top: 50px;
 	}
 	.section__content{
 		padding: 15px;
@@ -1206,10 +1207,6 @@ label.error{
 		display: none;
 		position: relative;
 	}
-	.section-1-view{
-		margin-top: 10px;
-	}
-
 }
 
 @media all and (max-width: 768px){

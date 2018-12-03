@@ -152,7 +152,7 @@
                                 <p class="menu-item-one" data-id="1" id="">Главная</p>
                             </a>
                             <p class="menu-item" data-id="2" id="menu-tab-2">Портфолио</p>
-                            <p class="menu-item" data-id="3" id="menu-tab-3">Цены и сроки</p>
+                            <!-- <p class="menu-item" data-id="3" id="menu-tab-3">Цены и сроки</p> -->
                             <p class="menu-item" data-id="4" id="menu-tab-4">Контакты</p>
                         </div>
                         <div class="menu-content" id="menu-content-2">
@@ -502,7 +502,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="#" class="d-flex justify-content-around flex-wrap js-form" onsubmit="yaCounter50094541.reachGoal('form'); return true;">
+                <form action="#" class="d-flex justify-content-around flex-wrap js-form" onsubmit="yaCounter50094541.reachGoal('form'); gtag('event', 'Otprav', {'event_category': 'Form'}); return true; ">
                     <div class="form-group d-flex flex-column">
                         <input type="text" class="form-input my-3" placeholder="Имя" name="name" required>
                     </div>
