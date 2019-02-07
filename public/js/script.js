@@ -189,10 +189,14 @@ $('.js-form').each(function(){
                 success: function (res) {
                     $('.bnt-thanks').trigger('click');
                     $('.js-form')[0].reset();
+                    ga('send','event', 'Otprav', 'Form');
+                    yaCounter50094541.reachGoal('form');
                 },
+
                 error: function () {
                     alert('Error!')
                 },
+
             });
             return false;
         },
