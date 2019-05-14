@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Iceberg</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<header>
+		<div class="container-full">
+			<div class="custom_row">
+				<div class="column logo_and_burger-column">
+					<div class="logo_and_burger-wrapper">
+						<div class="burger-wrapper">
+							<button type="button" class="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+						<div class="logo">
+							<a href="#">
+								<img src="img/ICEBERG_STUDIO.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="column phone-column">
+					<ul class="list-vertical some-menu-header-list">
+						<li>
+							<a href="#">Портфолио</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li class="is-drop">
+							<a href="#">093 917 98 71</a>
+							<ul>
+								<li>
+									<a href="tel:0939179871">093 917 98 71</a>
+								</li>
+								<li>
+									<a href="tel:0939179871">093 917 98 71</a>
+								</li>
+								<li>
+									<a href="tel:0939179871">093 917 98 71</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="column order-button_column">
+					<a href="#" class="order-btn">Заказать сайт</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="s-order-form">
+			<div class="container">
+				<div class="custom_row">
+					<div class="column">
+						<p class="top_order-headlist">
+							Бриф на разработку интернет проекта | Iceberg
+						</p>
+					</div> 
+				</div>
+				<div class="custom_row">
+					<div class="column order-form_column">
+						<form action="mail.php" method="post" id="form">
+							<div class="form_order-main_wrapper">
+								<div class="form_order-main_box about_us_order">
+									<label class="label_order">
+										Имя<sup>*</sup>
+										<input type="text" name="username" class="order_input" required>
+									</label>
+									<div class="order-two_column">
+										<label class="label_order">
+											Телефон<sup>*</sup>
+											<input type="tel" name="phone" class="order_input" required>
+										</label>
+										<label class="label_order">
+											Emai<sup>*</sup>
+											<input type="email" name="email" class="order_input" required>
+										</label>
+									</div>
+								</div>
+								<div class="form_order-main_box info_company_order">
+									<div class="headline_form_small">
+										1. Информация о компании
+									</div>
+									<label class="label_order">
+										Название компании
+										<input type="text" name="company_name" class="order_input">
+									</label>
+									<label class="label_order">
+										Сфера деятельности
+										<input type="text" name="activity_area" class="order_input">
+									</label>
+									<label class="label_order">
+										Вы знаете ваших конкурентов в сети? Если да, дайте на них ссылки:
+										<textarea name="competitors_text" class="order_textarea"></textarea>
+									</label>
+								</div>
+								<div class="form_order-main_box info_company_order">
+									<div class="headline_form_small">
+										2. Деятельность заказчика
+									</div>
+									<label class="label_order">
+										Продукция, услуги
+										<input type="text" name="activity_customer" class="order_input">
+									</label>
+									<label class="label_order">
+										Кто является целевой аудиторией вашего продукта / услуги?
+										<textarea class="order_textarea" name="goal_text" placeholder="Какой возраст, пол, должность, интересы? Опишите подробно, кто будет посещать ваш сайт. Разумеется, у вас может быть несколько типов клиентов."></textarea>
+									</label>
+									<label class="label_order">
+										Выделите ключевое преимущество продукта / услуги
+										<textarea name="advantages_text" class="order_textarea"></textarea>
+									</label>
+									<label class="label_order">
+										С какими проблемами к вам приходит клиент? Что в вашем случае можно назвать "болью" клиента?
+										<textarea name="problems_text" class="order_textarea"></textarea>
+									</label>
+									<label class="label_order">
+										На что опирается клиент, сравнивая ваш продукт с продуктом конкурента? Какие критерии являются основными при принятии решения о покупке?
+										<textarea name="compare_text" class="order_textarea"></textarea>
+									</label>
+									<div class="input_chekbox_wrapper">
+										<div class="input_chekbox_wrapper-item">
+											<label class="label_order">
+												Выберите 5 наиболее распространенных возражения в вашем бизнесе.
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Безопасно?">
+											  <div class="checkbox__text">Безопасно?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Есть гарантии?">
+											  <div class="checkbox__text">Есть гарантии?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Сертификаты, награды и прочие документы?">
+											  <div class="checkbox__text">Сертификаты, награды и прочие документы?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Качественно?">
+											  <div class="checkbox__text">Качественно?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Как выбрать среди большого количества аналогов? Чем вы лучше?">
+											  	<div class="checkbox__text">
+											  		Как выбрать среди большого количества аналогов? Чем вы лучше?
+												</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Насколько это сложно?">
+											  	<div class="checkbox__text">
+											  		Насколько это сложно?
+												</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Не завышена ли цена?">
+											  <div class="checkbox__text">Не завышена ли цена?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Есть отзывы?">
+											  <div class="checkbox__text">Есть отзывы?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Сколько людей уже пользуются?">
+											  <div class="checkbox__text">Сколько людей уже пользуются?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Насколько известная компания?">
+											  <div class="checkbox__text">Насколько известная компания?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Есть какие-то скидки\акции?">
+											  <div class="checkbox__text">Есть какие-то скидки\акции?</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="objections[]" value="Какие сроки?">
+											  <div class="checkbox__text">Какие сроки?</div>
+											</label>
+										</div>
+									</div>
+									<label class="label_order">
+										Какие решения вы предоставляете клиенту?
+										<textarea name="solutions_text" class="order_textarea" placeholder="Полный спектр ваших услуг или продуктовая линейка."></textarea>
+									</label>
+									<label class="label_order">
+										Покажите ваши цифры
+										<textarea name="numbers_text" class="order_textarea" placeholder="Возможно, вы можете похвастаться цифрами? Например: построено 1324 домов, 321543 человек уже пользуются нашим приложением, суммарный опыт сотрудников больше 100 лет."></textarea>
+									</label>
+									<label class="label_order">
+										У вас есть качественные изображения или видео для сайта?
+										<input type="text" name="quality_images_text" class="order_input">
+									</label>
+								</div>
+								<div class="form_order-main_box portret_project_order">
+									<div class="headline_form_small">
+										3. Портрет интернет-проекта
+									</div>
+									<label class="label_order">
+										Какой сайт можно взять за пример полностью или с частью функционала
+										<input type="text" name="example_site" class="order_input">
+									</label>
+									<label class="label_order">
+										У вас сейчас есть сайт? Что вам не нравится в нынешнем сайте?
+										<input type="text" name="is_have_site" class="order_input">
+									</label>
+									<label class="label_order">
+										На сколько срочен данный проект для вас? Когда дедлайн по запуску ресурса (НЕ путать с дедлайном по выбору подрядчика)
+										<input type="text" name="term_site" class="order_input">
+									</label>
+									<label class="label_order">
+										Есть ли у вас особая идея? Возможно, у вас есть сформированное видение будущего сайта?
+										<textarea name="idea_text" class="order_textarea"></textarea>
+									</label>
+									<label class="label_order">
+										Укажите предполагаемые основные разделы вашего будущего сайта (структуру)
+										<textarea name="structure_site" class="order_textarea"></textarea>
+									</label>
+									<label class="label_order">
+										Есть ли у вас прототип будущего сайта?
+										<input type="text" name="prototype_site" class="order_input">
+									</label>
+								</div>
+								<div class="form_order-main_box portret_project_order">
+									<div class="headline_form_small">
+										4. Дизайн
+									</div>
+									<label class="label_order">
+										Сайты, которые нравятся
+										<input type="text" name="likes_sites" class="order_input">
+									</label>
+									<label class="label_order">
+										Сайты, которые не нравятся
+										<input type="text" name="unlikes_sites" class="order_input">
+									</label>
+								</div>
+								<div class="form_order-main_box portret_project_order">
+									<div class="headline_form_small">
+										5. Функциональность сайта
+									</div>
+									<label class="label_order">
+										Какой сайт можно взять за пример полностью или с частью функционала. Опишите отличия и разницу.
+										<textarea name="example_sites_text" class="order_textarea"></textarea>
+									</label>
+									<div class="input_chekbox_wrapper">
+										<div class="input_chekbox_wrapper-item">
+											<label class="label_order">
+												Что из этого необходимо?
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="features[]" value="Мультиязычность (несколько языковых версий)">
+											  <div class="checkbox__text">Мультиязычность (несколько языковых версий)</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="features[]" value="Експорт / Импорт товаров">
+											  <div class="checkbox__text">Експорт / Импорт товаров</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="features[]" value="Онлайн оплата на сайте">
+											  <div class="checkbox__text">Онлайн оплата на сайте</div>
+											</label>
+										</div>
+										<div class="input_chekbox_wrapper-item">
+											<label class="checkbox">
+											  <input type="checkbox" name="features[]" value="Интеграция с другими сервисами">
+											  <div class="checkbox__text">Интеграция с другими сервисами</div>
+											</label>
+										</div>
+									</div>
+									<label class="label_order">
+										Дополнения, замечания, пожелания, требования к сайту
+										<textarea name="desire_text" class="order_textarea"></textarea>
+									</label>
+								</div>
+							</div>
+							<div class="brief-page__sub-title">
+	                            <span class="red_star">*</span>
+	                            <span>Обязательные поля</span>
+	                        </div>
+	                        <div class="order-button_blok">
+	                        	<button type="submit" class="btn_blue">Отправить</button>
+	                        </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="custom_row f_menu_row">
+				<div class="column f-col_four">
+					<h4 class="f-headline">НАШИ УСЛУГИ</h4>
+					<ul class="footer_nav list-style">
+						<li><a href="#">Создание Landing Page</a></li>
+						<li><a href="#">Создание интернет-магазина</a></li>
+						<li><a href="#">Создание сайта-визитки</a></li>
+						<li><a href="#">Создание сайта-каталога</a></li>
+						<li><a href="#">Создание интернет-портала</a></li>
+					</ul>
+				</div>
+				<div class="column f-col_four">
+					<h4 class="f-headline">КЛИЕНТУ</h4>
+					<ul class="footer_nav list-style">
+						<li><a href="#">Как начать работу?</a></li>
+						<li><a href="#">Возможности</a></li>
+						<li><a href="#">Стоимость сайта</a></li>
+						<li><a href="#">Сроки разработки сайта</a></li>
+					</ul>
+				</div>
+				<div class="column f-col_four">
+					<h4 class="f-headline">О НАС</h4>
+					<ul class="footer_nav list-style">
+						<li><a href="#">О компании Iceberg</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Партнерство</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="column f-col_four">
+					<h4 class="f-headline">КОНТАКТЫ</h4>
+					<div class="f-contact-box">
+						<div class="f-contact-box-item">
+							<address>
+								г. Винница ул. Нансена 7а
+							</address>
+						</div>
+						<div class="f-contact-box-item">
+							<a href="tel:0939179871">+38 (093) 917-98-71</a>
+						</div>
+						<div class="f-contact-box-item">
+							<a href="tel:0939179871">+38 (093) 917-98-71</a>
+						</div>
+						<div class="f-contact-box-item">
+							<a href="mailto:iceberg.vn.ua@gmail.com">iceberg.vn.ua@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="custom_row">
+				<div class="column footer_social_column">
+					<ul class="f-social-list list-vertical">
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"><g><g><path fill="#b5b5b5" d="M15.756 13.58l-.437.436c-.618.618-2.039.569-2.952.392-3.036-.586-6.576-4.017-7.258-6.988-.338-1.472-.152-2.752.336-3.24l.437-.437a.618.618 0 0 1 .873 0L8.503 5.49c.116.117.18.272.18.437a.61.61 0 0 1-.18.436l-.437.437a1.238 1.238 0 0 0 0 1.748l2.885 2.847a1.235 1.235 0 0 0 1.748 0l.436-.437a.646.646 0 0 1 .874 0l1.747 1.747a.617.617 0 0 1 0 .874zM9.887.225C4.731.226.5 4.456.5 9.613c0 1.701.459 3.358 1.329 4.807L.499 19l4.58-1.329A9.325 9.325 0 0 0 9.888 19c5.156 0 9.387-4.231 9.387-9.387 0-5.156-4.231-9.387-9.387-9.387z"/></g></g></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19"><g><g><path fill="#b5b5b5" d="M7.004 10.156l9.645-5.94c.173-.107.351.128.203.266l-7.96 7.398c-.28.26-.46.61-.511.988l-.271 2.009c-.036.268-.413.295-.487.035L6.58 11.248a.971.971 0 0 1 .424-1.092zM.467 9.294l4.935 1.842 1.91 6.143a.58.58 0 0 0 .923.278l2.75-2.243a.82.82 0 0 1 1-.028l4.962 3.602a.581.581 0 0 0 .911-.351l3.635-17.482a.582.582 0 0 0-.78-.661L.463 8.206c-.5.193-.496.9.005 1.088z"/></g></g></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"><g><g><g><g><path fill="#b5b5b5" d="M17.578 13.34a3.749 3.749 0 0 1-3.75 3.749H6.15a3.749 3.749 0 0 1-3.749-3.75V5.66a3.749 3.749 0 0 1 3.75-3.749h7.679a3.749 3.749 0 0 1 3.749 3.75zM13.828 0H6.15A5.667 5.667 0 0 0 .49 5.66v7.68c0 3.12 2.54 5.66 5.66 5.66h7.68c3.12 0 5.66-2.54 5.66-5.66V5.66c0-3.12-2.54-5.66-5.66-5.66z"/></g><g><path fill="#b5b5b5" d="M9.989 12.503a3.003 3.003 0 1 1 0-6.006 3.003 3.003 0 0 1 0 6.006zm0-7.917A4.92 4.92 0 0 0 5.075 9.5a4.92 4.92 0 0 0 4.914 4.914A4.92 4.92 0 0 0 14.903 9.5a4.92 4.92 0 0 0-4.914-4.914z"/></g><g><path fill="#b5b5b5" d="M13.735 4.623a1.178 1.178 0 1 1 2.355 0 1.178 1.178 0 0 1-2.355 0z"/></g></g></g></g></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="29" height="18" viewBox="0 0 29 18"><g><g><g><path fill="#b5b5b5" d="M24.987 9.694c-.062-.898-.362-1.578-.904-2.043-.536-.467-1.205-.7-2.003-.7-.87 0-1.539.249-2.018.74-.48.493-.778 1.158-.9 2.003zm3.398-.337c.089.591.129 1.447.111 2.567h-9.413c.053 1.3.5 2.208 1.352 2.728.512.326 1.134.485 1.863.485.769 0 1.395-.194 1.876-.593.263-.212.494-.51.694-.887h3.451c-.092.767-.506 1.544-1.253 2.337-1.157 1.256-2.779 1.888-4.862 1.888-1.722 0-3.238-.534-4.555-1.592-1.313-1.061-1.972-2.787-1.972-5.179 0-2.242.593-3.96 1.78-5.154 1.192-1.197 2.729-1.793 4.625-1.793 1.124 0 2.137.2 3.041.604.901.405 1.645 1.04 2.231 1.915.53.77.872 1.66 1.03 2.674zm-16.909 2.936c0-.938-.384-1.585-1.148-1.934-.428-.197-1.031-.299-1.805-.306H4.648v4.81h3.814c.784 0 1.39-.102 1.828-.317.79-.392 1.186-1.14 1.186-2.253zM4.648 7.066h3.82c.785 0 1.42-.15 1.908-.447.489-.299.732-.828.732-1.589 0-.838-.322-1.395-.969-1.663-.556-.187-1.268-.283-2.13-.283h-3.36zm9.929 2.84c.468.727.703 1.611.703 2.645 0 1.073-.264 2.032-.802 2.88A4.98 4.98 0 0 1 13.2 16.85c-.575.441-1.255.746-2.036.909-.785.163-1.634.242-2.548.242H.486V-.05h8.717c2.197.035 3.754.671 4.674 1.923.552.766.825 1.686.825 2.755 0 1.105-.277 1.987-.834 2.657-.31.377-.767.72-1.374 1.028.92.337 1.616.865 2.083 1.593zm11.111-7.403h-7.27V.697h7.27z"/></g></g></g></svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!--Modal-->
+<section class="modal" id="modal">
+	<button class="close-modal">
+		<svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30"><g><g><g><path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M.737 1.5L28 28.763"/></g><g><path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M28 1.5L.737 28.763"/></g></g></g></svg>
+	</button>
+	<div class="modal-content thank-you-modal">
+		<h2>Спасибо!</h2>
+		<p>
+			Наш менеджер свяжется с вами в ближайшее время
+		</p>
+	</div>
+</section>
+<!--Script-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/mask.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

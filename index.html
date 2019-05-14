@@ -1,158 +1,387 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
-
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
 
-	<title>Веб-студия Iceberg | Создание сайтов, лендингов и интернет-магазинов</title>
-	<meta name="description" lang="ru" content="Делаем защищенные, быстрые сайты с любым функционалом и понятным управлением! Работаем на чистом коде (фреймворк Yii2) с поэтапной оплатой, а также поддерживаем сайт после сдачи." />
+	<title>Iceberg</title>
+	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon-32.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
-	<!-- Template Basic Images End -->
 
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#fff">
-	<!-- Custom Browsers Color End -->
-	<link rel="stylesheet" href="css/all.min.css">
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 
-
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym(50094541, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true,
-			webvisor:true
-		});
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/50094541" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-
-
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127488819-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-127488819-1');
-	</script>
-
-
 </head>
-
-<body class="is-home">
+<body>
 	<header>
-		<div class="container">
-			<div class="logo_and_header_navigation_wrapper">
-				<div class="logo">
-					<a href="#">
-						<span class="part_of_logo_md_hidden">ВЕБ СТУДИЯ</span> ICEBERG
-					</a>
-				</div>
-				<div class="header_navigation_wrapper">
-					<div class="phone_box_with_dropdown">
-						<div class="dropdown_button">+38 (063) 458-33-20</div>
-						<div class="dropdown_container">
-							<ul>
-								<li>
-									<a href="tel:0962965202">+38 (096) 296-52-02</a>
-								</li>
-								<li>
-									<a href="tel:0634583320">+38 (063) 458-33-20</a>
-								</li>
-							</ul>
+		<div class="container-full">
+			<div class="custom_row">
+				<div class="column logo_and_burger-column">
+					<div class="logo_and_burger-wrapper">
+						<div class="burger-wrapper">
+							<button type="button" class="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
+						</div>
+						<div class="logo">
+							<a href="#">
+								<img src="img/ICEBERG_STUDIO.png" alt="">
+							</a>
 						</div>
 					</div>
-					<div class="header_navigation_social_list">
-						<ul class="we_in_social">
-							<li>
-								<a title="Viber" href="viber://chat?number=+3806345833208" class="social_icon social_viber"></a>
-							</li>
-							<li>
-								<a title="Telegram" href="tg://resolve?domain=iceberg_studio" class="social_icon social_telegram"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="header_navigation_button_wrapper">
-						<button href="#" class="btn_red modal_btn">Задать вопрос</button>
-					</div>
+				</div>
+				<div class="column phone-column">
+					<ul class="list-vertical some-menu-header-list">
+						<li>
+							<a href="#">Портфолио</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+						<li class="is-drop">
+							<a href="#">093 917 98 71</a>
+							<ul>
+								<li>
+									<a href="tel:0939179871">093 917 98 71</a>
+								</li>
+								<li>
+									<a href="tel:0939179871">093 917 98 71</a>
+								</li>
+								<li>
+									<a href="tel:0939179871">093 917 98 71</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="column order-button_column">
+					<a href="#" class="order-btn enter-popap">Заказать сайт</a>
 				</div>
 			</div>
 		</div>
 	</header>
 	<main>
-
-		<section class="s-main-iformation">
-			<div class="container main-iformation-container">
-				<div class="main-iformation-wrapper" style="background-image: url('img/main_background-image-min.png')">
-					<div class="iformation-main_text_and_button">
-						<div class="iformation-main_text">
-							<h1 class="h1">
-								Узнай в 5 кликов стоимость и сроки 
-								разработки своего сайта
-							</h1>
+		<section class="s-main_slider">
+			<div class="container-full">
+			<div class="custom_row">
+				<div class="column logo_and_burger-column">
+					<div class="info_company-block">
+						<h1>Веб студия по разработке сайтов</h1>
+						<p>
+							Оставьте заявку и мы посчитаем стоимость
+							и сроки разработки Вашего сайта
+						</p>
+						<div class="info_company-button-wrapper">
+							<a href="#" class="btn_blue enter-popap">Рассчитать стоимость</a>
 						</div>
-						<div class="main_iformation_button_wrapper">
-							<div class="main_iformation_button_plagin_wrapper">
-								<div class="marquiz__container marquiz__container_inline">
-									<a class="marquiz__button marquiz__button_blicked marquiz__button_rounded marquiz__button_shadow" href="#popup:marquiz_5c02f41b4de4050055a57756" data-fixed-side="" data-alpha-color="rgba(211, 64, 133, 0.5)" data-color="#d34085" data-text-color="#ffffff">Пройти тест</a>
-								</div>
-							</div>
-							<!--<div class="main_iformation_button_desktop_hidden">-->
-								<!--<button class="btn_red modal_btn">Пройти опрос</button>-->
-							<!--</div>-->
-						</div>
+						<div class="our_instagram">
+						<span class="instagram_icon icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearGradient id="ghmda" x1="12" x2="12" y1=".2" y2="23.94" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e09b3d"/><stop offset=".3" stop-color="#c74c4d"/><stop offset=".6" stop-color="#c21975"/><stop offset="1" stop-color="#7024c4"/></linearGradient><linearGradient id="ghmdb" x1="12" x2="12" y1=".19" y2="23.95" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e09b3d"/><stop offset=".3" stop-color="#c74c4d"/><stop offset=".6" stop-color="#c21975"/><stop offset="1" stop-color="#7024c4"/></linearGradient><linearGradient id="ghmdc" x1="18.22" x2="18.22" y1=".19" y2="23.98" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#e09b3d"/><stop offset=".3" stop-color="#c74c4d"/><stop offset=".6" stop-color="#c21975"/><stop offset="1" stop-color="#7024c4"/></linearGradient></defs><g><g><g><path fill="url(#ghmda)" d="M21.586 16.85a4.735 4.735 0 0 1-4.736 4.736h-9.7a4.735 4.735 0 0 1-4.736-4.736v-9.7A4.735 4.735 0 0 1 7.15 2.414h9.7a4.735 4.735 0 0 1 4.736 4.736zM16.85 0h-9.7C3.207 0 0 3.207 0 7.15v9.7C0 20.793 3.207 24 7.15 24h9.7c3.943 0 7.15-3.207 7.15-7.15v-9.7C24 3.207 20.793 0 16.85 0z"/></g><g><path fill="url(#ghmdb)" d="M12 15.793a3.793 3.793 0 1 1 0-7.586 3.793 3.793 0 0 1 0 7.586zm0-10A6.214 6.214 0 0 0 5.793 12 6.214 6.214 0 0 0 12 18.207 6.214 6.214 0 0 0 18.207 12 6.214 6.214 0 0 0 12 5.793z"/></g><g><path fill="url(#ghmdc)" d="M16.732 5.84a1.487 1.487 0 1 1 2.975 0 1.487 1.487 0 0 1-2.975 0z"/></g></g></g></svg>
+						</span>
+						<a href="#">@iceberg.vn</a>
+					</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<section class="s-how-we-work">
-			<div class="container">
-				<div class="row">
-					<div class="col-7">
-						<div class="how-we-work-image_wrapper">
-							<img src="img/left_imae-min.png" alt="">
+				<div class="column slider_wrapper_column">
+                    <div class="main-wrapper-for-main-slider">
+							<div class="primary__nav__holder" id="primaryNavHolder">
+								<div class="primary" id="primary">
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+									<div class="box1">
+										<div class="slider-for-item-image" style="background-image: url('img/m-s-1.png')"></div>
+									</div>
+								</div>
+							</div>
+							<div class="secondary_nav_holder-box">
+								<div class="secondary_nav_holder-wrapper">
+									<div class="secondary_nav_holder" id="secondaryNavHolder">
+										<div class="secondary" id="secondary">
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1 </span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="project-deteils">
+														<a href="#">перейти к проекту</a>
+													</div>
+												</div>
+											</div>
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE2
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1</span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+													</div>
+													<div class="project-deteils">
+														<a href="#">перейти к проекту</a>
+													</div>
+												</div>
+											</div>
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE3
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1</span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+														<div class="project-deteils">
+															<a href="#" tabindex="-1">перейти к проекту</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE4
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1</span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+														<div class="project-deteils">
+															<a href="#" tabindex="-1">перейти к проекту</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE5
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1</span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+														<div class="project-deteils">
+															<a href="#" tabindex="-1">перейти к проекту</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE6
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1</span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+														<div class="project-deteils">
+															<a href="#" tabindex="-1">перейти к проекту</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="box2">
+												<div class="main-slider-nav-info-box">
+													<div class="main-slider-nav-info">
+														<div class="slider-nav-info-headline">
+															DOOR HOUSE7
+														</div>
+														<p>
+															интернет-магазин
+														</p>
+														<div class="nav_info__vd">
+															<div class="slider-count-wrapper">
+																<span class="cp">1 </span> / 7
+															</div>
+															<div class="progres__navbar-wrapper">
+																<div class="slider-progress">
+																	<div class="progress"></div>
+																</div>
+															</div>
+															<div class="nav_info__vd-nav-wrapper">
+																<button class="prev_nav">
+																</button>
+																<button class="next_nav">
+																</button>
+															</div>
+														</div>
+														<div class="project-deteils">
+															<a href="#" tabindex="-1">перейти к проекту</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 						</div>
 					</div>
-					<div class="col-5">
-						<div class="how-we-work-text">
-							<h3 class="h3">Работаем на чистом коде (фреймворк Yii2)</h3>
-							<p>
-								Не используем шаблоны и CMS, такие как Opencard и Wordpress. Так как 
-								это сильно ухудшает скорость работы сайта и выдачу в поиске. А также 
-								несет дополнительны расходы на разные модули, которые не 
-								гарантируют качественную и стабильною работу, а только засоряют сайт 
-							</p>
-							<h3 class="h3">Оплата поэтапно</h3>
-							<p>
-								Вы НЕ будете платить 50-100% предоплаты, а платите небольшой аванс в 
-								размере 1/4 от всей суммы для начала работ. Дальше только за конкретно 
-								выполненный этап.
-							</p>
-							<h3 class="h3">
-								Поддерживаем сайт после сдачи
-							</h3>
-							<p>
-								Если при работе с сайтом выявится технические ошибки, которые были 
-								сделаны по нашей вине мы исправим это бесплатно. А также за 
-								дополнительную плату доработаем или добавим функционал.
-							</p>
+			   	</div>
+		    </div>
+		</section>
+		<section class="our_servise">
+			<div class="container">
+				<div class="custom_row">
+					<div class="our_servise-left-column column">
+						<h2>Наши услуги</h2>
+						<p>
+							Мы сосредоточены только на 
+							разработке и технической 
+							поддержки сайтов
+						</p>
+					</div>
+					<div class="our_servise-right-column column">
+						<div class="our_servise-right-column-wrapper">
+							<ul class="servise-list list-style">
+								<li><a href="#" title="Временно недоступен">Создание Landing Page</a></li>
+								<li><a href="#" title="Временно недоступен">Разработка сайтов на Yii</a></li>
+								<li><a href="#" title="Временно недоступен">Профессиональная верстка сайта</a></li>
+								<li><a href="#" title="Временно недоступен">Создание интернет-магазина</a></li>
+								<li><a href="#" title="Временно недоступен">Разработка сайтов на Laravel</a></li>
+								<li><a href="#" title="Временно недоступен">Создание дизайна сайтов</a></li>
+								<li><a href="#" title="Временно недоступен">Создание сайта-визитки</a></li>
+								<li><a href="#" title="Временно недоступен">Разработка сайтов на WordPress</a></li>
+								<li><a href="#" title="Временно недоступен">Готовый универсальный интернет-магазин</a></li>
+								<li><a href="#" title="Временно недоступен">Создание сайта-каталога</a></li>
+								<li><a href="#" title="Временно недоступен">Разработка сайтов на Opencard</a></li>
+								<li><a href="#" title="Временно недоступен">Создание интернет-портала</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -160,255 +389,477 @@
 		</section>
 		<section class="s-portfolio">
 			<div class="container">
-				<h2 class="h2">Примеры наших работ</h2>
-				<div class="row portfolio_row">
-					<div class="portfolio-item">
-						<a href="http:/vinkardan.com" target="_blank">
-							<img src="img/portfolio/p1-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://elisoft.com.ua/" target="_blank">
-							<img src="img/portfolio/p2-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://market-door.in.ua/" target="_blank">
-							<img src="img/portfolio/p3-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="http://mayster.vn.ua/" target="_blank">
-							<img src="img/portfolio/p4-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<!-- -->
-					<div class="portfolio-item">
-						<a href="http://salon.meri-shop.com/" target="_blank">
-							<img src="img/portfolio/p5-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="http://door.in.ua/" target="_blank">
-							<img src="img/portfolio/p6-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="http://meri-shop.com/" target="_blank">
-							<img src="img/portfolio/p7-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://teachme.com.ua/" target="_blank">
-							<img src="img/portfolio/p8-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-				   <!-- -->
-					<div class="portfolio-item">
-						<a href="http://meri-meri.com/" target="_blank">
-							<img src="img/portfolio/p9-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://iceberg.vn.ua/build/" target="_blank">
-							<img src="img/portfolio/p10-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
+				<div class="custom_row">
+					<div class="column">
+						<h2>
+							Наши последние проекты
+						</h2>
+						<a href="#" class="all_project_with-icon">
+							Посмотрите все работы
+							<span class="arrow-right icon">
+								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><g><g><path fill="none" stroke="#aeaeae" stroke-miterlimit="50" d="M.944.5v0l7.5 7.5v0l-7.5 7.5v0"/></g></g></svg>
+							</span>
 						</a>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="s-mailing">
-			<div class="container">
-				<div class="row">
-					<div class="col-mailing-form col-mailing-form-title_hidden">
-						<h2 class="h2">Получи бесплатную статью </h2>
-						<div class="five-errr-title">
-							5 ошибок при разработке сайта
+			<div class="container-full portfolio-container">
+				<div class="custom_row">
+					<div class="portfolio-column column">
+						<div class="portfolio-column-wrapper">
+							<div class="img-block">
+								<a href="#">
+									<img src="img/p-1.png" alt="">
+								</a>
+							</div>
+							<div class="portfolio-text-wrapper">
+								<p class="portfolio-headline-tex">
+									DOOR HOUSE
+								</p>
+								<p class="about-portfolio-project">Интернет-магазин<br>  входных и межкомнатных дверей</p>
+							</div>
 						</div>
 					</div>
-					<div class="col-mailing-form">
-						<h2 class="h2">Получи бесплатную статью </h2>
-						<div class="five-errr-title">
-							5 ошибок при разработке сайта
-						</div>
-						<div class="col-mailing-form-wrappe">
-							<form action="mail_2.php" method="post" id="mailing" onsubmit="yaCounter50094541.reachGoal('article'); gtag('event', 'Otprav', {'event_category': 'Article'}); return true;">
-								<div class="form_control_wrapper">
-									<label class="form_control">
-										<span class="contacts_icon_wrapper">
-											<span class="icon_gmail icon_none_clik"></span>
-										</span>
-											<input type="email" name="email" placeholder="info@gmail.com">
-									</label>
-									<span class="or">или</span>
-									<label class="form_control">
-										<span class="contacts_icon_wrapper">
-											<span class="icon_viver icon_none_clik"></span>
-											<span class="icon_telegram icon_none_clik"></span>
-										</span>
-										<input type="tel" name="phone" placeholder="+38(___) ___-____"
-										class="phone--form">
-									</label>
-									<div class="main-form_button">
-										<button class="btn_red" type="submit" id="form_btn">Получить статью</button>
-									</div>
-								</div>
-							</form>
+					<div class="portfolio-column column">
+						<div class="portfolio-column-wrapper">
+							<div class="img-block">
+								<a href="#">
+									<img src="img/p-2.png" alt="">
+								</a>
+							</div>
+							<div class="portfolio-text-wrapper">
+								<p class="portfolio-headline-tex">
+									ECO-LOOK
+								</p>
+								<p class="about-portfolio-project">Интернет-магазин<br> косметики для домашнего ухода</p>
+							</div>
 						</div>
 					</div>
-					<div class="col-mailing-image">
-						<img src="img/bonus-min.png" alt="">
+					<div class="portfolio-column column">
+						<div class="portfolio-column-wrapper">
+							<div class="img-block">
+								<a href="#">
+									<img src="img/p-3.png" alt="">
+								</a>
+							</div>
+							<div class="portfolio-text-wrapper">
+								<p class="portfolio-headline-tex">
+									GIVI STUDIO
+								</p>
+								<p class="about-portfolio-project">Landing page <br>
+								Продажа готовых юридических документов</p>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-column column">
+						<div class="portfolio-column-wrapper">
+							<div class="img-block">
+								<a href="#">
+									<img src="img/p-4.png" alt="">
+								</a>
+							</div>
+							<div class="portfolio-text-wrapper">
+								<p class="portfolio-headline-tex">
+									SEPTA
+								</p>
+								<p class="about-portfolio-project">
+									Корпоративный сайт для<br>
+									одесского ОСББ
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-column column">
+						<div class="portfolio-column-wrapper">
+							<div class="img-block">
+								<a href="#">
+									<img src="img/p-5.png" alt="">
+								</a>
+							</div>
+							<div class="portfolio-text-wrapper">
+								<p class="portfolio-headline-tex">
+									GIVI STUDIO
+								</p>
+								<p class="about-portfolio-project">
+									Landing page <br>
+									Монтаж и продвижение в соц. сетях
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-column column">
+						<div class="portfolio-column-wrapper">
+							<div class="img-block">
+								<a href="#">
+									<img src="img/p-6.png" alt="">
+								</a>
+							</div>
+							<div class="portfolio-text-wrapper">
+								<p class="portfolio-headline-tex">
+									ABC
+								</p>
+								<p class="about-portfolio-project">
+									Landing page <br>
+									оптовой продажи игрушек
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="s-contacts">
+		<section class="s-our_advantages">
 			<div class="container">
-				<div class="row">
-					<div class="col-contacts">
-						<div class="col-contacts-all_contacts">
-							<h2 class="h2">Связаться с нами</h2>
-							<div class="row">
-								<div class="col-half">
-									<div class="contacts_wrapper contacts_phone">
-										<h4 class="h4">Телефны</h4>
-										<ul>
-											<li>
-												<a href="tel:0962965202">+38 (096) 296-52-02</a>
-											</li>
-											<li>
-												<a href="tel:0634583320">+38 (063) 458-33-20</a>
-											</li>
-										</ul>
-									</div>
-									<div class="contacts_wrapper adress">
-										<h4 class="h4">Адресс</h4>
-										<address>
-											г. Винница, ул. Нансена 7А
-										</address>
+				<div class="custom_row">
+					<div class="advantages-left-col column">
+						<h2>
+							Преимущества разработки
+							сайта в Iceberg
+						</h2>
+						<p>
+							Мы всегда доводим проект до результата
+						</p>
+					</div>
+					<div class="advantages-right-col column custom_ol">
+						<ol>
+							<li>Перед началом работ подписуем договор</li>
+							<li>
+								Поэтапная оплата только после того, как вы примите  часть выполненной работы
+							</li>
+							<li>
+								Все наши специалисты работают официально по договору и  в одном офисе
+							</li>
+							<li>
+								Поддерживаем клиента после выполнение и запуска сайта.
+							</li>
+							<li>
+								Можем работать с юридическими лицами
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-reviws">
+			<div class="container">
+				<div class="custom_row">
+					<div class="column">
+						<h2>Свежие отзывы наших клиентов</h2>
+					</div>
+				</div>
+				<div class="custom_row review-slider-row">
+					<div class="review-slider-col column">
+						<div class="review-slider-wrapper">
+							<div class="review-slider">
+								<div class="review-slider-item">
+									<div class="review-slider-item-wrapper">
+										<div class="reviews-name">
+											<div class="reviews-name-photo">
+												<img src="img/r-1.png" alt="">
+											</div>
+											<div class="reviews-name-content">
+												<p class="reviews-customer-name">
+													Юлія Василега
+												</p>
+												<p class="reviews-customer-project">
+													Детский лагерь Башкирова
+												</p>
+											</div>
+										</div>
+										<div class="reviews-comment">
+											<p>
+												Робили сайт свого підприєсмтва.Все дуже сподобалося, 
+												всі наші побажання працівниками даної фірми враховано 
+												в повному обсязі. Претензій до Веб студії "Iceberg" у нас 
+												ніяких не має, ми всім задоволенні. Всім рекомендуємо 
+												Веб студію "Iceberg"!
+											</p>
+										</div>
 									</div>
 								</div>
-								<div class="col-half">
-									<div class="contacts_wrapper contacts_social">
-										<h4 class="h4">Наши месседжеры</h4>
-										<ul class="we_in_social">
-											<li>
-												<a title="Viber" href="viber://chat?number=+3806345833208" class="social_icon social_viber"></a>
-											</li>
-											<li>
-												<a title="Telegram" href="tg://resolve?domain=iceberg_studio" class="social_icon social_telegram"></a>
-											</li>
-										</ul>
+								<div class="review-slider-item">
+									<div class="review-slider-item-wrapper">
+										<div class="reviews-name">
+											<div class="reviews-name-photo">
+												<img src="img/r-2.png" alt="">
+											</div>
+											<div class="reviews-name-content">
+												<p class="reviews-customer-name">
+													Анна Сеник
+												</p>
+												<p class="reviews-customer-project">
+													Интернет-магазин косметикиа
+												</p>
+											</div>
+										</div>
+										<div class="reviews-comment">
+											<p>
+												Писали сайт віддалено, зв‘язок лише по телефону, всі 
+												бажання враховані та сайт написаний раніше ніш 
+												очікувалось, всім задоволена, будемо працювати і надалі 
+												разом. Дякую за пророблену роботу, терпіння і розуміння!
+												Успіхів і вдячних клієнтів!
+											</p>
+										</div>
 									</div>
-									<div class="contacts_wrapper contacts_mail">
-										<h4 class="h4">Почта</h4>
-										<a href="mailto:iceberg.vn.ua@gmail.com">iceberg.vn.ua@gmail.com</a>
+								</div>
+								<div class="review-slider-item">
+									<div class="review-slider-item-wrapper">
+										<div class="reviews-name">
+											<div class="reviews-name-photo">
+												<img src="img/r-1.png" alt="">
+											</div>
+											<div class="reviews-name-content">
+												<p class="reviews-customer-name">
+													Юлія Василега
+												</p>
+												<p class="reviews-customer-project">
+													Детский лагерь Башкирова
+												</p>
+											</div>
+										</div>
+										<div class="reviews-comment">
+											<p>
+												Робили сайт свого підприєсмтва.Все дуже сподобалося, 
+												всі наші побажання працівниками даної фірми враховано 
+												в повному обсязі. Претензій до Веб студії "Iceberg" у нас 
+												ніяких не має, ми всім задоволенні. Всім рекомендуємо 
+												Веб студію "Iceberg"!
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="review-slider-item">
+									<div class="review-slider-item-wrapper">
+										<div class="reviews-name">
+											<div class="reviews-name-photo">
+												<img src="img/r-1.png" alt="">
+											</div>
+											<div class="reviews-name-content">
+												<p class="reviews-customer-name">
+													Юлія Василега
+												</p>
+												<p class="reviews-customer-project">
+													Детский лагерь Башкирова
+												</p>
+											</div>
+										</div>
+										<div class="reviews-comment">
+											<p>
+												Робили сайт свого підприєсмтва.Все дуже сподобалося, 
+												всі наші побажання працівниками даної фірми враховано 
+												в повному обсязі. Претензій до Веб студії "Iceberg" у нас 
+												ніяких не має, ми всім задоволенні. Всім рекомендуємо 
+												Веб студію "Iceberg"!
+											</p>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>	
+								<button class="review-prev">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"><g><g><path fill="none" stroke="#1c1c1c" stroke-miterlimit="50" stroke-width="2" d="M12.5 1.5v0l-11 11v0l11 11v0"/></g></g></svg>
+									</span>
+								</button>
+								<button class="review-next">
+									<span class="icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"><g><g><path fill="none" stroke="#1c1c1c" stroke-miterlimit="50" stroke-width="2" d="M1.5 1.5v0l11 11v0l-11 11v0"/></g></g></svg>
+									</span>
+								</button>
+						</div>
 					</div>
-					<div class="col-contacts">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41680.504527159894!2d28.43029173102954!3d49.23789135745351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b427dff08a7%3A0x72c4b3f477416142!2z0JLQtdCxINGB0YLRg9C00LjRjyBJY2ViZXJnIC0g0YHQvtC30LTQsNC90LjQtSDRgdCw0LnRgtC-0LIg0LIg0JLQuNC90L3QuNGG0LU!5e0!3m2!1suk!2sua!4v1552583168170" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</section>
+		<section class="about_us">
+				<div class="container">
+					<div class="custom_row">
+						<div class="about_us-left-col column">
+							<h3>
+								Создание сайтов в Виннице
+							</h3>
+							<p>
+								Создание сайта с нуля — один из важных этапов в построении успешного бизнеса и его развитии, ведь именно он — тот самый маркетинговый инструмент, который позволяет привлекать новых клиентов, повышать продажи и достойным образом представить ваш бизнес общественности.
+							</p>
+							<p>
+								Создание сайтов в Киеве и продающих интернет-магазинов — приоритетное направление деятельности компании Artjoker. Обратившись к нам, вы получите не просто качественный программинг, красивый и эргономичный дизайн, но и комплексный подход к решению всех возложенных на нас бизнес-задач.
+							</p>
+						</div>
+						<div class="about_us-right-col column">
+							<img src="img/icebr-logo.png" alt="">
+						</div>
+					</div>
+				</div>
+		</section>
+		<section class="s-feetback">
+			<div class="container">
+				<div class="custom_row">
+					<div class="personal-column column">
+						<div class="personal-column-img" style="background-image: url('img/f-1.png')"></div>
+					</div>
+					<div class="personal-info-column column">
+						<p class="f-promo">
+							Давайте обсудим 
+							Ваш проект
+						</p>
+						<div class="under-promo">
+							Мы зададим пару вопросов и ответим на ваши.
+						</div>
+						<div class="about-manager-content">
+							<p class="manager-status">
+								Менеджер по работе с клиентами
+							</p>
+							<p class="manager-name">
+								Марк Таксер
+							</p>
+						</div>
+					</div>
+					<div class="f-form-column column">
+						<div class="f-form-main-wrap">
+							<form>
+								<p class="form-item">
+									<input type="text" placeholder="Введите ваш телефон" class="call-back-input" required data-mask="callback-catalog-phone">
+								</p>
+								<div class="f-form-button">
+									<a href="#" class="btn_blue">Обсудить проект</a>
+								</div>
+							</form>
+							<p class="call-back-text">
+								или позвоните по телефону
+							</p>
+							<a href="tel:0939179871" class="f-call-link">+38 (093) 917-98-71</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 	</main>
-	
-	<!--Modal-->
-	<div class="modal_wrapper" id="question">
-		<div class="modal_content">
-			<button class="close"></button>
-				<div class="modal_content_wrapper">
-					<h2>
-						Задайте нам вопрос
-					</h2>
-					<div class="modal-form">
-						<form action="mail.php" method="post" onsubmit="yaCounter50094541.reachGoal('menubutton'); gtag('event', 'Otprav', {'event_category': 'menubutton'}); return true;">
-							<div class="form_control">
-								<input type="tel" name="phone" placeholder="Телефон" class="phone--form" required>
-							</div>
-							<div class="form_control">
-								<textarea name="text" placeholder="Ваш коментарий..." required></textarea> 
-							</div>
-							<div class="modal-button-form">
-								<button type="sbmit" class="btn_red">Отправить</button>
-							</div>
-						</form>
+	<footer>
+		<div class="container">
+			<div class="custom_row f_menu_row">
+				<div class="column f-col_four">
+					<h4 class="f-headline">НАШИ УСЛУГИ</h4>
+					<ul class="footer_nav list-style">
+						<li><a href="#">Создание Landing Page</a></li>
+						<li><a href="#">Создание интернет-магазина</a></li>
+						<li><a href="#">Создание сайта-визитки</a></li>
+						<li><a href="#">Создание сайта-каталога</a></li>
+						<li><a href="#">Создание интернет-портала</a></li>
+					</ul>
+				</div>
+				<div class="column f-col_four">
+					<h4 class="f-headline">КЛИЕНТУ</h4>
+					<ul class="footer_nav list-style">
+						<li><a href="#">Как начать работу?</a></li>
+						<li><a href="#">Возможности</a></li>
+						<li><a href="#">Стоимость сайта</a></li>
+						<li><a href="#">Сроки разработки сайта</a></li>
+					</ul>
+				</div>
+				<div class="column f-col_four">
+					<h4 class="f-headline">О НАС</h4>
+					<ul class="footer_nav list-style">
+						<li><a href="#">О компании Iceberg</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">Партнерство</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="column f-col_four">
+					<h4 class="f-headline">КОНТАКТЫ</h4>
+					<div class="f-contact-box">
+						<div class="f-contact-box-item">
+							<address>
+								г. Винница ул. Нансена 7а
+							</address>
+						</div>
+						<div class="f-contact-box-item">
+							<a href="tel:0939179871">+38 (093) 917-98-71</a>
+						</div>
+						<div class="f-contact-box-item">
+							<a href="tel:0939179871">+38 (093) 917-98-71</a>
+						</div>
+						<div class="f-contact-box-item">
+							<a href="mailto:iceberg.vn.ua@gmail.com">iceberg.vn.ua@gmail.com</a>
+						</div>
 					</div>
 				</div>
+			</div>
+			<div class="custom_row">
+				<div class="column footer_social_column">
+					<ul class="f-social-list list-vertical">
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"><g><g><path fill="#b5b5b5" d="M15.756 13.58l-.437.436c-.618.618-2.039.569-2.952.392-3.036-.586-6.576-4.017-7.258-6.988-.338-1.472-.152-2.752.336-3.24l.437-.437a.618.618 0 0 1 .873 0L8.503 5.49c.116.117.18.272.18.437a.61.61 0 0 1-.18.436l-.437.437a1.238 1.238 0 0 0 0 1.748l2.885 2.847a1.235 1.235 0 0 0 1.748 0l.436-.437a.646.646 0 0 1 .874 0l1.747 1.747a.617.617 0 0 1 0 .874zM9.887.225C4.731.226.5 4.456.5 9.613c0 1.701.459 3.358 1.329 4.807L.499 19l4.58-1.329A9.325 9.325 0 0 0 9.888 19c5.156 0 9.387-4.231 9.387-9.387 0-5.156-4.231-9.387-9.387-9.387z"/></g></g></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19"><g><g><path fill="#b5b5b5" d="M7.004 10.156l9.645-5.94c.173-.107.351.128.203.266l-7.96 7.398c-.28.26-.46.61-.511.988l-.271 2.009c-.036.268-.413.295-.487.035L6.58 11.248a.971.971 0 0 1 .424-1.092zM.467 9.294l4.935 1.842 1.91 6.143a.58.58 0 0 0 .923.278l2.75-2.243a.82.82 0 0 1 1-.028l4.962 3.602a.581.581 0 0 0 .911-.351l3.635-17.482a.582.582 0 0 0-.78-.661L.463 8.206c-.5.193-.496.9.005 1.088z"/></g></g></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19"><g><g><g><g><path fill="#b5b5b5" d="M17.578 13.34a3.749 3.749 0 0 1-3.75 3.749H6.15a3.749 3.749 0 0 1-3.749-3.75V5.66a3.749 3.749 0 0 1 3.75-3.749h7.679a3.749 3.749 0 0 1 3.749 3.75zM13.828 0H6.15A5.667 5.667 0 0 0 .49 5.66v7.68c0 3.12 2.54 5.66 5.66 5.66h7.68c3.12 0 5.66-2.54 5.66-5.66V5.66c0-3.12-2.54-5.66-5.66-5.66z"/></g><g><path fill="#b5b5b5" d="M9.989 12.503a3.003 3.003 0 1 1 0-6.006 3.003 3.003 0 0 1 0 6.006zm0-7.917A4.92 4.92 0 0 0 5.075 9.5a4.92 4.92 0 0 0 4.914 4.914A4.92 4.92 0 0 0 14.903 9.5a4.92 4.92 0 0 0-4.914-4.914z"/></g><g><path fill="#b5b5b5" d="M13.735 4.623a1.178 1.178 0 1 1 2.355 0 1.178 1.178 0 0 1-2.355 0z"/></g></g></g></g></svg>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="29" height="18" viewBox="0 0 29 18"><g><g><g><path fill="#b5b5b5" d="M24.987 9.694c-.062-.898-.362-1.578-.904-2.043-.536-.467-1.205-.7-2.003-.7-.87 0-1.539.249-2.018.74-.48.493-.778 1.158-.9 2.003zm3.398-.337c.089.591.129 1.447.111 2.567h-9.413c.053 1.3.5 2.208 1.352 2.728.512.326 1.134.485 1.863.485.769 0 1.395-.194 1.876-.593.263-.212.494-.51.694-.887h3.451c-.092.767-.506 1.544-1.253 2.337-1.157 1.256-2.779 1.888-4.862 1.888-1.722 0-3.238-.534-4.555-1.592-1.313-1.061-1.972-2.787-1.972-5.179 0-2.242.593-3.96 1.78-5.154 1.192-1.197 2.729-1.793 4.625-1.793 1.124 0 2.137.2 3.041.604.901.405 1.645 1.04 2.231 1.915.53.77.872 1.66 1.03 2.674zm-16.909 2.936c0-.938-.384-1.585-1.148-1.934-.428-.197-1.031-.299-1.805-.306H4.648v4.81h3.814c.784 0 1.39-.102 1.828-.317.79-.392 1.186-1.14 1.186-2.253zM4.648 7.066h3.82c.785 0 1.42-.15 1.908-.447.489-.299.732-.828.732-1.589 0-.838-.322-1.395-.969-1.663-.556-.187-1.268-.283-2.13-.283h-3.36zm9.929 2.84c.468.727.703 1.611.703 2.645 0 1.073-.264 2.032-.802 2.88A4.98 4.98 0 0 1 13.2 16.85c-.575.441-1.255.746-2.036.909-.785.163-1.634.242-2.548.242H.486V-.05h8.717c2.197.035 3.754.671 4.674 1.923.552.766.825 1.686.825 2.755 0 1.105-.277 1.987-.834 2.657-.31.377-.767.72-1.374 1.028.92.337 1.616.865 2.083 1.593zm11.111-7.403h-7.27V.697h7.27z"/></g></g></g></svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+<!--Modal-->
+<section class="modal">
+	<button class="close-modal">
+		<svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30"><g><g><g><path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M.737 1.5L28 28.763"/></g><g><path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="2" d="M28 1.5L.737 28.763"/></g></g></g></svg>
+	</button>
+	<div class="modal-dialog-centered">
+		<div class="modal-content">
+			<h2>Оставьте свои контакты и мы <br>
+			проконсультируем Вас в ближайшее время!</h2>
+			<div class="form_wrapper-modal">
+				<form>
+				<p class="form_wrapper-modal-wrapper">
+					<label>
+						Имя
+						<input type="text" class="form-input" placeholder="Серегей" required>
+					</label>
+				</p>
+				<p class="form_wrapper-modal-wrapper modal-form-row">
+					<label>
+						Телефон
+						<input type="tel" class="form-input" data-mask="callback-catalog-phone" placeholder="+ 380 93 123 21 12" required>
+					</label>
+					<label>
+						E-mail
+						<input type="email" class="form-input" placeholder="pochta@gmail.com">
+					</label>
+				</p>
+				<p class="form_wrapper-modal-wrapper">
+					<label>
+						Комментарий
+						<textarea placeholder="Введите Ваш вопрос" class="form-input"></textarea>
+					</label>
+				</p>
+				<div class="form_wrapper_button">
+					<button type="submit" class="btn_blue">Отправить заявку</button>
+				</div>
+			</form>
+			</div>
 		</div>
 	</div>
-	<!--Modal thank you-->
-	<div class="modal_wrapper" id="modal-thankyou">
-		<div class="modal_content modal-thankyou">
-			<button class="close"></button>
-			<div class="modal_content_wrapper">
-				<h2>
-					Спасибо мы свяжемся с вами в ближайшего времени
-				</h2>
-			</div>
-			<div class="modal-thank-you">
-				<button class="btn_red red_close">Закрыть</button>
-			</div>
-		</div>
-	</div>
-	<!--Modal mailing-->
-	<div class="modal_wrapper" id="modal-mailing">
-		<div class="modal_content modal-thankyou">
-			<button class="close"></button>
-			<div class="modal_content_wrapper">
-				<h2>
-					Вы подписаны на рассылку!
-				</h2>
-			</div>
-			<div class="modal-thank-you">
-				<button class="btn_red red_close">Закрыть</button>
-			</div>
-		</div>
-	</div>
-
-
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-		<script src="js/common.js"></script>
-		<!-- Marquiz script start -->
-	<script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			Marquiz.init({
-				id: '5c02f41b4de4050055a57756',
-				autoOpen: false,
-				autoOpenFreq: 'once',
-				openOnExit: false
-			});
-		});
-	</script>
-	<!-- Marquiz script end -->
-
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'k8kFIZEVWB';var d=document;var w=window;function l(){
-  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-  s.src = '//code.jivosite.com/script/widget/'+widget_id
-    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
-  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
-  else{w.addEventListener('load',l,false);}}})();
-</script>
-<!-- {/literal} END JIVOSITE CODE -->
-
-
+</section>
+<!--Script-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/mask.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
