@@ -20,30 +20,22 @@ class MainController extends AppController
 
 
 
-    public function sendAction()
+    public function sendOrderSiteAction()
     {
         if (!empty($_POST)){
 
-            $services = '';
             $username = $_POST['username'] ? trim(htmlspecialchars($_POST['username'])) : null;
             $phone = $_POST['phone'] ? trim(htmlspecialchars(str_replace(" ", "", $_POST['phone']))) : null;
             $email = $_POST['email'] ? htmlspecialchars($_POST['email']) : null;
-            if (isset($_POST['service_name'])) {
-                foreach ($_POST['service_name'] as $key => $value){
-                    $services .= htmlspecialchars($value) . ', ';
-                }
-            }
-
+            $text = $_POST['text'] ? htmlspecialchars($_POST['text']) : null;
 
             $messageText = '
                     <h1>Новая заявка</h1>
                     <p><b>Имя </b> - '. $username .' </p>
                     <p><b>Телефон </b> - '. $phone .' </p>
-                    <p><b>Email </b> - '. $email .' </p>';
+                    <p><b>Email </b> - '. $email .' </p>
+                    <p><b>Текст </b> - '. $text .' </p>';
 
-            if ($services){
-                $messageText .= '<p><b>Типы услуг: </b> - ' . $services .' </p> ';
-            }
 
             // Create the Transport
             $transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'), App::$app->getProperty('smtp_port'), App::$app->getProperty('smtp_protocol')))

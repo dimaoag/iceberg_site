@@ -47,7 +47,7 @@
                         </div>
                         <div class="logo">
                             <a href="#">
-                                <img src="img/ICEBERG_STUDIO.png" alt="">
+                                <img src="img/ICEBERG_STUDIO.png" alt="ICEBERG_STUDIO.png">
                             </a>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                 <div class="column phone-column">
                     <ul class="list-vertical some-menu-header-list">
                         <li>
-                            <a title="Страница в разработке" href="#">Портфолио</a>
+                            <a title="Страница в разработке" href="<?=PATH?>/portfolio">Портфолио</a>
                         </li>
                         <li>
                             <a title="Страница в разработке" href="#">Контакты</a>
@@ -183,27 +183,27 @@
                 <h2>Оставьте свои контакты и мы <br>
                     проконсультируем Вас в ближайшее время!</h2>
                 <div class="form_wrapper-modal">
-                    <form>
+                    <form action="<?= PATH ?>/main/send-order-site" method="post">
                         <p class="form_wrapper-modal-wrapper">
                             <label>
                                 Имя
-                                <input type="text" class="form-input" placeholder="Сергей" required>
+                                <input type="text" name="username" class="form-input" placeholder="Сергей" required>
                             </label>
                         </p>
                         <p class="form_wrapper-modal-wrapper modal-form-row">
                             <label>
                                 Телефон
-                                <input type="tel" class="form-input" data-mask="callback-catalog-phone" placeholder="+ 380 93 123 21 12" required>
+                                <input type="tel" class="form-input" name="phone" data-mask="callback-catalog-phone" placeholder="+ 380 93 123 21 12" required>
                             </label>
                             <label>
                                 E-mail
-                                <input type="email" class="form-input" placeholder="pochta@gmail.com">
+                                <input type="email" class="form-input" name="email" placeholder="pochta@gmail.com">
                             </label>
                         </p>
                         <p class="form_wrapper-modal-wrapper">
                             <label>
                                 Комментарий
-                                <textarea placeholder="Введите Ваш вопрос" class="form-input"></textarea>
+                                <textarea placeholder="Введите Ваш вопрос" name="text" class="form-input"></textarea>
                             </label>
                         </p>
                         <div class="form_wrapper_button">
