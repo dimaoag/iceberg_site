@@ -20,6 +20,12 @@ class MainController extends AppController
 
 
 
+    public function contactsAction()
+    {
+        $metaTitle = 'Контакты';
+        $this->setMeta($metaTitle);
+    }
+
     public function sendOrderSiteAction()
     {
         if (!empty($_POST)){
@@ -63,8 +69,6 @@ class MainController extends AppController
         redirect();
     }
 
-
-
     public function sendPhoneAction()
     {
         if (!empty($_POST)){
@@ -103,7 +107,6 @@ class MainController extends AppController
         }
         redirect();
     }
-
 
     public function thanksAction()
     {

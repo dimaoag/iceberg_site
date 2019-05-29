@@ -67,7 +67,7 @@
                             <a title="Страница в разработке" href="<?=PATH?>/portfolio">Портфолио</a>
                         </li>
                         <li>
-                            <a title="Страница в разработке" href="#">Контакты</a>
+                            <a title="Страница в разработке" href="<?=PATH?>/main/contacts">Контакты</a>
                         </li>
                         <li class="is-drop">
                             <a href="tel:0962965202">+38 (096) 296-52-02</a>
