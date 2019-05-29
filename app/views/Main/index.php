@@ -71,7 +71,7 @@
                                                 </div>
                                             </div>
                                             <div class="project-deteils">
-                                                <a href="https://ecolook.store" target="_blank">перейти к проекту</a>
+                                                <a href="<?= PATH ?>/portfolio/eco-look">перейти к проекту</a>
                                             </div>
                                         </div>
                                     </div>
@@ -100,7 +100,7 @@
                                                 </div>
                                             </div>
                                             <div class="project-deteils">
-                                                <a href="https://legalportal.com.ua" target="_blank" tabindex="-1">перейти к проекту</a>
+                                                <a href="<?= PATH ?>/portfolio/selfsave"  tabindex="-1">перейти к проекту</a>
                                             </div>
                                         </div>
                                     </div>
@@ -128,7 +128,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="project-deteils">
-                                                    <a href="https://givi-studio.com" target="_blank" tabindex="-1">перейти к проекту</a>
+                                                    <a href="<?= PATH ?>/portfolio/givi-studio" tabindex="-1">перейти к проекту</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -157,7 +157,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="project-deteils">
-                                                    <a href="http://abc-stock.com" target="_blank" tabindex="-1">перейти к проекту</a>
+                                                    <a href="<?= PATH ?>/portfolio/abs" tabindex="-1">перейти к проекту</a>
                                                 </div>
                                             </div>
                                         </div>
