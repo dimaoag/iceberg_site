@@ -13,4 +13,11 @@ class PortfolioController extends AppController
     }
 
 
+
+    public function absAction()
+    {
+        $metaTitle = 'ABC SOCK';
+        $this->setMeta($metaTitle);
+    }
+
 }

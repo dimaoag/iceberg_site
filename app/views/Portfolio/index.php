@@ -22,7 +22,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/door-house-lending.html" target="blank">
-                            <img src="img/portfolio/p-p-1.jpg" alt="p-p-1.jpg">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-1.jpg" alt="p-p-1.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -41,7 +41,7 @@
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/ecolook-landing.html"
                            target="blank">
-                            <img src="img/portfolio/p-p-2.jpg" alt="p-p-2.jpg">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-2.jpg" alt="p-p-2.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -59,7 +59,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/givi-studio-lnding.html" target="blank">
-                            <img src="img/portfolio/p-p-3.jpg" alt="p-p-3.jpg">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-3.jpg" alt="p-p-3.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -77,7 +77,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/selvesave-landing.html" target="blank">
-                            <img src="img/portfolio/p-p-4.jpg" alt="p-p-4.jpg">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-4.jpg" alt="p-p-4.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -95,7 +95,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a title="Страница в разработке"  href="#" target="blank">
-                            <img src="img/portfolio/p-p-5.jpg" alt="p-p-5.jpg">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-5.jpg" alt="p-p-5.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -112,8 +112,8 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/abs-stock-landing.html"  target="blank">
-                            <img src="img/portfolio/p-p-6.jpg"  alt="p-p-6.jpg">
+                        <a href="<?= PATH ?>/portfolio/abs">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-6.jpg"  alt="p-p-6.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
