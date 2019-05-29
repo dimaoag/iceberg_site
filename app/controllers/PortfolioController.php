@@ -12,18 +12,21 @@ class PortfolioController extends AppController
 //        $this->setData(compact('services', 'jobs', 'isShowJobBtn', 'offset', 'employees', 'contact'));
     }
 
-
-
     public function absAction()
     {
         $metaTitle = 'ABC SOCK';
         $this->setMeta($metaTitle);
     }
 
-
     public function doorHouseAction()
     {
         $metaTitle = 'Door House';
+        $this->setMeta($metaTitle);
+    }
+
+    public function ecoLookAction()
+    {
+        $metaTitle = 'Eco.look';
         $this->setMeta($metaTitle);
     }
 

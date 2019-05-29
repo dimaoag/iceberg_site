@@ -39,8 +39,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/ecolook-landing.html"
-                           target="blank">
+                        <a href="<?= PATH ?>/portfolio/eco-look">
                             <img src="<?= PATH ?>/img/portfolio/p-p-2.jpg" alt="p-p-2.jpg">
                         </a>
                     </div>
@@ -58,7 +57,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/givi-studio-lnding.html" target="blank">
+                        <a href="https://iceberg.vn.ua/givi-studio-lnding.html">
                             <img src="<?= PATH ?>/img/portfolio/p-p-3.jpg" alt="p-p-3.jpg">
                         </a>
                     </div>
@@ -76,7 +75,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/selvesave-landing.html" target="blank">
+                        <a href="https://iceberg.vn.ua/selvesave-landing.html">
                             <img src="<?= PATH ?>/img/portfolio/p-p-4.jpg" alt="p-p-4.jpg">
                         </a>
                     </div>
@@ -94,7 +93,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a title="Страница в разработке"  href="#" target="blank">
+                        <a title="Страница в разработке"  href="#">
                             <img src="<?= PATH ?>/img/portfolio/p-p-5.jpg" alt="p-p-5.jpg">
                         </a>
                     </div>

@@ -242,7 +242,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/ecolook-landing.html"
+                        <a href="<?= PATH ?>/portfolio/eco-look"
                            target="blank">
                             <img src="<?= PATH ?>/img/portfolio/p-p-2.jpg" alt="p-p-2.jpg">
                         </a>
