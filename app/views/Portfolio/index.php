@@ -57,7 +57,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/givi-studio-lnding.html">
+                        <a href="<?= PATH ?>/portfolio/givi-studio">
                             <img src="<?= PATH ?>/img/portfolio/p-p-3.jpg" alt="p-p-3.jpg">
                         </a>
                     </div>

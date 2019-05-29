@@ -30,4 +30,10 @@ class PortfolioController extends AppController
         $this->setMeta($metaTitle);
     }
 
+    public function giviStudioAction()
+    {
+        $metaTitle = 'Givi Studio';
+        $this->setMeta($metaTitle);
+    }
+
 }
