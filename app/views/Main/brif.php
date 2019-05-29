@@ -268,3 +268,5 @@
         </div>
     </div>
 </section>
+
+<div class="hide-footer-section"></div>

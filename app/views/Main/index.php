@@ -210,7 +210,7 @@
                 <h2>
                     Наши последние проекты
                 </h2>
-                <a  href="https://iceberg.vn.ua/portfolio-page.html" class="all_project_with-icon">
+                <a  href="<?= PATH ?>/portfolio" class="all_project_with-icon">
                     Посмотрите все работы
                     <span class="arrow-right icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><g><g><path fill="none" stroke="#aeaeae" stroke-miterlimit="50" d="M.944.5v0l7.5 7.5v0l-7.5 7.5v0"/></g></g></svg>
@@ -505,48 +505,6 @@
             </div>
             <div class="about_us-right-col column">
                 <img src="<?= PATH ?>/img/icebr-logo.png" alt="icebr-logo.png">
-            </div>
-        </div>
-    </div>
-</section>
-<section class="s-feetback">
-    <div class="container">
-        <div class="custom_row">
-            <div class="personal-column column">
-                <div class="personal-column-img" style="background-image: url('<?= PATH ?>/img/manager-sergey.png')"></div>
-            </div>
-            <div class="personal-info-column column">
-                <p class="f-promo">
-                    Давайте обсудим
-                    Ваш проект
-                </p>
-                <div class="under-promo">
-                    Мы зададим пару вопросов и ответим на ваши.
-                </div>
-                <div class="about-manager-content">
-                    <p class="manager-status">
-                        Менеджер по работе с клиентами
-                    </p>
-                    <p class="manager-name">
-                        Соц Сергей
-                    </p>
-                </div>
-            </div>
-            <div class="f-form-column column">
-                <div class="f-form-main-wrap">
-                    <form action="<?= PATH ?>/main/send-phone" method="post">
-                        <p class="form-item">
-                            <input type="text" name="phone" placeholder="Введите ваш телефон" class="call-back-input" required data-mask="callback-catalog-phone">
-                        </p>
-                        <div class="f-form-button">
-                            <button type="submit" class="btn_blue">Обсудить проект</button>
-                        </div>
-                    </form>
-                    <p class="call-back-text">
-                        или позвоните по телефону
-                    </p>
-                    <a href="tel:0962965202" class="f-call-link">+38 (096) 296-52-02</a>
-                </div>
             </div>
         </div>
     </div>

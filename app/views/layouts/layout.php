@@ -27,20 +27,24 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141025239-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-141025239-1');
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PL74NB9');</script>
+    <!-- End Google Tag Manager -->
 
 
 </head>
 
 <body>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL74NB9"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
     <header>
         <div class="container-full">
@@ -94,6 +98,48 @@
 
     <main>
         <?= $content; ?>
+        <section class="s-feetback">
+            <div class="container">
+                <div class="custom_row">
+                    <div class="personal-column column">
+                        <div class="personal-column-img" style="background-image: url('<?= PATH ?>/img/manager-sergey.png')"></div>
+                    </div>
+                    <div class="personal-info-column column">
+                        <p class="f-promo">
+                            Давайте обсудим
+                            Ваш проект
+                        </p>
+                        <div class="under-promo">
+                            Мы зададим пару вопросов и ответим на ваши.
+                        </div>
+                        <div class="about-manager-content">
+                            <p class="manager-status">
+                                Менеджер по работе с клиентами
+                            </p>
+                            <p class="manager-name">
+                                Соц Сергей
+                            </p>
+                        </div>
+                    </div>
+                    <div class="f-form-column column">
+                        <div class="f-form-main-wrap">
+                            <form action="<?= PATH ?>/main/send-phone" method="post">
+                                <p class="form-item">
+                                    <input type="text" name="phone" placeholder="Введите ваш телефон" class="call-back-input" required data-mask="callback-catalog-phone">
+                                </p>
+                                <div class="f-form-button">
+                                    <button type="submit" class="btn_blue">Обсудить проект</button>
+                                </div>
+                            </form>
+                            <p class="call-back-text">
+                                или позвоните по телефону
+                            </p>
+                            <a href="tel:0962965202" class="f-call-link">+38 (096) 296-52-02</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
