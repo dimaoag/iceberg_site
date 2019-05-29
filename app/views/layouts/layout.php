@@ -168,11 +168,11 @@
                     <h4 class="f-headline">О НАС</h4>
                     <ul class="footer_nav list-style">
                         <li><a title="Страница в разработке" href="#">О компании Iceberg</a></li>
-                        <li><a title="Страница в разработке" href="#">Портфолио</a></li>
+                        <li><a title="Страница в разработке" href="<?= PATH ?>/portfolio">Портфолио</a></li>
                         <li><a title="Страница в разработке" href="#">Отзывы</a></li>
                         <li><a title="Страница в разработке" href="#">Партнерство</a></li>
                         <li><a title="Страница в разработке" href="#">Вакансии</a></li>
-                        <li><a title="Страница в разработке" href="#">Контакты</a></li>
+                        <li><a title="Страница в разработке" href="<?= PATH ?>/main/contacts">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="column f-col_four">
