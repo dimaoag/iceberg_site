@@ -11,8 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="icon" href="img/favicon/favicon-32.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
+    <link rel="icon" href="<?= PATH?>/img/favicon/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= PATH?>/img/favicon/favicon-180.png">
 
     <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#fff">
@@ -27,6 +27,15 @@
     <link rel="stylesheet" href="css/style.css">
 
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-141025239-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-141025239-1');
+    </script>
 
 
 </head>
@@ -46,8 +55,8 @@
                             </button>
                         </div>
                         <div class="logo">
-                            <a href="#">
-                                <img src="img/ICEBERG_STUDIO.png" alt="ICEBERG_STUDIO.png">
+                            <a href="/">
+                                <img src="<?= PATH?>/img/ICEBERG_STUDIO.png" alt="ICEBERG_STUDIO.png">
                             </a>
                         </div>
                     </div>

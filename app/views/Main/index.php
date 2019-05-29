@@ -14,7 +14,7 @@
                         и сроки разработки Вашего сайта
                     </p>
                     <div class="info_company-button-wrapper">
-                        <a href="../brif.html" class="btn_blue">Заполнить бриф</a>
+                        <a href="<?= PATH ?>/brif" class="btn_blue">Заполнить бриф</a>
                     </div>
                     <div class="our_instagram">
 						<span class="instagram_icon icon">
@@ -29,16 +29,16 @@
                     <div class="primary__nav__holder" id="primaryNavHolder">
                         <div class="primary" id="primary">
                             <div class="box1">
-                                <div class="slider-for-item-image" style="background-image: url('img/ecolook.png')"></div>
+                                <div class="slider-for-item-image" style="background-image: url('<?= PATH ?>/img/ecolook.png')"></div>
                             </div>
                             <div class="box1">
-                                <div class="slider-for-item-image" style="background-image: url('img/salfsave.png')"></div>
+                                <div class="slider-for-item-image" style="background-image: url('<?= PATH ?>/img/salfsave.png')"></div>
                             </div>
                             <div class="box1">
-                                <div class="slider-for-item-image" style="background-image: url('img/givistudio.png')"></div>
+                                <div class="slider-for-item-image" style="background-image: url('<?= PATH ?>/img/givistudio.png')"></div>
                             </div>
                             <div class="box1">
-                                <div class="slider-for-item-image" style="background-image: url('img/abc.png')"></div>
+                                <div class="slider-for-item-image" style="background-image: url('<?= PATH ?>/img/abc.png')"></div>
                             </div>
                         </div>
                     </div>
@@ -65,10 +65,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="nav_info__vd-nav-wrapper">
-                                                        <button class="prev_nav">
-                                                        </button>
-                                                        <button class="next_nav">
-                                                        </button>
+                                                        <button class="prev_nav"></button>
+                                                        <button class="next_nav"></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -96,10 +94,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="nav_info__vd-nav-wrapper">
-                                                        <button class="prev_nav">
-                                                        </button>
-                                                        <button class="next_nav">
-                                                        </button>
+                                                        <button class="prev_nav"></button>
+                                                        <button class="next_nav"></button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -127,10 +123,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="nav_info__vd-nav-wrapper">
-                                                        <button class="prev_nav">
-                                                        </button>
-                                                        <button class="next_nav">
-                                                        </button>
+                                                        <button class="prev_nav"></button>
+                                                        <button class="next_nav"></button>
                                                     </div>
                                                 </div>
                                                 <div class="project-deteils">
@@ -158,10 +152,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="nav_info__vd-nav-wrapper">
-                                                        <button class="prev_nav">
-                                                        </button>
-                                                        <button class="next_nav">
-                                                        </button>
+                                                        <button class="prev_nav"></button>
+                                                        <button class="next_nav"></button>
                                                     </div>
                                                 </div>
                                                 <div class="project-deteils">
@@ -221,8 +213,8 @@
                 <a  href="https://iceberg.vn.ua/portfolio-page.html" class="all_project_with-icon">
                     Посмотрите все работы
                     <span class="arrow-right icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><g><g><path fill="none" stroke="#aeaeae" stroke-miterlimit="50" d="M.944.5v0l7.5 7.5v0l-7.5 7.5v0"/></g></g></svg>
-							</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16"><g><g><path fill="none" stroke="#aeaeae" stroke-miterlimit="50" d="M.944.5v0l7.5 7.5v0l-7.5 7.5v0"/></g></g></svg>
+                    </span>
                 </a>
             </div>
         </div>
@@ -233,7 +225,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/door-house-lending.html" target="blank">
-                            <img src="img/portfolio/p-p-1.jpg" alt="">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-1.jpg" alt="p-p-1.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -252,7 +244,7 @@
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/ecolook-landing.html"
                            target="blank">
-                            <img src="img/portfolio/p-p-2.jpg" alt="">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-2.jpg" alt="p-p-2.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -270,7 +262,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/givi-studio-lnding.html" target="blank">
-                            <img src="img/portfolio/p-p-3.jpg" alt="">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-3.jpg" alt="p-p-3.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -288,7 +280,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/selvesave-landing.html" target="blank">
-                            <img src="img/portfolio/p-p-4.jpg" alt="">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-4.jpg" alt="p-p-4.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -306,7 +298,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a title="Страница в разработке"  href="#" target="blank">
-                            <img src="img/portfolio/p-p-5.jpg" alt="">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-5.jpg" alt="p-p-5.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -324,7 +316,7 @@
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
                         <a href="https://iceberg.vn.ua/abs-stock-landing.html" target="blank">
-                            <img src="img/portfolio/p-p-6.jpg"  alt="">
+                            <img src="<?= PATH ?>/img/portfolio/p-p-6.jpg"  alt="p-p-6.jpg">
                         </a>
                     </div>
                     <div class="portfolio-text-wrapper">
@@ -389,7 +381,7 @@
                             <div class="review-slider-item-wrapper">
                                 <div class="reviews-name">
                                     <div class="reviews-name-photo">
-                                        <img src="img/vaselega.png" alt="">
+                                        <img src="<?= PATH ?>/img/vaselega.png" alt="vaselega.png">
                                     </div>
                                     <div class="reviews-name-content">
                                         <p class="reviews-customer-name">
@@ -415,7 +407,7 @@
                             <div class="review-slider-item-wrapper">
                                 <div class="reviews-name">
                                     <div class="reviews-name-photo">
-                                        <img src="img/avatar-women.png" alt="">
+                                        <img src="<?= PATH ?>/img/avatar-women.png" alt="avatar-women.png">
                                     </div>
                                     <div class="reviews-name-content">
                                         <p class="reviews-customer-name">
@@ -441,7 +433,7 @@
                             <div class="review-slider-item-wrapper">
                                 <div class="reviews-name">
                                     <div class="reviews-name-photo">
-                                        <img src="img/tramsuk.png" alt="">
+                                        <img src="<?= PATH ?>/img/tramsuk.png" alt="tramsuk.png">
                                     </div>
                                     <div class="reviews-name-content">
                                         <p class="reviews-customer-name">
@@ -463,7 +455,7 @@
                             <div class="review-slider-item-wrapper">
                                 <div class="reviews-name">
                                     <div class="reviews-name-photo">
-                                        <img src="img/darmoros.png" alt="">
+                                        <img src="<?= PATH ?>/img/darmoros.png" alt="darmoros.png">
                                     </div>
                                     <div class="reviews-name-content">
                                         <p class="reviews-customer-name">
@@ -483,14 +475,14 @@
                         </div>
                     </div>
                     <button class="review-prev">
-									<span class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"><g><g><path fill="none" stroke="#1c1c1c" stroke-miterlimit="50" stroke-width="2" d="M12.5 1.5v0l-11 11v0l11 11v0"/></g></g></svg>
-									</span>
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"><g><g><path fill="none" stroke="#1c1c1c" stroke-miterlimit="50" stroke-width="2" d="M12.5 1.5v0l-11 11v0l11 11v0"/></g></g></svg>
+                        </span>
                     </button>
                     <button class="review-next">
-									<span class="icon">
-										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"><g><g><path fill="none" stroke="#1c1c1c" stroke-miterlimit="50" stroke-width="2" d="M1.5 1.5v0l11 11v0l-11 11v0"/></g></g></svg>
-									</span>
+                        <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24"><g><g><path fill="none" stroke="#1c1c1c" stroke-miterlimit="50" stroke-width="2" d="M1.5 1.5v0l11 11v0l-11 11v0"/></g></g></svg>
+                        </span>
                     </button>
                 </div>
             </div>
@@ -512,7 +504,7 @@
                 </p>
             </div>
             <div class="about_us-right-col column">
-                <img src="img/icebr-logo.png" alt="">
+                <img src="<?= PATH ?>/img/icebr-logo.png" alt="icebr-logo.png">
             </div>
         </div>
     </div>
@@ -521,7 +513,7 @@
     <div class="container">
         <div class="custom_row">
             <div class="personal-column column">
-                <div class="personal-column-img" style="background-image: url('img/manager-sergey.png')"></div>
+                <div class="personal-column-img" style="background-image: url('<?= PATH ?>/img/manager-sergey.png')"></div>
             </div>
             <div class="personal-info-column column">
                 <p class="f-promo">
@@ -542,12 +534,12 @@
             </div>
             <div class="f-form-column column">
                 <div class="f-form-main-wrap">
-                    <form>
+                    <form action="<?= PATH ?>/main/send-phone" method="post">
                         <p class="form-item">
-                            <input type="text" placeholder="Введите ваш телефон" class="call-back-input" required data-mask="callback-catalog-phone">
+                            <input type="text" name="phone" placeholder="Введите ваш телефон" class="call-back-input" required data-mask="callback-catalog-phone">
                         </p>
                         <div class="f-form-button">
-                            <a href="#" class="btn_blue">Обсудить проект</a>
+                            <button type="submit" class="btn_blue">Обсудить проект</button>
                         </div>
                     </form>
                     <p class="call-back-text">
