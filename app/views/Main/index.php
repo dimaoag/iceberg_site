@@ -14,7 +14,7 @@
                         и сроки разработки Вашего сайта
                     </p>
                     <div class="info_company-button-wrapper">
-                        <a href="<?= PATH ?>/brif" class="btn_blue">Заполнить бриф</a>
+                        <a href="<?= PATH ?>/main/brif" class="btn_blue">Заполнить бриф</a>
                     </div>
                     <div class="our_instagram">
 						<span class="instagram_icon icon">
