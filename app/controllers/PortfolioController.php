@@ -20,4 +20,11 @@ class PortfolioController extends AppController
         $this->setMeta($metaTitle);
     }
 
+
+    public function doorHouseAction()
+    {
+        $metaTitle = 'Door House';
+        $this->setMeta($metaTitle);
+    }
+
 }

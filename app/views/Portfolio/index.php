@@ -21,7 +21,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/door-house-lending.html" target="blank">
+                        <a href="<?= PATH ?>/portfolio/door-house">
                             <img src="<?= PATH ?>/img/portfolio/p-p-1.jpg" alt="p-p-1.jpg">
                         </a>
                     </div>
