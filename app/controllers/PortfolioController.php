@@ -36,4 +36,10 @@ class PortfolioController extends AppController
         $this->setMeta($metaTitle);
     }
 
+    public function selfsaveAction()
+    {
+        $metaTitle = 'SELFSAVE';
+        $this->setMeta($metaTitle);
+    }
+
 }

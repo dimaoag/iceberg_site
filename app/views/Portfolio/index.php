@@ -75,7 +75,7 @@
             <div class="portfolio-column column">
                 <div class="portfolio-column-wrapper">
                     <div class="img-block">
-                        <a href="https://iceberg.vn.ua/selvesave-landing.html">
+                        <a href="<?= PATH ?>/portfolio/selfsave">
                             <img src="<?= PATH ?>/img/portfolio/p-p-4.jpg" alt="p-p-4.jpg">
                         </a>
                     </div>
