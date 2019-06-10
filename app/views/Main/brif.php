@@ -27,7 +27,7 @@
                                     <input type="tel" name="phone" class="order_input" required>
                                 </label>
                                 <label class="label_order">
-                                    Emai<sup>*</sup>
+                                    Email<sup>*</sup>
                                     <input type="email" name="email" class="order_input" required>
                                 </label>
                             </div>

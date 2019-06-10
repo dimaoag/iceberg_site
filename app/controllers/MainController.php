@@ -21,7 +21,7 @@ class MainController extends AppController
 
     public function brifAction()
     {
-        $metaTitle = 'Проити бриф';
+        $metaTitle = 'Заполнить бриф';
         $this->setMeta($metaTitle);
     }
 
