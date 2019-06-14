@@ -45,6 +45,7 @@ var nextSlide = function (currentSlide2) {
         $('.quize-slider').children().eq(nextSlide).addClass("quize-slider-active");
         $('.manager-qustion p').html(phrases[nextSlide]);
     }
+
 }
 
 //next prev slide
@@ -65,51 +66,16 @@ function diss(button, variantGroupId) {
     var variantGroupId = $(variantGroupId);
 
     variantGroupId.each(function () {
-
-        if ($(this).find('input[type="radio"]').is(':checked')) {
-            $(this).parent().parent().find(".next").removeAttr("disabled");
-            console.log("Снят disable потому что radio выбран");
-        } else if ($(this).find('input[type="checkbox"]').is(':checked')) {
-            $(this).parent().parent().find(".next").removeAttr("disabled");
-            console.log("Снят disable потому что checkbox выбран");
-        } else if($(this).find('input[type="text"]')){
-            if($(this).find('input[type="text"]').val() !== ""){
-                console.log($(this).find('input[type="text"]').val());
-                $(this).parent().parent().find(".next").removeAttr("disabled");
-            } else {
-                $(this).parent().parent().find(".next").attr("disabled", "disabled");
-            }
-        }else {
-            $(this).parent().parent().find(".next").attr("disabled", "disabled");
-            console.log("disabled");
-        }
-    });
-}
-
-var textinput = $(".input-for-text");
-textinput.on("change", function() {
-
-    $(this).closest(".promo-form-list").each(function () {
         if ($(this).find('input[type="radio"]').is(':checked')) {
             $(this).parent().parent().find(".next").removeAttr("disabled");
         } else if ($(this).find('input[type="checkbox"]').is(':checked')) {
             $(this).parent().parent().find(".next").removeAttr("disabled");
         } else {
-
             $(this).parent().parent().find(".next").attr("disabled", "disabled");
-            if($(this).find(".input-for-text").val() !== ""){
-                console.log("remove disabled dsdfsfs");
-                textinput.closest(".quize-slider-active").find(".next").removeAttr("disabled");
-            }
         }
     });
 
-   if($(this).val() !== ""){
-       console.log("remove disabled");
-       textinput.closest(".quize-slider-active").find(".next").removeAttr("disabled");
-   }
-
-});
+}
 
 $(".politic-confidency-input").on("click", function (){
     if($(".politic-confidency-input").is(":checked")){
@@ -167,6 +133,29 @@ $("#another-massager").on("click", function (evt){
     $(".confidency-label").show();
 });
 
-funcion getLastSlide(){
-    
+$(".next").on("click", function (){
+    if($(".quize-slider-item").last().hasClass("quize-slider-active")){
+        console.log("Вот тепер уберем бонусы");
+        $(".quize-slider-active").closest(".quize-main-item").find(".quize-right-column").addClass("delate-bonus");
+        $(".quize-slider-active").find(".lock").addClass("unlock");
+        $(".quize-slider-item").addClass("normalize-padding");
+    }
+});
+
+if($(window).width() <= 1200){
+    $(".has-drop-link").on("click", function (evt) {
+        evt.preventDefault();
+        $(this).next().toggleClass("quize-drop-list-open");
+    });
 }
+
+$(".mobile-icon-content").on("click", function (){
+    $(".mobile-main-contacts-navigation").addClass("open-menu");
+});
+
+$(".btn-close-menu").on("click", function(){
+    $(".mobile-main-contacts-navigation").removeClass("open-menu");
+});
+
+$("[data-mask='callback-catalog-phone']").mask("+38 (999) 999  99  99");
+
