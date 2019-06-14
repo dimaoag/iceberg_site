@@ -131,8 +131,13 @@
                     </a>
                 </li>
                 <li data-widget="tree">
+                    <a href="<?=ADMIN?>/blog">
+                        <i class="fa fa-newspaper-o"></i><span>Новости</span>
+                    </a>
+                </li>
+                <li data-widget="tree">
                     <a href="<?=ADMIN?>/contact">
-                        <i class="fa fa-info-circle"></i><span>Контакты</span>
+                        <i class="fa fa-user"></i><span>Контакты</span>
                     </a>
                 </li>
 

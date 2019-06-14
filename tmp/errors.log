@@ -1,0 +1,237 @@
+[2019-06-13 10:06:45] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.job' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 10:06:51] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.service' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 10:07:01] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.contact' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 11:01:48] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.job' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 11:20:07] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.contact' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 11:28:34] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.contact' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:06:16] Text error: View /var/www/iceberg_site/app/views/admin/Contact/index.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 12:08:03] Text error: View /var/www/iceberg_site/app/views/admin/Contact/index.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 12:08:04] Text error: View /var/www/iceberg_site/app/views/admin/Contact/index.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 12:19:50] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telegram' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:20:10] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telegram' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:20:14] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telegram' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:22:01] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'telegram' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:24:12] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'viber' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:25:55] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'viber' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:34:44] Text error: SQLSTATE[01000]: Warning: 1265 Data truncated for column 'phone_1' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:38:19] Text error: Controller app\controllers\admin\NewsController not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 54 
+        
+====================='=
+[2019-06-13 12:38:39] Text error: Action app\controllers\admin\NewsController::indexAction not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 51 
+        
+====================='=
+[2019-06-13 12:39:29] Text error: Action app\controllers\admin\NewsController::indexAction not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 51 
+        
+====================='=
+[2019-06-13 12:44:49] Text error: Call to a member function getStart() on null | File: /var/www/iceberg_site/app/controllers/admin/NewsController.php | Line: 16 
+        
+====================='=
+[2019-06-13 12:44:58] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:45:39] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:45:46] Text error: View /var/www/iceberg_site/app/views/admin/News/index.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 12:47:05] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:47:29] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:48:21] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:51:20] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:53:26] Text error: Controller app\controllers\admin\NewsController not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 54 
+        
+====================='=
+[2019-06-13 12:54:02] Text error: Controller app\controllers\admin\NewsController not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 54 
+        
+====================='=
+[2019-06-13 12:54:03] Text error: Controller app\controllers\admin\NewsController not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 54 
+        
+====================='=
+[2019-06-13 12:54:04] Text error: Controller app\controllers\admin\NewsController not found | File: /var/www/iceberg_site/vendor/site/core/Router.php | Line: 54 
+        
+====================='=
+[2019-06-13 12:54:09] Text error: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 12:56:28] Text error: View /var/www/iceberg_site/app/views/admin/Blog/index.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 12:56:29] Text error: View /var/www/iceberg_site/app/views/admin/Blog/index.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 12:59:19] Text error: Call to a member function getCountPages() on null | File: /var/www/iceberg_site/app/views/admin/Blog/index.php | Line: 58 
+        
+====================='=
+[2019-06-13 13:09:32] Text error: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'phone_2' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 13:09:49] Text error: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'phone_2' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 13:09:54] Text error: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'phone_2' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 13:09:56] Text error: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'phone_2' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 13:10:00] Text error: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: '' for column 'phone_2' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 13:10:28] Text error: SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'dgsg' for column 'phone_2' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 13:22:28] Text error: Call to a member function getCountPages() on null | File: /var/www/iceberg_site/app/views/admin/Blog/index.php | Line: 58 
+        
+====================='=
+[2019-06-13 13:22:37] Text error: Call to a member function getCountPages() on null | File: /var/www/iceberg_site/app/views/admin/Blog/index.php | Line: 58 
+        
+====================='=
+[2019-06-13 13:27:45] Text error: Call to a member function getCountPages() on null | File: /var/www/iceberg_site/app/views/admin/Blog/index.php | Line: 49 
+        
+====================='=
+[2019-06-13 13:30:33] Text error: Class 'app\controllers\admin\Pagination' not found | File: /var/www/iceberg_site/app/controllers/admin/BlogController.php | Line: 15 
+        
+====================='=
+[2019-06-13 14:10:22] Text error: View /var/www/iceberg_site/app/views/admin/Blog/add.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 14:20:58] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.service' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 14:36:07] Text error: View /var/www/iceberg_site/app/views/admin/Blog/edit.php not found | File: /var/www/iceberg_site/vendor/site/core/base/View.php | Line: 60 
+        
+====================='=
+[2019-06-13 14:55:44] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.employee' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 15:03:00] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-13 15:04:31] Text error: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'field list' | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:00:00] Text error: DateTime::__construct(): Failed to parse time string (Y-m-d H:i:s) at position 1 (-): Unexpected character | File: /var/www/iceberg_site/app/controllers/admin/BlogController.php | Line: 30 
+        
+====================='=
+[2019-06-14 07:07:48] Text error: Cannot use object of type app\models\admin\Blog as array | File: /var/www/iceberg_site/app/controllers/admin/BlogController.php | Line: 31 
+        
+====================='=
+[2019-06-14 07:12:44] Text error: Cannot use object of type app\models\admin\Blog as array | File: /var/www/iceberg_site/app/controllers/admin/BlogController.php | Line: 29 
+        
+====================='=
+[2019-06-14 07:16:58] Text error: Identifier does not conform to RedBeanPHP security policies. | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/QueryWriter/AQueryWriter.php | Line: 743 
+        
+====================='=
+[2019-06-14 07:18:02] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:19:01] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:22:14] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:31:48] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:48:54] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:57:39] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 07:58:00] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 08:01:22] Text error: syntax error, unexpected 'blog' (T_STRING), expecting ')' | File: /var/www/iceberg_site/app/controllers/admin/BlogController.php | Line: 62 
+        
+====================='=
+[2019-06-14 09:08:11] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.employee' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 09:24:59] Text error: Expected array, integer given. | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Finder.php | Line: 146 
+        
+====================='=
+[2019-06-14 09:27:39] Text error: Expected array, string given. | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Finder.php | Line: 146 
+        
+====================='=
+[2019-06-14 09:28:21] Text error: Expected array, string given. | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Finder.php | Line: 146 
+        
+====================='=
+[2019-06-14 09:28:24] Text error: Expected array, integer given. | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Finder.php | Line: 146 
+        
+====================='=
+[2019-06-14 09:33:15] Text error: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'phone_3' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 09:35:27] Text error: SQLSTATE[22003]: Numeric value out of range: 1264 Out of range value for column 'phone_1' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 09:36:06] Text error: Rule 'number' has not been registered with Valitron\Validator::addRule(). | File: /var/www/iceberg_site/vendor/vlucas/valitron/src/Valitron/Validator.php | Line: 1271 
+        
+====================='=
+[2019-06-14 09:36:25] Text error: Rule 'number' has not been registered with Valitron\Validator::addRule(). | File: /var/www/iceberg_site/vendor/vlucas/valitron/src/Valitron/Validator.php | Line: 1271 
+        
+====================='=
+[2019-06-14 09:51:12] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 10:22:15] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 10:23:06] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 10:23:12] Text error: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'date_create' at row 1 | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 11:11:13] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.service' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 11:19:26] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.employee' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=
+[2019-06-14 12:25:05] Text error: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'iceberg_site.employee' doesn't exist | File: /var/www/iceberg_site/vendor/gabordemooij/redbean/RedBeanPHP/Driver/RPDO.php | Line: 194 
+        
+====================='=

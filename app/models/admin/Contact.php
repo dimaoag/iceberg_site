@@ -11,9 +11,8 @@ use app\models\AppModel;
  * @property string $phone_2
  * @property string $phone_3
  * @property string $telegram
- * @property string $viber
- * @property string $facebook
- * @property string $instagram
+ * @property string $whatsapp
+ * @property string $behance
  *
  */
 
@@ -26,9 +25,8 @@ class Contact extends AppModel {
         'phone_2' => '',
         'phone_3' => '',
         'telegram' => '',
-        'viber' => '',
-        'facebook' => '',
-        'instagram' => '',
+        'whatsapp' => '',
+        'behance' => ''
     ];
 
     public $rules = [
@@ -36,13 +34,13 @@ class Contact extends AppModel {
             ['address'],
             ['email'],
             ['telegram'],
-            ['viber'],
-            ['facebook'],
-            ['instagram'],
+            ['whatsapp'],
+            ['behance']
         ],
         'email' => [
             ['email'],
         ],
+        'integer' => ['phone_1', 'phone_2', 'phone_3']
 
     ];
 
