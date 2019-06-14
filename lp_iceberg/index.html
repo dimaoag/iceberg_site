@@ -1,414 +1,559 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
 
-	<meta charset="utf-8">
-	<!-- <base href="/"> -->
+    <title>Iceberg</title>
+    <meta name="description" content="">
 
-	<title>Веб-студия Iceberg | Создание сайтов, лендингов и интернет-магазинов</title>
-	<meta name="description" lang="ru" content="Делаем защищенные, быстрые сайты с любым функционалом и понятным управлением! Работаем на чистом коде (фреймворк Yii2) с поэтапной оплатой, а также поддерживаем сайт после сдачи." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon-32.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-180.png">
-	<!-- Template Basic Images End -->
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
 
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#fff">
-	<!-- Custom Browsers Color End -->
-	<link rel="stylesheet" href="css/all.min.css">
-	<link rel="stylesheet" href="css/style.css">
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#fc7700">
+    <!-- Custom Browsers Color End -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fc7700">
 
-
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-		ym(50094541, "init", {
-			clickmap:true,
-			trackLinks:true,
-			accurateTrackBounce:true,
-			webvisor:true
-		});
-	</script>
-	<noscript><div><img src="https://mc.yandex.ru/watch/50094541" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-	<!-- /Yandex.Metrika counter -->
-
-
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127488819-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-127488819-1');
-	</script>
-
-
+    <!--Style-->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+<div class="quize-screen-main">
+    <div class="quize-screen-main-graphics">
+        <div class="quize-screen-main-img" style="background-image: url('img/main-background.jpg')"></div>
+    </div>
+    <div class="quize-screen-main-content">
+        <div class="quize-logo-phone">
+            <a href="#" class="logo">
+                <img src="img/logo.png" alt="Логотип комапии Iceberg">
+            </a>
+            <ul class="quize-phone-list list-style-none">
+                <li class="quize-phone-item has-drop">
+                    <a href="tel:0634583320">
+                        +38 (063) 458-33-20
+                        <span class="mobile-icon-content button">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     version="1.1" id="Capa_1" x="0px" y="0px" width="348.077px" height="348.077px"
+                                     viewBox="0 0 348.077 348.077" style="enable-background:new 0 0 348.077 348.077;"
+                                     xml:space="preserve">
+									<path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076     c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257     c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194     C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02     C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876     c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029     C350.631,303.527,350.95,285.795,340.273,275.083z"/>
+								</svg>
+							</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <h1 class="quize-headline">
+            Узнайте в 5 кликов <span class="blue-color">стоимость</span> и сроки
+            разработки своего <span class="blue-color">сайта</span>
+        </h1>
+        <a href="#" class="button button-left-icon" id="open-quize">Пройти тест</a>
+        <div class="quize-bonuce">
+            <p class="quize-bonuce-headline">Бонусы после прохождения</p>
+            <ul class="quize-bonuce-list list-style-none">
+                <li class="quize-bonuce-list-item">
+                    <a href="#" class="bonuce-link">
+                        <img src="img/b-1.png" alt="Хостинг на 1 год бесплатно">
+                    </a>
+                </li>
+                <li class="quize-bonuce-list-item">
+                    <a href="#" class="bonuce-link">
+                        <img src="img/b-2.png" alt="Домен на 1 год бесплатно">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Quize -->
+<div class="quize-main-container">
+    <div class="quize-main-item">
+        <div class="quize-left-column">
+            <div class="quize-logo-phone">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="Логотип комапии Iceberg">
+                </a>
+                <ul class="quize-phone-list list-style-none">
+                    <li class="quize-phone-item has-drop">
+                        <a href="tel:0634583320">
+                            +38 (063) 458-33-20
+                            <span class="mobile-icon-content button">
+											<svg xmlns="http://www.w3.org/2000/svg"
+                                                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+                                                 x="0px" y="0px" width="348.077px" height="348.077px"
+                                                 viewBox="0 0 348.077 348.077"
+                                                 style="enable-background:new 0 0 348.077 348.077;"
+                                                 xml:space="preserve">
+											<path d="M340.273,275.083l-53.755-53.761c-10.707-10.664-28.438-10.34-39.518,0.744l-27.082,27.076     c-1.711-0.943-3.482-1.928-5.344-2.973c-17.102-9.476-40.509-22.464-65.14-47.113c-24.704-24.701-37.704-48.144-47.209-65.257     c-1.003-1.813-1.964-3.561-2.913-5.221l18.176-18.149l8.936-8.947c11.097-11.1,11.403-28.826,0.721-39.521L73.39,8.194     C62.708-2.486,44.969-2.162,33.872,8.938l-15.15,15.237l0.414,0.411c-5.08,6.482-9.325,13.958-12.484,22.02     C3.74,54.28,1.927,61.603,1.098,68.941C-6,127.785,20.89,181.564,93.866,254.541c100.875,100.868,182.167,93.248,185.674,92.876     c7.638-0.913,14.958-2.738,22.397-5.627c7.992-3.122,15.463-7.361,21.941-12.43l0.331,0.294l15.348-15.029     C350.631,303.527,350.95,285.795,340.273,275.083z"/>
+									</svg>
+								</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form method="post" action="mail.php">
+                <div class="quize-slider">
+                    <div class="quize-slider-item quize-slider-active">
+                        <p class="promo-text">
+                            Узнай в 5 кликов стоимость и сроки разработки своего сайта
+                        </p>
+                        <div class="question-block">
+                            <p class="question-headline">
+                                Какой Вам нужен сайт?
+                            </p>
+                            <div class="progress-wrapper">
+                                <p class="progress-status">
+                                    Готово:
+                                    <span class="progress-inprocent">
+										<span class="progress-in-procent">0</span>%
+									</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-form">
+                            <ul class="promo-form-list" id="promo-form-1">
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-1"
+                                               onclick="diss('next', '#promo-form-1')">
+                                        <span class="radio-text">Продающий</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-1" onclick="diss('next', '#promo-form-1')">
+                                        <span class="radio-text">Информационный</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="control-element">
+                            <button type="button" class="prev wite-button">
+                                Назад
+                            </button>
+                            <button type="button" class="next button with-left-icon"
+                                    onclick="nextSlide(0)" disabled>
+                                Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quize-slider-item">
+                        <p class="promo-text">
+                            Узнай в 5 кликов стоимость и сроки разработки своего сайта
+                        </p>
+                        <div class="question-block">
+                            <p class="question-headline">
+                                Вы хотите сделать новый сайт или это улучшение
+                                предыдущей версии?
+                            </p>
+                            <div class="progress-wrapper">
+                                <p class="progress-status">
+                                    Готово:
+                                    <span class="progress-inprocent">
+										<span class="progress-in-procent">0</span>%
+									</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-form">
+                            <ul class="promo-form-list" id="promo-form-2">
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-1" onclick="diss('next', '#promo-form-2')">
+                                        <span class="radio-text">Продающий</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-1" onclick="diss('next', '#promo-form-2')">
+                                        <span class="radio-text">Информационный</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="control-element">
+                            <button type="button" class="prev wite-button" onclick="prevSlide(1)">Назад</button>
+                            <button type="button" class="next button with-left-icon" onclick="nextSlide(1)" disabled>Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quize-slider-item">
+                        <p class="promo-text">
+                            Узнай в 5 кликов стоимость и сроки разработки своего сайта
+                        </p>
+                        <div class="question-block">
+                            <p class="question-headline">
+                                Какая у Вас сфера деятельности?
+                            </p>
+                            <div class="progress-wrapper">
+                                <p class="progress-status">
+                                    Готово:
+                                    <span class="progress-inprocent">
+										<span class="progress-in-procent">0</span>%
+									</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-form">
+                            <ul class="promo-form-list" id="promo-form-3">
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label chekbox-label">
+                                        <input type="checkbox" name="answer-3" onclick="diss('next', '#promo-form-3')">
+                                        <span class="radio-text">Оптовые продажи</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label chekbox-label">
+                                        <input type="checkbox" name="answer-3" onclick="diss('next', '#promo-form-3')">
+                                        <span class="radio-text">Производство</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label chekbox-label">
+                                        <input type="checkbox" name="answer-3" onclick="diss('next', '#promo-form-3')">
+                                        <span class="radio-text">Обучение</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label chekbox-label">
+                                        <input type="checkbox" name="answer-3" onclick="diss('next', '#promo-form-3')">
+                                        <span class="radio-text">Розничная торговля</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label chekbox-label">
+                                        <input type="checkbox" name="answer-3" onclick="diss('next', '#promo-form-3')">
+                                        <span class="radio-text">Сфера услуг</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label chekbox-label">
+                                        <input type="checkbox" name="answer-3" onclick="diss('next', '#promo-form-3')">
+                                        <span class="radio-text">Другое</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="control-element">
+                            <button type="button" class="prev wite-button"
+                                    onclick="prevSlide(2)">Назад
+                            </button>
+                            <button type="button" class="next button with-left-icon" onclick="nextSlide(2)" disabled>Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quize-slider-item">
+                        <p class="promo-text">
+                            Узнай в 5 кликов стоимость и сроки разработки своего сайта
+                        </p>
+                        <div class="question-block">
+                            <p class="question-headline">
+                                Когда Вы хотите закончить работу с сайтом?
+                            </p>
+                            <div class="progress-wrapper">
+                                <p class="progress-status">
+                                    Готово:
+                                    <span class="progress-inprocent">
+										<span class="progress-in-procent">0</span>%
+									</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-form">
+                            <ul class="promo-form-list" id="promo-form-4">
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-4" class="input-for-text" onclick="diss('next', '#promo-form-4')">
+                                        <span class="radio-text">На вчера</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-4" onclick="diss('next', '#promo-form-4')">
+                                        <span class="radio-text">30 - 45 дней</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-4" onclick="diss('next', '#promo-form-4')">
+                                        <span class="radio-text">только планирую</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-4" onclick="diss('next', '#promo-form-4')">
+                                        <span class="radio-text">14 - 30 дней</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-4" onclick="diss('next', '#promo-form-4')">
+                                        <span class="radio-text">45 - 60 дней</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="control-element">
+                            <button type="button" class="prev wite-button"
+                                    onclick="prevSlide(3)">Назад
+                            </button>
+                            <button type="button" class="next button with-left-icon" onclick="nextSlide(3)" disabled>Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quize-slider-item">
+                        <p class="promo-text">
+                            Узнай в 5 кликов стоимость и сроки разработки своего сайта
+                        </p>
+                        <div class="question-block">
+                            <p class="question-headline">
+                                В какой бюджет планируете уложиться?
+                            </p>
+                            <div class="progress-wrapper">
+                                <p class="progress-status">
+                                    Готово:
+                                    <span class="progress-inprocent">
+										<span class="progress-in-procent">0</span>%
+									</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="promo-form">
+                            <ul class="promo-form-list" id="promo-form-5">
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-5" onclick="diss('next', '#promo-form-5')">
+                                        <span class="radio-text">от 9 - 15 тыс. грн.</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-5" onclick="diss('next', '#promo-form-5')">
+                                        <span class="radio-text">от 30 - 60 тыс. грн.</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-5" onclick="diss('next', '#promo-form-5')">
+                                        <span class="radio-text">от 100 тыс. грн.</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-5" onclick="diss('next', '#promo-form-5')">
+                                        <span class="radio-text">от 15 - 30 тыс. грн.</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-5" onclick="diss('next', '#promo-form-5')">
+                                        <span class="radio-text">от 60 - 100 тыс. грн.</span>
+                                    </label>
+                                </li>
+                                <li class="promo-form-list-item">
+                                    <label class="radio-label">
+                                        <input type="radio" name="answer-5" onclick="diss('next', '#promo-form-5')">
+                                        <span class="radio-text">Другое</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="control-element">
+                            <button type="button" class="prev wite-button"
+                                    onclick="prevSlide(4)">Назад
+                            </button>
+                            <button type="button" class="next button with-left-icon" onclick="nextSlide(4)" disabled>Далее
+                            </button>
+                        </div>
+                    </div>
+                    <div class="quize-slider-item">
+                        <div class="question-block last-step">
+                            <div class="progress-wrapper">
+                                <p class="progress-status">
+                                    Готово:
+                                    <span class="progress-inprocent">
+										<span class="progress-in-procent">0</span>%
+									</span>
+                                </p>
+                                <p class="last-step-text">
+                                    Последний шаг!
+                                </p>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-line"></div>
+                                </div>
+                            </div>
+                            <p class="promo-text">
+                                Оставьте свои контакты и мы вышлем ориентировочною
+                                цену и сроки разработки сайта
+                            </p>
+                        </div>
+                        <div class="bonucs-in-last-step">
+                            <div class="bonucs-in-last-left">
+                                <p class="bonucs-text">
+                                    Ваши бонусы
+                                </p>
+                                <ul class="quize-bonuce-list list-style-none">
+                                    <li class="quize-bonuce-list-item">
+                                        <a href="#" class="bonuce-link">
+                                            <img src="img/b-1.png" alt="Хостинг на 1 год бесплатно">
+                                        </a>
+                                    </li>
+                                    <li class="quize-bonuce-list-item">
+                                        <a href="#" class="bonuce-link">
+                                            <img src="img/b-2.png" alt="Домен на 1 год бесплатно">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bonucs-in-last-right">
+                                <div class="before-enter-your-number">
+                                    <p class="bonucs-in-last-send">
+                                        Куда прислать результаты?
+                                    </p>
+                                    <div class="where-send">
+                                        <ul class="where-send-list list-style-none">
+                                            <li class="where-send-item">
+                                                <label class="were-send-label were-send-viber">
+                                                    <input type="radio" name="were-send-massage" class="input-viber massage-input">
+                                                    <span class="were-send-label-text">
+													Viber
+												</span>
+                                                </label>
+                                            </li>
+                                            <li class="where-send-item">
+                                                <label class="were-send-label were-send-telegram">
+                                                    <input type="radio" name="were-send-massage" class="input-telegram massage-input">
+                                                    <span class="were-send-label-text">
+													Telegram
+												</span>
+                                                </label>
+                                            </li>
+                                            <li class="where-send-item">
+                                                <label class="were-send-label were-send-watsapp">
+                                                    <input type="radio" name="were-send-massage" class="input-whatsapp massage-input">
+                                                    <span class="were-send-label-text">
+													WhatsApp
+												</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="enter-your-number">
+                                    <p class="enter-your-number-massage">
+                                        Введите номер <span class="massager-name">Viber</span>
+                                    </p>
+                                    <label class="enter-your-number-label">
+                                        <span class="enter-your-number-icon"></span>
+                                        <input type="text" placeholder="+38 (093) 111-11-11" class="single-number-input">
+                                    </label>
+                                    <a href="#" class="standart-link" id="another-massager">Выбрать другой мессенджер</a>
+                                    <button type="submit" class="standart-blue">
+                                        Узнать стоимость
+                                    </button>
+                                </div>
+                                <label class="confidency-label">
+                                    <input type="checkbox" class="politic-confidency-input" name="politic-confidency" checked>
+                                    <span class="label-text"> C
+                                    <a href="#">политикой конфиденциальности</a> ознакомлен</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="control-element">
+                            <button type="button" class="prev wite-button" onclick="prevSlide(5)">Назад</button>
+                            <button type="button" class="next button with-left-icon" onclick="nextSlide(5)" disabled>Далее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="quize-right-column background-grey">
+            <div class="quize-right-social-wrapper">
+                <p class="quize-right-text">
+                    Можете написать
+                    нам в мессенджеры
+                </p>
+                <p class="quize-right-social">
+                    <a href="#" class="viber-social social-button">
+                        Viber
+                    </a>
+                    <a href="#" class="telegram-social social-button">
+                        Telegram
+                    </a>
+                </p>
+            </div>
+            <div class="quize-maneger-wrpper">
+                <div class="quize-maneger-top">
+                    <div class="quize-maneger-avatar">
+                        <img src="img/mnager.png" class="manager-picture" alt="Фото менеджера" width="100" height="100">
+                        <span class="maneger-status status-online"></span>
+                    </div>
+                    <div class="quize-maneger-info">
+                        <p class="quize-manager-name">
+                            Сергей
+                        </p>
+                        <p class="quize-position">
+                            Менеджер проектов
+                        </p>
+                    </div>
+                </div>
+                <div class="quize-maneger-bottom">
+                    <div class="manager-qustion">
+                        <p>
+                            Этот этап очень важен, нужно понять какие у Вас цели продать или рассказать о себе.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="bonus-in-quize">
+                <p class="decor-text">
+                    Bonus
+                </p>
+                <ul class="quize-bonuce-list list-style-none">
+                    <li class="quize-bonuce-list-item">
+                        <a href="#" class="bonuce-link">
+                            <img src="img/b-1.png" alt="Хостинг на 1 год бесплатно">
+                        </a>
+                    </li>
+                    <li class="quize-bonuce-list-item">
+                        <a href="#" class="bonuce-link">
+                            <img src="img/b-2.png" alt="Домен на 1 год бесплатно">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
-<body class="is-home">
-	<header>
-		<div class="container">
-			<div class="logo_and_header_navigation_wrapper">
-				<div class="logo">
-					<a href="#">
-						<span class="part_of_logo_md_hidden">ВЕБ СТУДИЯ</span> ICEBERG
-					</a>
-				</div>
-				<div class="header_navigation_wrapper">
-					<div class="phone_box_with_dropdown">
-						<div class="dropdown_button">+38 (063) 458-33-20</div>
-						<div class="dropdown_container">
-							<ul>
-								<li>
-									<a href="tel:0962965202">+38 (096) 296-52-02</a>
-								</li>
-								<li>
-									<a href="tel:0634583320">+38 (063) 458-33-20</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="header_navigation_social_list">
-						<ul class="we_in_social">
-							<li>
-								<a title="Viber" href="viber://chat?number=+3806345833208" class="social_icon social_viber"></a>
-							</li>
-							<li>
-								<a title="Telegram" href="tg://resolve?domain=iceberg_studio" class="social_icon social_telegram"></a>
-							</li>
-						</ul>
-					</div>
-					<div class="header_navigation_button_wrapper">
-						<button href="#" class="btn_red modal_btn">Задать вопрос</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<main>
-
-		<section class="s-main-iformation">
-			<div class="container main-iformation-container">
-				<div class="main-iformation-wrapper" style="background-image: url('img/main_background-image-min.png')">
-					<div class="iformation-main_text_and_button">
-						<div class="iformation-main_text">
-							<h1 class="h1">
-								Узнай в 5 кликов стоимость и сроки 
-								разработки своего сайта
-							</h1>
-						</div>
-						<div class="main_iformation_button_wrapper">
-							<div class="main_iformation_button_plagin_wrapper">
-								<div class="marquiz__container marquiz__container_inline">
-									<a class="marquiz__button marquiz__button_blicked marquiz__button_rounded marquiz__button_shadow" href="#popup:marquiz_5c02f41b4de4050055a57756" data-fixed-side="" data-alpha-color="rgba(211, 64, 133, 0.5)" data-color="#d34085" data-text-color="#ffffff">Пройти тест</a>
-								</div>
-							</div>
-							<!--<div class="main_iformation_button_desktop_hidden">-->
-								<!--<button class="btn_red modal_btn">Пройти опрос</button>-->
-							<!--</div>-->
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="s-how-we-work">
-			<div class="container">
-				<div class="row">
-					<div class="col-7">
-						<div class="how-we-work-image_wrapper">
-							<img src="img/left_imae-min.png" alt="">
-						</div>
-					</div>
-					<div class="col-5">
-						<div class="how-we-work-text">
-							<h3 class="h3">Работаем на чистом коде (фреймворк Yii2)</h3>
-							<p>
-								Не используем шаблоны и CMS, такие как Opencard и Wordpress. Так как 
-								это сильно ухудшает скорость работы сайта и выдачу в поиске. А также 
-								несет дополнительны расходы на разные модули, которые не 
-								гарантируют качественную и стабильною работу, а только засоряют сайт 
-							</p>
-							<h3 class="h3">Оплата поэтапно</h3>
-							<p>
-								Вы НЕ будете платить 50-100% предоплаты, а платите небольшой аванс в 
-								размере 1/4 от всей суммы для начала работ. Дальше только за конкретно 
-								выполненный этап.
-							</p>
-							<h3 class="h3">
-								Поддерживаем сайт после сдачи
-							</h3>
-							<p>
-								Если при работе с сайтом выявится технические ошибки, которые были 
-								сделаны по нашей вине мы исправим это бесплатно. А также за 
-								дополнительную плату доработаем или добавим функционал.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="s-portfolio">
-			<div class="container">
-				<h2 class="h2">Примеры наших работ</h2>
-				<div class="row portfolio_row">
-					<div class="portfolio-item">
-						<a href="http:/vinkardan.com" target="_blank">
-							<img src="img/portfolio/p1-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://elisoft.com.ua/" target="_blank">
-							<img src="img/portfolio/p2-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://market-door.in.ua/" target="_blank">
-							<img src="img/portfolio/p3-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="http://mayster.vn.ua/" target="_blank">
-							<img src="img/portfolio/p4-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<!-- -->
-					<div class="portfolio-item">
-						<a href="http://salon.meri-shop.com/" target="_blank">
-							<img src="img/portfolio/p5-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="http://door.in.ua/" target="_blank">
-							<img src="img/portfolio/p6-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="http://meri-shop.com/" target="_blank">
-							<img src="img/portfolio/p7-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://teachme.com.ua/" target="_blank">
-							<img src="img/portfolio/p8-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-				   <!-- -->
-					<div class="portfolio-item">
-						<a href="http://meri-meri.com/" target="_blank">
-							<img src="img/portfolio/p9-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-					<div class="portfolio-item">
-						<a href="https://iceberg.vn.ua/build/" target="_blank">
-							<img src="img/portfolio/p10-min.jpg" alt="">
-							<i class="fas fa-external-link-alt"></i>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="s-mailing">
-			<div class="container">
-				<div class="row">
-					<div class="col-mailing-form col-mailing-form-title_hidden">
-						<h2 class="h2">Получи бесплатную статью </h2>
-						<div class="five-errr-title">
-							5 ошибок при разработке сайта
-						</div>
-					</div>
-					<div class="col-mailing-form">
-						<h2 class="h2">Получи бесплатную статью </h2>
-						<div class="five-errr-title">
-							5 ошибок при разработке сайта
-						</div>
-						<div class="col-mailing-form-wrappe">
-							<form action="mail_2.php" method="post" id="mailing" onsubmit="yaCounter50094541.reachGoal('article'); gtag('event', 'Otprav', {'event_category': 'Article'}); return true;">
-								<div class="form_control_wrapper">
-									<label class="form_control">
-										<span class="contacts_icon_wrapper">
-											<span class="icon_gmail icon_none_clik"></span>
-										</span>
-											<input type="email" name="email" placeholder="info@gmail.com">
-									</label>
-									<span class="or">или</span>
-									<label class="form_control">
-										<span class="contacts_icon_wrapper">
-											<span class="icon_viver icon_none_clik"></span>
-											<span class="icon_telegram icon_none_clik"></span>
-										</span>
-										<input type="tel" name="phone" placeholder="+38(___) ___-____"
-										class="phone--form">
-									</label>
-									<div class="main-form_button">
-										<button class="btn_red" type="submit" id="form_btn">Получить статью</button>
-									</div>
-								</div>
-							</form>
-						</div>
-					</div>
-					<div class="col-mailing-image">
-						<img src="img/bonus-min.png" alt="">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="s-contacts">
-			<div class="container">
-				<div class="row">
-					<div class="col-contacts">
-						<div class="col-contacts-all_contacts">
-							<h2 class="h2">Связаться с нами</h2>
-							<div class="row">
-								<div class="col-half">
-									<div class="contacts_wrapper contacts_phone">
-										<h4 class="h4">Телефны</h4>
-										<ul>
-											<li>
-												<a href="tel:0962965202">+38 (096) 296-52-02</a>
-											</li>
-											<li>
-												<a href="tel:0634583320">+38 (063) 458-33-20</a>
-											</li>
-										</ul>
-									</div>
-									<div class="contacts_wrapper adress">
-										<h4 class="h4">Адресс</h4>
-										<address>
-											г. Винница, ул. Нансена 7А
-										</address>
-									</div>
-								</div>
-								<div class="col-half">
-									<div class="contacts_wrapper contacts_social">
-										<h4 class="h4">Наши месседжеры</h4>
-										<ul class="we_in_social">
-											<li>
-												<a title="Viber" href="viber://chat?number=+3806345833208" class="social_icon social_viber"></a>
-											</li>
-											<li>
-												<a title="Telegram" href="tg://resolve?domain=iceberg_studio" class="social_icon social_telegram"></a>
-											</li>
-										</ul>
-									</div>
-									<div class="contacts_wrapper contacts_mail">
-										<h4 class="h4">Почта</h4>
-										<a href="mailto:iceberg.vn.ua@gmail.com">iceberg.vn.ua@gmail.com</a>
-									</div>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<div class="col-contacts">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41680.504527159894!2d28.43029173102954!3d49.23789135745351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b427dff08a7%3A0x72c4b3f477416142!2z0JLQtdCxINGB0YLRg9C00LjRjyBJY2ViZXJnIC0g0YHQvtC30LTQsNC90LjQtSDRgdCw0LnRgtC-0LIg0LIg0JLQuNC90L3QuNGG0LU!5e0!3m2!1suk!2sua!4v1552583168170" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</section>
-	</main>
-	
-	<!--Modal-->
-	<div class="modal_wrapper" id="question">
-		<div class="modal_content">
-			<button class="close"></button>
-				<div class="modal_content_wrapper">
-					<h2>
-						Задайте нам вопрос
-					</h2>
-					<div class="modal-form">
-						<form action="mail.php" method="post" onsubmit="yaCounter50094541.reachGoal('menubutton'); gtag('event', 'Otprav', {'event_category': 'menubutton'}); return true;">
-							<div class="form_control">
-								<input type="tel" name="phone" placeholder="Телефон" class="phone--form" required>
-							</div>
-							<div class="form_control">
-								<textarea name="text" placeholder="Ваш коментарий..." required></textarea> 
-							</div>
-							<div class="modal-button-form">
-								<button type="sbmit" class="btn_red">Отправить</button>
-							</div>
-						</form>
-					</div>
-				</div>
-		</div>
-	</div>
-	<!--Modal thank you-->
-	<div class="modal_wrapper" id="modal-thankyou">
-		<div class="modal_content modal-thankyou">
-			<button class="close"></button>
-			<div class="modal_content_wrapper">
-				<h2>
-					Спасибо мы свяжемся с вами в ближайшего времени
-				</h2>
-			</div>
-			<div class="modal-thank-you">
-				<button class="btn_red red_close">Закрыть</button>
-			</div>
-		</div>
-	</div>
-	<!--Modal mailing-->
-	<div class="modal_wrapper" id="modal-mailing">
-		<div class="modal_content modal-thankyou">
-			<button class="close"></button>
-			<div class="modal_content_wrapper">
-				<h2>
-					Вы подписаны на рассылку!
-				</h2>
-			</div>
-			<div class="modal-thank-you">
-				<button class="btn_red red_close">Закрыть</button>
-			</div>
-		</div>
-	</div>
-
-
-
-	<script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-		<script src="js/common.js"></script>
-		<!-- Marquiz script start -->
-	<script src="//script.marquiz.ru/v1.js" type="application/javascript"></script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			Marquiz.init({
-				id: '5c02f41b4de4050055a57756',
-				autoOpen: false,
-				autoOpenFreq: 'once',
-				openOnExit: false
-			});
-		});
-	</script>
-	<!-- Marquiz script end -->
-
-<!-- BEGIN JIVOSITE CODE {literal} -->
-<script type='text/javascript'>
-(function(){ var widget_id = 'k8kFIZEVWB';var d=document;var w=window;function l(){
-  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
-  s.src = '//code.jivosite.com/script/widget/'+widget_id
-    ; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}
-  if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}
-  else{w.addEventListener('load',l,false);}}})();
-</script>
-<!-- {/literal} END JIVOSITE CODE -->
-
-
+<!--Script-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/common.js"></script>
 </body>
 </html>
+
